@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+
+    
+    <title>Dese - Cours SQL</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../../css/base.min.css" rel="stylesheet">
+    <link href="../../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="../../..">Cours SQL</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 0 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours0/">Introduction</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 1 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours1/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/cyberchase/instructions/">Cyberchase</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/normals/instructions/">Normals</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/players/instructions/">Players</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/views/instructions/">Views</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/index_old.md">Old Index</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 2 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../">Introduction</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Dese</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../moneyball/instructions/">Moneyball</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../packages/instructions/">Packages</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 3 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours3/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours3/atl/instructions/">ATL</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours3/connect/instructions/">Connect</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours3/doghnut/instructions/">Doghnut</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 4 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours4/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours4/dont-panic/instructions/">Don't Panic</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours4/meteorites/instructions/">Meteorites</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 5 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours5/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours5/bnb/instructions/">BNB</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours5/census/instructions/">Census</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours5/private/instructions/">Private</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 6 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours6/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours6/harvard/instructions/">Harvard</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours6/snap/instructions/">Snap</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 7 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours7/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/index2/">Index 2</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/deep/answers/">Deep Answers</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/deep/instructions/">Deep Instructions</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/dont-panic-python/instructions/">Don't Panic Python</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/linkedin/instructions/">LinkedIn</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">SQLite Python <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../sqlite_python/">Introduction</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../../moneyball/instructions/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#dese">DESE</a></li>
+            <li class="second-level"><a href="#probleme-a-resoudre">Problème à Résoudre</a></li>
+                
+            <li class="second-level"><a href="#schema">Schéma</a></li>
+                
+                <li class="third-level"><a href="#table-districts">Table districts</a></li>
+                <li class="third-level"><a href="#table-schools">Table schools</a></li>
+                <li class="third-level"><a href="#table-graduation_rates">Table graduation_rates</a></li>
+                <li class="third-level"><a href="#table-expenditures">Table expenditures</a></li>
+                <li class="third-level"><a href="#table-staff_evaluations">Table staff_evaluations</a></li>
+            <li class="second-level"><a href="#specification">Spécification</a></li>
+                
+                <li class="third-level"><a href="#1sql">1.sql</a></li>
+                <li class="third-level"><a href="#2sql">2.sql</a></li>
+                <li class="third-level"><a href="#3sql">3.sql</a></li>
+                <li class="third-level"><a href="#4sql">4.sql</a></li>
+                <li class="third-level"><a href="#5sql">5.sql</a></li>
+                <li class="third-level"><a href="#6sql">6.sql</a></li>
+                <li class="third-level"><a href="#7sql">7.sql</a></li>
+                <li class="third-level"><a href="#8sql">8.sql</a></li>
+                <li class="third-level"><a href="#9sql">9.sql</a></li>
+                <li class="third-level"><a href="#10sql">10.sql</a></li>
+                <li class="third-level"><a href="#11sql">11.sql</a></li>
+                <li class="third-level"><a href="#12sql">12.sql</a></li>
+                <li class="third-level"><a href="#13sql">13.sql</a></li>
+            <li class="second-level"><a href="#utilisation">Utilisation</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="dese">DESE<a class="headerlink" href="#dese" title="Permanent link">&para;</a></h1>
+<p><img alt="Logo du Département de l'Éducation Élémentaire et Secondaire du Massachusetts" src="https://cs50.harvard.edu/sql/2024/psets/1/dese/dese-logo.png" /></p>
+<h2 id="probleme-a-resoudre">Problème à Résoudre<a class="headerlink" href="#probleme-a-resoudre" title="Permanent link">&para;</a></h2>
+<p>Vous venez de décrocher un nouvel emploi en tant qu'analyste de données pour l'État du Massachusetts, au sein du Département de l'Éducation Élémentaire et Secondaire (ou DESE, en abrégé !). Le DESE supervise le système éducatif public de l'État. L'une des responsabilités du DESE est de garantir que chaque enfant reçoive une éducation de qualité — une éducation dans laquelle ils rencontrent des enseignants expérimentés, ont accès à une abondance de ressources, et obtiennent finalement leur diplôme en ayant satisfait à toutes les exigences de l'État. Vos compétences en SQL ont un rôle à jouer dans ces nobles objectifs !</p>
+<p>Dans une base de données appelée <code>dese.db</code>, répondez à des questions sur l'état de l'éducation dans le Massachusetts.</p>
+<h2 id="schema">Schéma<a class="headerlink" href="#schema" title="Permanent link">&para;</a></h2>
+<p>Dans le Massachusetts, l'éducation publique est déléguée à des districts, un type de gouvernement scolaire souvent associé à une ville individuelle. Ces districts contiennent à leur tour de nombreuses écoles individuelles. Considérez le diagramme de relation d'entité ci-dessous, qui codifie la relation entre les districts, les écoles et d'autres données collectées par le DESE.</p>
+<pre><code class="language-mermaid">erDiagram
+    &quot;District&quot; ||--o{ &quot;School&quot;: &quot;contains&quot;
+    &quot;District&quot; ||--o{ &quot;Expenditure&quot;: &quot;makes&quot;
+    &quot;District&quot; ||--o{ &quot;Staff Evaluation&quot; : &quot;receives&quot;
+    &quot;School&quot; ||--o| &quot;Graduation Rate&quot; : &quot;reports&quot;
+</code></pre>
+<h3 id="table-districts">Table <code>districts</code><a class="headerlink" href="#table-districts" title="Permanent link">&para;</a></h3>
+<p>La table <code>districts</code> contient les colonnes suivantes :</p>
+<ul>
+<li><code>id</code>, qui est l'ID du district</li>
+<li><code>name</code>, qui est le nom du district</li>
+<li><code>type</code>, qui indique le type de district. Dans le Massachusetts, il existe des districts scolaires publics (désignés "Public School District") et des districts à charte (désignés "Charter District"). Pas besoin d'apprendre la différence, bien que vous puissiez le faire sur Wikipedia si vous êtes curieux !</li>
+<li><code>city</code>, qui est la ville dans laquelle se trouve le district</li>
+<li><code>state</code>, qui est l'État dans lequel se trouve le district</li>
+<li><code>zip</code>, qui est le code postal dans lequel se trouve le district</li>
+</ul>
+<h3 id="table-schools">Table <code>schools</code><a class="headerlink" href="#table-schools" title="Permanent link">&para;</a></h3>
+<p>La table <code>schools</code> contient les colonnes suivantes :</p>
+<ul>
+<li><code>id</code>, qui est l'ID de l'école</li>
+<li><code>district_id</code>, qui est l'ID du district auquel appartient l'école</li>
+<li><code>name</code>, qui est le nom de l'école</li>
+<li><code>type</code>, qui indique le type d'école. Dans le Massachusetts, il existe des écoles publiques (désignées "Public School") et des écoles à charte (désignées "Charter School"). Pas besoin d'apprendre la différence, bien que vous puissiez le faire sur Wikipedia si vous êtes curieux !</li>
+<li><code>city</code>, qui est la ville dans laquelle se trouve l'école</li>
+<li><code>state</code>, qui est l'État dans lequel se trouve l'école</li>
+<li><code>zip</code>, qui est le code postal dans lequel se trouve l'école</li>
+</ul>
+<h3 id="table-graduation_rates">Table <code>graduation_rates</code><a class="headerlink" href="#table-graduation_rates" title="Permanent link">&para;</a></h3>
+<p>La table <code>graduation_rates</code> contient les colonnes suivantes :</p>
+<ul>
+<li><code>id</code>, qui est l'ID du taux de diplôme</li>
+<li><code>school_id</code>, qui est l'ID de l'école associée au diplôme</li>
+<li><code>graduated</code>, qui est le pourcentage d'élèves, de 0 à 100, qui ont obtenu leur diplôme à temps</li>
+<li><code>dropped</code>, qui est le pourcentage d'élèves, de 0 à 100, qui ont abandonné l'école avant d'obtenir leur diplôme</li>
+<li><code>excluded</code>, qui est le pourcentage d'élèves, de 0 à 100, qui ont été "exclus" (c'est-à-dire expulsés)</li>
+</ul>
+<h3 id="table-expenditures">Table <code>expenditures</code><a class="headerlink" href="#table-expenditures" title="Permanent link">&para;</a></h3>
+<p>La table <code>expenditures</code> contient les colonnes suivantes :</p>
+<ul>
+<li><code>id</code>, qui est l'ID de la dépense</li>
+<li><code>district_id</code>, qui est l'ID du district associé à la dépense</li>
+<li><code>pupils</code>, qui est le nombre d'élèves fréquentant le district donné</li>
+<li><code>per_pupil_expenditure</code>, qui est le montant d'argent dépensé, en dollars, pour chaque élève fréquentant le district</li>
+</ul>
+<h3 id="table-staff_evaluations">Table <code>staff_evaluations</code><a class="headerlink" href="#table-staff_evaluations" title="Permanent link">&para;</a></h3>
+<p>La table <code>staff_evaluations</code> contient les colonnes suivantes :</p>
+<ul>
+<li><code>id</code>, qui est l'ID du rapport d'évaluation</li>
+<li><code>district_id</code>, qui est l'ID du district associé à l'évaluation</li>
+<li><code>evaluated</code>, qui est le pourcentage du personnel du district, de 0 à 100, formellement évalué</li>
+<li><code>exemplary</code>, qui est le pourcentage du personnel du district, de 0 à 100, évalué comme "exemplaire"</li>
+<li><code>proficient</code>, qui est le pourcentage du personnel du district, de 0 à 100, évalué comme "compétent"</li>
+<li><code>needs_improvement</code>, qui est le pourcentage du personnel du district, de 0 à 100, évalué comme "ayant besoin d'amélioration"</li>
+<li><code>unsatisfactory</code>, qui est le pourcentage du personnel du district, de 0 à 100, évalué comme "insatisfaisant"</li>
+</ul>
+<h2 id="specification">Spécification<a class="headerlink" href="#specification" title="Permanent link">&para;</a></h2>
+<p>Pour chacune des questions suivantes, vous devez écrire une seule requête SQL qui produit les résultats spécifiés par chaque problème. Votre réponse doit prendre la forme d'une seule requête SQL. Vous ne devez faire aucune supposition sur les <code>id</code> de lignes particulières : vos requêtes doivent être exactes même si les <code>id</code> étaient différents. Enfin, chaque requête ne doit retourner que les données nécessaires pour répondre à la question.</p>
+<h5 id="1sql"><code>1.sql</code><a class="headerlink" href="#1sql" title="Permanent link">&para;</a></h5>
+<p>Votre collègue prépare une carte de toutes les écoles publiques du Massachusetts. Dans <code>1.sql</code>, écrivez une requête SQL pour trouver les noms et les villes de toutes les écoles publiques du Massachusetts.</p>
+<ul>
+<li>Gardez à l'esprit que toutes les écoles de la table <code>schools</code> ne sont pas considérées comme des écoles publiques traditionnelles. Le Massachusetts reconnaît également les écoles privées (<code>charter schools</code>) qui (selon le DESE !) sont considérées comme distinctes.</li>
+</ul>
+<h5 id="2sql"><code>2.sql</code><a class="headerlink" href="#2sql" title="Permanent link">&para;</a></h5>
+<p>Votre équipe travaille à l'archivage d'anciennes données. Dans <code>2.sql</code>, écrivez une requête SQL pour trouver les noms des districts qui ne sont plus opérationnels.</p>
+<ul>
+<li>Les districts qui ne sont plus opérationnels ont "(non-op)" à la fin de leur nom.</li>
+</ul>
+<h5 id="3sql"><code>3.sql</code><a class="headerlink" href="#3sql" title="Permanent link">&para;</a></h5>
+<p>La législature du Massachusetts souhaite savoir combien d'argent, en moyenne, les districts ont dépensé par élève l'année dernière. Dans <code>3.sql</code>, écrivez une requête SQL pour trouver la dépense moyenne par élève. Nommez la colonne "per_pupil_expenditure".</p>
+<ul>
+<li>Notez que la colonne <code>per_pupil_expenditure</code> dans la table <code>expenditures</code> contient le montant moyen, par élève, que chaque district a dépensé l'année dernière. On vous a demandé de trouver la moyenne de cet ensemble de moyennes, en pondérant tous les districts de manière égale, quelle que soit leur taille.</li>
+</ul>
+<h5 id="4sql"><code>4.sql</code><a class="headerlink" href="#4sql" title="Permanent link">&para;</a></h5>
+<p>Certaines villes ont plus d'écoles publiques que d'autres. Dans <code>4.sql</code>, écrivez une requête SQL pour trouver les 10 villes avec le plus d'écoles publiques. Votre requête doit retourner les noms des villes et le nombre d'écoles publiques qu'elles contiennent, triés du plus grand nombre d'écoles publiques au plus petit. Si deux villes ont le même nombre d'écoles publiques, triez-les par ordre alphabétique.</p>
+<h5 id="5sql"><code>5.sql</code><a class="headerlink" href="#5sql" title="Permanent link">&para;</a></h5>
+<p>Le DESE souhaite que vous déterminiez dans quelles villes des écoles publiques supplémentaires pourraient être nécessaires. Dans <code>5.sql</code>, écrivez une requête SQL pour trouver les villes avec 3 écoles publiques ou moins. Votre requête doit retourner les noms des villes et le nombre d'écoles publiques qu'elles contiennent, triés du plus grand nombre d'écoles publiques au plus petit. Si deux villes ont le même nombre d'écoles publiques, triez-les par ordre alphabétique.</p>
+<h5 id="6sql"><code>6.sql</code><a class="headerlink" href="#6sql" title="Permanent link">&para;</a></h5>
+<p>Le DESE souhaite évaluer quelles écoles ont atteint un taux de diplôme de 100 %. Dans <code>6.sql</code>, écrivez une requête SQL pour trouver les noms des écoles (publiques ou à charte !) qui ont déclaré un taux de diplôme de 100 %.</p>
+<h5 id="7sql"><code>7.sql</code><a class="headerlink" href="#7sql" title="Permanent link">&para;</a></h5>
+<p>Le DESE prépare un rapport sur les écoles du district scolaire de Cambridge. Dans <code>7.sql</code>, écrivez une requête SQL pour trouver les noms des écoles (publiques ou à charte !) dans le district scolaire de Cambridge. Gardez à l'esprit que Cambridge, la ville, contient quelques districts scolaires, mais le DESE s'intéresse au district dont le nom est "Cambridge".</p>
+<h5 id="8sql"><code>8.sql</code><a class="headerlink" href="#8sql" title="Permanent link">&para;</a></h5>
+<p>Un parent souhaite envoyer son enfant dans un district avec de nombreux autres élèves. Dans <code>8.sql</code>, écrivez une requête SQL pour afficher les noms de tous les districts scolaires et le nombre d'élèves inscrits dans chacun.</p>
+<h5 id="9sql"><code>9.sql</code><a class="headerlink" href="#9sql" title="Permanent link">&para;</a></h5>
+<p>Un autre parent souhaite envoyer son enfant dans un district avec peu d'autres élèves. Dans <code>9.sql</code>, écrivez une requête SQL pour trouver le(s) nom(s) du ou des district(s) scolaire(s) avec le plus petit nombre d'élèves. Ne rapportez que le(s) nom(s).</p>
+<h5 id="10sql"><code>10.sql</code><a class="headerlink" href="#10sql" title="Permanent link">&para;</a></h5>
+<p>Dans le Massachusetts, les dépenses des districts scolaires sont en partie déterminées par les taxes locales sur les valeurs immobilières (par exemple, les valeurs des maisons). Dans <code>10.sql</code>, écrivez une requête SQL pour trouver les 10 districts scolaires publics avec les dépenses par élève les plus élevées. Votre requête doit retourner les noms des districts et la dépense par élève pour chacun.</p>
+<h5 id="11sql"><code>11.sql</code><a class="headerlink" href="#11sql" title="Permanent link">&para;</a></h5>
+<p>Y a-t-il une relation entre les dépenses scolaires et les taux de diplôme ? Dans <code>11.sql</code>, écrivez une requête SQL pour afficher les noms des écoles, leur dépense par élève et leur taux de diplôme. Triez les écoles de la plus grande dépense par élève à la plus petite. Si deux écoles ont la même dépense par élève, triez par nom d'école.</p>
+<ul>
+<li>Vous devez supposer qu'une école dépense le même montant par élève que l'ensemble de son district.</li>
+</ul>
+<h5 id="12sql"><code>12.sql</code><a class="headerlink" href="#12sql" title="Permanent link">&para;</a></h5>
+<p>Un parent vous demande conseil pour trouver les meilleurs districts scolaires publics du Massachusetts. Dans <code>12.sql</code>, écrivez une requête SQL pour trouver les districts scolaires publics avec des dépenses par élève supérieures à la moyenne et un pourcentage supérieur à la moyenne d'enseignants notés "exemplaires". Votre requête doit retourner les noms des districts, ainsi que leurs dépenses par élève et le pourcentage d'enseignants notés exemplaires. Triez les résultats d'abord par le pourcentage d'enseignants notés exemplaires (du plus élevé au plus bas), puis par la dépense par élève (du plus élevé au plus bas).</p>
+<h5 id="13sql"><code>13.sql</code><a class="headerlink" href="#13sql" title="Permanent link">&para;</a></h5>
+<p>Dans <code>13.sql</code>, écrivez une requête SQL pour répondre à une question que vous vous posez sur les données ! La requête doit :</p>
+<ul>
+<li>Impliquer au moins une <code>JOINTURE</code> ou une sous-requête</li>
+</ul>
+<h2 id="utilisation">Utilisation<a class="headerlink" href="#utilisation" title="Permanent link">&para;</a></h2>
+<p>Pour tester vos requêtes au fur et à mesure que vous les écrivez dans vos fichiers <code>.sql</code>, vous pouvez interroger la base de données en exécutant :</p>
+<pre><code>.read FILENAME
+</code></pre>
+<p>où <code>FILENAME</code> est le nom du fichier contenant votre requête SQL. Par exemple,</p>
+<pre><code>.read 1.sql
+</code></pre>
+<p>Vous pouvez également exécuter :</p>
+<pre><code>$ cat FILENAME | sqlite3 dese.db &gt; output.txt
+</code></pre>
+<p>pour rediriger la sortie de la requête vers un fichier texte nommé <code>output.txt</code>. (Cela peut être utile pour vérifier combien de lignes sont retournées par votre requête !)</p></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../../.."</script>
+    
+    <script src="../../../js/base.js"></script>
+    <script src="../../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

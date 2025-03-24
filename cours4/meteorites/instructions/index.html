@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+
+    
+    <title>Meteorites - Cours SQL</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../../css/base.min.css" rel="stylesheet">
+    <link href="../../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="../../..">Cours SQL</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 0 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours0/">Introduction</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 1 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours1/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/cyberchase/instructions/">Cyberchase</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/normals/instructions/">Normals</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/players/instructions/">Players</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/views/instructions/">Views</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/index_old.md">Old Index</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 2 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours2/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours2/dese/instructions/">Dese</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours2/moneyball/instructions/">Moneyball</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours2/packages/instructions/">Packages</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 3 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours3/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours3/atl/instructions/">ATL</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours3/connect/instructions/">Connect</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours3/doghnut/instructions/">Doghnut</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 4 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../dont-panic/instructions/">Don't Panic</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Meteorites</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 5 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours5/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours5/bnb/instructions/">BNB</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours5/census/instructions/">Census</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours5/private/instructions/">Private</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 6 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours6/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours6/harvard/instructions/">Harvard</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours6/snap/instructions/">Snap</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 7 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours7/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/index2/">Index 2</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/deep/answers/">Deep Answers</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/deep/instructions/">Deep Instructions</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/dont-panic-python/instructions/">Don't Panic Python</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/linkedin/instructions/">LinkedIn</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">SQLite Python <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../sqlite_python/">Introduction</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../dont-panic/instructions/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../../../cours5/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#nettoyage-de-meteorites-version-originale">Nettoyage de Météorites (Version originale)</a></li>
+            <li class="second-level"><a href="#probleme-a-resoudre">Problème à Résoudre</a></li>
+                
+            <li class="second-level"><a href="#distribution-code">Distribution Code</a></li>
+                
+            <li class="second-level"><a href="#specification">Spécification</a></li>
+                
+            <li class="second-level"><a href="#conseils">Conseils</a></li>
+                
+            <li class="second-level"><a href="#utilisation">Utilisation</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="nettoyage-de-meteorites-version-originale">Nettoyage de Météorites (<a href="https://cs50.harvard.edu/sql/2024/psets/3/meteorites/">Version originale</a>)<a class="headerlink" href="#nettoyage-de-meteorites-version-originale" title="Permanent link">&para;</a></h1>
+<p><img alt="Astronautes de la NASA nettoyant une grosse météorite, dans le style d'une bande dessinée de science-fiction" src="https://cs50.harvard.edu/sql/2024/psets/3/meteorites/cleaning_comic.png" /> "Astronautes de la NASA nettoyant une grosse météorite, dans le style d'une bande dessinée de science-fiction", généré par <a href="https://openai.com/dall-e-2">DALL·E 2</a></p>
+<h2 id="probleme-a-resoudre">Problème à Résoudre<a class="headerlink" href="#probleme-a-resoudre" title="Permanent link">&para;</a></h2>
+<p>En tant qu'ingénieur de données à la NASA, vous passez souvent votre temps à nettoyer des météorites - ou du moins les données qu'elles génèrent.</p>
+<p>On vous a fourni un fichier CSV des atterrissages historiques de météorites ici sur Terre, et il y en a pas mal ! Votre travail consiste à importer les données dans une base de données SQLite, en les nettoyant au passage. Une fois terminé, la base de données sera utilisée dans des analyses par certains de vos collègues ingénieurs.</p>
+<h2 id="distribution-code">Distribution Code<a class="headerlink" href="#distribution-code" title="Permanent link">&para;</a></h2>
+<p>et voir un fichier CSV nommé <code>meteorites.csv</code> à côté d'un fichier <code>import.sql</code>. Si ce n'est pas le cas, revenez sur vos pas et voyez si vous pouvez déterminer où vous vous êtes trompé !</p>
+<h2 id="specification">Spécification<a class="headerlink" href="#specification" title="Permanent link">&para;</a></h2>
+<p>Dans <code>import.sql</code>, écrivez une série d'instructions SQL (et SQLite) pour importer et nettoyer les données de <code>meteorites.csv</code> dans une table, <code>meteorites</code>, dans une base de données appelée <code>meteorites.db</code>.</p>
+<p>Dans <code>meteorites.db</code>, la table <code>meteorites</code> doit avoir les colonnes suivantes :</p>
+<p>Colonnes dans la table <code>meteorites</code>
+- <code>id</code>, qui représente l'ID unique de la météorite.
+- <code>name</code>, qui représente le nom donné à la météorite.
+- <code>class</code>, qui est la classification de la météorite, selon le schéma de classification traditionnel.
+- <code>mass</code>, qui est le poids de la météorite, en grammes.
+- <code>discovery</code>, qui est soit "Fell" (chute) soit "Found" (trouvée). "Fell" indique que la météorite a été vue tombant sur Terre, tandis que "Found" indique que la météorite n'a été trouvée qu'après avoir atterri sur Terre.
+- <code>year</code>, qui est l'année de découverte de la météorite.
+- <code>lat</code>, qui est la latitude à laquelle la météorite a atterri.
+- <code>long</code>, qui est la longitude à laquelle la météorite a atterri.</p>
+<p>Gardez à l'esprit que toutes les colonnes du CSV ne doivent pas se retrouver dans la table finale !</p>
+<p>Pour considérer les données de la table <code>meteorites</code> comme propres, vous devez vous assurer que...</p>
+<ol>
+<li>Toutes les valeurs vides dans <code>meteorites.csv</code> sont représentées par <code>NULL</code> dans la table <code>meteorites</code>.<ul>
+<li>Gardez à l'esprit que les colonnes <code>mass</code>, <code>year</code>, <code>lat</code>, et <code>long</code> ont des valeurs vides dans le CSV.</li>
+</ul>
+</li>
+<li>Toutes les colonnes avec des valeurs décimales (par exemple, 70.4777) doivent être arrondies au centième le plus proche (par exemple, 70.4777 devient 70.48).<ul>
+<li>Gardez à l'esprit que les colonnes <code>mass</code>, <code>lat</code>, et <code>long</code> ont des valeurs décimales.</li>
+</ul>
+</li>
+<li>Toutes les météorites avec le <code>nametype</code> "Relict" ne sont pas incluses dans la table <code>meteorites</code>.</li>
+<li>Les météorites sont triées par <code>year</code>, de la plus ancienne à la plus récente, et ensuite - si deux météorites ont atterri la même année - par <code>name</code>, dans l'ordre alphabétique.</li>
+<li>Vous avez mis à jour les IDs des météorites de <code>meteorites.csv</code>, selon l'ordre spécifié en #4.<ul>
+<li>L'<code>id</code> des météorites doit commencer à 1, en commençant par la météorite qui a atterri l'année la plus ancienne et qui est la première dans l'ordre alphabétique pour cette année-là.</li>
+</ul>
+</li>
+</ol>
+<h2 id="conseils">Conseils<a class="headerlink" href="#conseils" title="Permanent link">&para;</a></h2>
+<p>Il peut sembler accablant de savoir par où commencer pour nettoyer un fichier de données aussi volumineux ! Décomposons le problème en morceaux plus petits.</p>
+<p>Commencez par importer <code>meteorites.csv</code> dans une table temporaire</p>
+<p>Commencez par importer toutes les données de <code>meteorites.csv</code> dans une table temporaire, appelée <code>meteorites_temp</code>. Une table temporaire est un espace réservé utile : vous pouvez l'utiliser pour nettoyer vos données jusqu'à ce qu'elles soient sous une forme adaptée à votre table <code>meteorites</code> finale.</p>
+<p>Avant d'importer un CSV dans une base de données SQLite, il est préférable de définir le schéma de la table dans laquelle ces données seront importées. Dans <code>import.sql</code>, essayez ce qui suit :</p>
+<pre><code>CREATE TABLE &quot;meteorites_temp&quot; (
+    -- TODO
+);
+</code></pre>
+<p>Nous vous laissons le soin de choisir les noms des colonnes.</p>
+<p>Ensuite, rappelez-vous que <code>.import</code> est une instruction SQLite qui peut importer un CSV dans une table de votre choix. Après votre instruction <code>CREATE TABLE</code>, écrivez une instruction <code>.import</code> pour importer les données de <code>meteorites.csv</code> dans la table <code>meteorites_temp</code>.</p>
+<p>Enfin, conformément à la section Utilisation ci-dessous, essayez de créer <code>meteorites.db</code> en exécutant les instructions dans <code>import.sql</code>.</p>
+<p>Écrivez des instructions SQL pour nettoyer les données importées</p>
+<p>Avec vos données dans une table temporaire, continuez à écrire des instructions SQL pour nettoyer les données. Considérez comment vous pourriez mettre à jour les valeurs de la colonne <code>mass</code>, par exemple :</p>
+<pre><code>UPDATE &quot;meteorites_temp&quot;
+SET &quot;mass&quot; = ...
+WHERE ...
+</code></pre>
+<p>Vous devrez peut-être écrire quelques instructions de ce type, une (ou plus) pour chaque colonne que vous essayez de nettoyer.</p>
+<p>Transférez les données de votre table temporaire dans une table <code>meteorites</code></p>
+<p>Rappelez-vous que vous pouvez <code>INSERT</code> des valeurs dans une nouvelle table en <code>SELECT</code>ionnant des lignes d'une autre :</p>
+<pre><code>INSERT INTO &quot;table0&quot; (&quot;column0&quot;, &quot;column1&quot;)
+SELECT &quot;column0&quot;, &quot;column1&quot; FROM &quot;table1&quot;;
+</code></pre>
+<p>Lorsque vous le faites, vous pouvez réorganiser vos données en utilisant <code>ORDER BY</code>. Et, tant que vous avez spécifié une colonne de clé primaire dans votre nouvelle table, une telle instruction attribuera automatiquement de nouveaux IDs aux lignes insérées si aucun n'est spécifié.</p>
+<p>Une fois que vous avez terminé avec la table temporaire, il est bon de la supprimer !</p>
+<h2 id="utilisation">Utilisation<a class="headerlink" href="#utilisation" title="Permanent link">&para;</a></h2>
+<p>Introduisons quelques commandes de terminal qui pourraient être utiles pendant que vous travaillez sur le nettoyage de cet ensemble de données ! Considérez ce qui suit :</p>
+<pre><code>cat import.sql | sqlite3 meteorites.db
+</code></pre>
+<p>La commande ci-dessus peut être décomposée en deux parties :</p>
+<ul>
+<li><code>cat import.sql</code> affiche les données dans <code>import.sql</code>. Essayez-le seul si vous êtes curieux.</li>
+<li><code>sqlite3 meteorites.db</code> ouvre un fichier appelé <code>meteorites.db</code> avec le moteur <code>sqlite3</code>, comme vous en avez déjà l'habitude.</li>
+</ul>
+<p>Lorsque ces commandes sont combinées avec un pipe, <code>|</code>, les données de <code>import.sql</code> sont traitées comme un ensemble d'instructions pour <code>sqlite3</code> à exécuter sur <code>meteorites.db</code>. Si <code>meteorites.db</code> n'existe pas encore, il sera créé et les instructions dans <code>import.sql</code> seront exécutées dessus.</p>
+<p>Et si votre <code>import.sql</code> n'est pas parfait et que vous souhaitez recréer la base de données ? Considérez la suppression de la version actuelle de <code>meteorites.db</code> avec :</p>
+<pre><code>rm meteorites.db
+</code></pre>
+<p><code>rm</code> signifie remove (supprimer). Si vous y êtes invité, tapez "y" suivi de Entrée pour confirmer la suppression de <code>meteorites.db</code>. À partir de là, vous pouvez réexécuter <code>cat import.sql | sqlite3 meteorites.db</code> pour créer <code>meteorites.db</code> à partir de zéro.</p></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../../.."</script>
+    
+    <script src="../../../js/base.js"></script>
+    <script src="../../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

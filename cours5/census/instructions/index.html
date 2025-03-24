@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+
+    
+    <title>Census - Cours SQL</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../../css/base.min.css" rel="stylesheet">
+    <link href="../../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="../../..">Cours SQL</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 0 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours0/">Introduction</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 1 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours1/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/cyberchase/instructions/">Cyberchase</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/normals/instructions/">Normals</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/players/instructions/">Players</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/views/instructions/">Views</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/index_old.md">Old Index</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 2 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours2/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours2/dese/instructions/">Dese</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours2/moneyball/instructions/">Moneyball</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours2/packages/instructions/">Packages</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 3 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours3/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours3/atl/instructions/">ATL</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours3/connect/instructions/">Connect</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours3/doghnut/instructions/">Doghnut</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 4 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours4/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours4/dont-panic/instructions/">Don't Panic</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours4/meteorites/instructions/">Meteorites</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 5 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../bnb/instructions/">BNB</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Census</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../private/instructions/">Private</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 6 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours6/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours6/harvard/instructions/">Harvard</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours6/snap/instructions/">Snap</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 7 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours7/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/index2/">Index 2</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/deep/answers/">Deep Answers</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/deep/instructions/">Deep Instructions</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/dont-panic-python/instructions/">Don't Panic Python</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/linkedin/instructions/">LinkedIn</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">SQLite Python <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../sqlite_python/">Introduction</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../bnb/instructions/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../../private/instructions/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#recenseur">Recenseur</a></li>
+            <li class="second-level"><a href="#probleme-a-resoudre">Problème à résoudre</a></li>
+                
+            <li class="second-level"><a href="#demonstration">Démonstration</a></li>
+                
+            <li class="second-level"><a href="#code-de-distribution">Code de distribution</a></li>
+                
+            <li class="second-level"><a href="#schema">Schéma</a></li>
+                
+            <li class="second-level"><a href="#specification">Spécification</a></li>
+                
+                <li class="third-level"><a href="#rural">Rural</a></li>
+                <li class="third-level"><a href="#total">Total</a></li>
+                <li class="third-level"><a href="#par-district">Par District</a></li>
+                <li class="third-level"><a href="#le-plus-peuple">Le plus peuplé</a></li>
+            <li class="second-level"><a href="#utilisation">Utilisation</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="recenseur"><a href="https://cs50.harvard.edu/sql/2024/psets/4/census/">Recenseur</a><a class="headerlink" href="#recenseur" title="Permanent link">&para;</a></h1>
+<p><img alt="Les chaînes de montagnes de l'Himalaya dans le style d'une peinture népalaise" src="../../../assets/nepal.png" /> « Les chaînes de montagnes de l'Himalaya dans le style d'une peinture népalaise », générée par DALL·E 2</p>
+<h2 id="probleme-a-resoudre">Problème à résoudre<a class="headerlink" href="#probleme-a-resoudre" title="Permanent link">&para;</a></h2>
+<p>Vous êtes un recenseur (census taker) travaillant pour le gouvernement népalais. Alors que vous franchissez une dernière colline, votre souffle se coupe à la vue d'un lever de soleil himalayen, projetant une lueur sur le village que vous avez parcouru si loin pour atteindre. Votre guide, un local, s'arrête brusquement. Sous le bruissement constant de vos papiers de recensement (census papers), vous ressentez une démangeaison de curiosité. Après tout, ce n'est pas tous les jours que votre travail vous emmène dans un village comme celui-ci.</p>
+<p>Dans <code>census.db</code>, traitez vos données en vues (views) que le gouvernement népalais peut utiliser pour la tenue des dossiers.</p>
+<h2 id="demonstration">Démonstration<a class="headerlink" href="#demonstration" title="Permanent link">&para;</a></h2>
+<pre><code class="language-sqlite">sqlite3 census.db
+SELECT district, locality, families FROM census;
+.quit       
+</code></pre>
+<h2 id="code-de-distribution">Code de distribution<a class="headerlink" href="#code-de-distribution" title="Permanent link">&para;</a></h2>
+<p>Pour ce problème, vous devrez télécharger <code>census.db</code>, ainsi que quelques fichiers <code>.sql</code> dans lesquels vous écrirez vos requêtes (queries).</p>
+<h2 id="schema">Schéma<a class="headerlink" href="#schema" title="Permanent link">&para;</a></h2>
+<p>Dans <code>census.db</code>, vous trouverez une seule table, <code>census</code>. Dans la table <code>census</code>, vous trouverez les colonnes suivantes :</p>
+<ul>
+<li><code>id</code>, qui identifie de manière unique chaque enregistrement de recensement (census record)</li>
+<li><code>district</code>, qui est le nom du district de l'enregistrement de recensement</li>
+<li><code>locality</code>, qui est le nom de la localité de l'enregistrement de recensement au sein du district</li>
+<li><code>families</code>, qui est le nombre de familles associées à l'enregistrement de recensement</li>
+<li><code>households</code>, qui est le nombre total de ménages associés à l'enregistrement de recensement (plusieurs familles peuvent vivre dans le même ménage)</li>
+<li><code>population</code>, qui est la population associée à l'enregistrement de recensement</li>
+<li><code>male</code>, qui est le nombre de personnes associées à l'enregistrement de recensement qui se sont identifiées comme étant de sexe masculin</li>
+<li><code>female</code>, qui est le nombre de personnes associées à l'enregistrement de recensement qui se sont identifiées comme étant de sexe féminin</li>
+</ul>
+<h2 id="specification">Spécification<a class="headerlink" href="#specification" title="Permanent link">&para;</a></h2>
+<p>Dans chacun des fichiers <code>.sql</code> correspondants, écrivez une instruction SQL (SQL statement) pour créer chacune des vues (views) suivantes des données dans <code>census.db</code>. Notez que, bien que les vues puissent être créées à partir d'autres vues, chacune de vos vues doit être autonome (c'est-à-dire ne pas dépendre d'une vue antérieure).</p>
+<h4 id="rural">Rural<a class="headerlink" href="#rural" title="Permanent link">&para;</a></h4>
+<p>Dans <code>rural.sql</code>, écrivez une instruction SQL pour créer une vue nommée <code>rural</code>. Cette vue doit contenir tous les enregistrements de recensement relatifs à une municipalité rurale (identifiée par l'inclusion de « rural » dans leur nom). Assurez-vous que la vue contient toutes les colonnes de la table <code>census</code>.</p>
+<h4 id="total">Total<a class="headerlink" href="#total" title="Permanent link">&para;</a></h4>
+<p>Dans <code>total.sql</code>, écrivez une instruction SQL pour créer une vue nommée <code>total</code>. Cette vue doit contenir les sommes pour chaque colonne numérique dans <code>census</code>, à travers tous les districts et localités. Assurez-vous que la vue contient chacune des colonnes suivantes :</p>
+<ul>
+<li><code>families</code>, qui est la somme des familles de chaque localité au Népal.</li>
+<li><code>households</code>, qui est la somme des ménages de chaque localité au Népal.</li>
+<li><code>population</code>, qui est la somme de la population de chaque localité au Népal.</li>
+<li><code>male</code>, qui est la somme des personnes s'identifiant comme étant de sexe masculin de chaque localité au Népal.</li>
+<li><code>female</code>, qui est la somme des personnes s'identifiant comme étant de sexe féminin de chaque localité au Népal.</li>
+</ul>
+<h4 id="par-district">Par District<a class="headerlink" href="#par-district" title="Permanent link">&para;</a></h4>
+<p>Dans <code>by_district.sql</code>, écrivez une instruction SQL pour créer une vue nommée <code>by_district</code>. Cette vue doit contenir les sommes pour chaque colonne numérique dans <code>census</code>, regroupées par <code>district</code>. Assurez-vous que la vue contient chacune des colonnes suivantes :</p>
+<ul>
+<li><code>district</code>, qui est le nom du district.</li>
+<li><code>families</code>, qui est le nombre total de familles dans le district.</li>
+<li><code>households</code>, qui est le nombre total de ménages dans le district.</li>
+<li><code>population</code>, qui est la population totale du district.</li>
+<li><code>male</code>, qui est le nombre total de personnes s'identifiant comme étant de sexe masculin dans le district.</li>
+<li><code>female</code>, qui est le nombre total de personnes s'identifiant comme étant de sexe féminin dans le district.</li>
+</ul>
+<h4 id="le-plus-peuple">Le plus peuplé<a class="headerlink" href="#le-plus-peuple" title="Permanent link">&para;</a></h4>
+<p>Dans <code>most_populated.sql</code>, écrivez une instruction SQL pour créer une vue nommée <code>most_populated</code>. Cette vue doit contenir, dans l'ordre du plus grand au plus petit, les districts les plus peuplés du Népal. Assurez-vous que la vue contient chacune des colonnes suivantes :</p>
+<ul>
+<li><code>district</code>, qui est le nom du district.</li>
+<li><code>families</code>, qui est le nombre total de familles dans le district.</li>
+<li><code>households</code>, qui est le nombre total de ménages dans le district.</li>
+<li><code>population</code>, qui est la population totale du district.</li>
+<li><code>male</code>, qui est le nombre total de personnes s'identifiant comme étant de sexe masculin dans le district.</li>
+<li><code>female</code>, qui est le nombre total de personnes s'identifiant comme étant de sexe féminin dans le district.</li>
+</ul>
+<h2 id="utilisation">Utilisation<a class="headerlink" href="#utilisation" title="Permanent link">&para;</a></h2>
+<p>Pour tester vos vues au fur et à mesure que vous les écrivez dans vos fichiers <code>.sql</code>, vous pouvez exécuter une requête (query) sur la base de données en exécutant</p>
+<pre><code>.read FILENAME
+</code></pre>
+<p>où <code>FILENAME</code> est le nom du fichier contenant votre requête SQL. Par exemple,</p>
+<pre><code>.read rural.sql
+</code></pre>
+<p>Gardez à l'esprit que vous pouvez également utiliser</p>
+<pre><code>DROP VIEW name;
+</code></pre>
+<p>où <code>name</code> est le nom de votre vue, pour supprimer une vue avant de la recréer.</p></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../../.."</script>
+    
+    <script src="../../../js/base.js"></script>
+    <script src="../../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

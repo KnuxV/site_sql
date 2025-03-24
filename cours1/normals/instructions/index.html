@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+
+    
+    <title>Normals - Cours SQL</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../../css/base.min.css" rel="stylesheet">
+    <link href="../../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="../../..">Cours SQL</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 0 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours0/">Introduction</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 1 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../cyberchase/instructions/">Cyberchase</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Normals</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../players/instructions/">Players</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../views/instructions/">Views</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../index_old.md">Old Index</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 2 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours2/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours2/dese/instructions/">Dese</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours2/moneyball/instructions/">Moneyball</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours2/packages/instructions/">Packages</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 3 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours3/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours3/atl/instructions/">ATL</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours3/connect/instructions/">Connect</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours3/doghnut/instructions/">Doghnut</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 4 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours4/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours4/dont-panic/instructions/">Don't Panic</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours4/meteorites/instructions/">Meteorites</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 5 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours5/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours5/bnb/instructions/">BNB</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours5/census/instructions/">Census</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours5/private/instructions/">Private</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 6 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours6/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours6/harvard/instructions/">Harvard</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours6/snap/instructions/">Snap</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 7 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours7/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/index2/">Index 2</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/deep/answers/">Deep Answers</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/deep/instructions/">Deep Instructions</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/dont-panic-python/instructions/">Don't Panic Python</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/linkedin/instructions/">LinkedIn</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">SQLite Python <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../sqlite_python/">Introduction</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../cyberchase/instructions/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../../players/instructions/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#normals">Normals</a></li>
+            <li class="second-level"><a href="#demonstration">Démonstration</a></li>
+                
+            <li class="second-level"><a href="#probleme-a-resoudre">Problème à Résoudre</a></li>
+                
+            <li class="second-level"><a href="#schema">Schéma</a></li>
+                
+            <li class="second-level"><a href="#specification">Spécification</a></li>
+                
+            <li class="second-level"><a href="#utilisation">Utilisation</a></li>
+                
+            <li class="second-level"><a href="#comment-tester">Comment Tester</a></li>
+                
+            <li class="second-level"><a href="#remerciements">Remerciements</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="normals">Normals<a class="headerlink" href="#normals" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>À la suite d'un nouveau record annuel de chaleur établi en 2022 — le dernier d'une série d'années records — les températures moyennes de la surface des océans dans le monde ont augmenté depuis début mars. En excluant les régions polaires, elles sont environ deux dixièmes de degré Celsius plus chaudes que ce que les scientifiques ont jamais observé à cette période de l'année via les données satellites.</p>
+<p>The Washington Post, 28 avril 2023</p>
+</blockquote>
+<h2 id="demonstration">Démonstration<a class="headerlink" href="#demonstration" title="Permanent link">&para;</a></h2>
+<pre><code class="language-sqlite">$ sqlite3 normals.db                                                     sqlite&gt; .tables                                                         normals                                                                 sqlite&gt; SELECT &quot;latitude&quot;, &quot;longitude&quot;, &quot;0m&quot;, &quot;250m&quot;, &quot;500m&quot; FROM &quot;normals&quot;  
+</code></pre>
+<h2 id="probleme-a-resoudre">Problème à Résoudre<a class="headerlink" href="#probleme-a-resoudre" title="Permanent link">&para;</a></h2>
+<p>Comment savons-nous si les températures des océans sont plus basses ou plus élevées que la "normale" ? Qu'est-ce qu'une température "normale" ? Il s'avère que les scientifiques ont développé une métrique appelée "Climate Normal". Une Climate Normal caractérise les aspects du climat terrestre — ses conditions météorologiques à long terme — sur une période de 30 ans. Une métrique importante est la température des océans.</p>
+<p>Dans une base de données appelée <code>normals.db</code>, en utilisant une table appelée <code>normals</code>, explorez certaines des données les plus récentes de Climate Normal pour comprendre ce qui constitue une température océanique normale dans le monde.</p>
+<h2 id="schema">Schéma<a class="headerlink" href="#schema" title="Permanent link">&para;</a></h2>
+<p>Les données dans <code>normals.db</code> peuvent être visualisées comme suit :</p>
+<p><img alt="Figure des Normales Climatiques" src="https://cs50.harvard.edu/sql/2024/psets/0/normals/normals.jpg" /></p>
+<p>Remarquez que la Terre est divisée en une grille de coordonnées — des points qui peuvent identifier presque n'importe quel endroit sur Terre. Chaque coordonnée est une combinaison de latitude et de longitude. Et remarquez comment chaque coordonnée au-dessus d'un océan a une certaine température normale de la surface de l'océan qui lui est associée !</p>
+<p>Dans <code>normals.db</code>, vous trouverez une seule table de coordonnées, <code>normals</code>. Dans la table <code>normals</code>, vous trouverez les colonnes suivantes :</p>
+<ul>
+<li><code>id</code>, qui identifie de manière unique chaque ligne (coordonnée) de la table</li>
+<li><code>latitude</code>, qui est le degré de latitude (exprimé en format décimal) pour la coordonnée</li>
+<li><code>longitude</code>, qui est le degré de longitude (exprimé en format décimal) pour la coordonnée</li>
+<li><code>0m</code>, qui est la température normale de la surface de l'océan (c'est-à-dire la température normale à 0 mètre de profondeur), en degrés Celsius, à la coordonnée</li>
+<li><code>5m</code>, qui est la température normale de l'océan à 5 mètres de profondeur, en degrés Celsius, à la coordonnée</li>
+<li><code>10m</code>, qui est la température normale de l'océan à 10 mètres de profondeur, en degrés Celsius, à la coordonnée</li>
+</ul>
+<p>Et les observations continuent jusqu'à <code>5500m</code>, ou 5500 mètres de profondeur, pour certaines coordonnées !</p>
+<p>Puisque <code>normals</code> est une table large, si vous voulez prévisualiser le contenu, envisagez de <code>SELECT</code>ionner uniquement les colonnes <code>latitude</code>, <code>longitude</code>, et quelques colonnes de profondeur.</p>
+<h2 id="specification">Spécification<a class="headerlink" href="#specification" title="Permanent link">&para;</a></h2>
+<p>Pour chacune des questions suivantes, vous devez écrire une seule requête SQL qui produit les résultats spécifiés par chaque problème. Votre réponse doit prendre la forme d'une seule requête SQL. Vous ne devez pas faire d'hypothèses sur les <code>id</code>s de certaines observations : vos requêtes doivent être exactes même si l'<code>id</code> d'une observation particulière était différent. Enfin, chaque requête doit retourner uniquement les données nécessaires pour répondre à la question.</p>
+<ol>
+<li>Dans <code>1.sql</code>, écrivez une requête SQL pour trouver la température normale de la surface de l'océan dans le Golfe du Maine, au large des côtes du Massachusetts. Pour trouver cette température, regardez les données associées à 42,5° de latitude et -69,5° de longitude.</li>
+<li>Rappelez-vous que vous pouvez trouver la température normale de la surface de l'océan dans la colonne <code>0m</code>, qui signifie 0 mètre de profondeur !</li>
+<li>Dans <code>2.sql</code>, écrivez une requête SQL pour trouver la température normale du capteur le plus profond près du Golfe du Maine, à la même coordonnée ci-dessus.</li>
+<li>Le capteur le plus profond enregistre les températures à 225 mètres de profondeur, vous pouvez donc trouver ces données dans la colonne <code>225m</code>.</li>
+<li>Dans <code>3.sql</code>, choisissez un endroit de votre choix et écrivez une requête SQL pour trouver la température normale à 0 mètre, 100 mètres, et 200 mètres. Vous pourriez trouver Google Earth utile si vous souhaitez trouver des coordonnées à utiliser !</li>
+<li>Dans <code>4.sql</code>, écrivez une requête SQL pour trouver la température normale de la surface de l'océan la plus basse.</li>
+<li>Dans <code>5.sql</code>, écrivez une requête SQL pour trouver la température normale de la surface de l'océan la plus élevée.</li>
+<li>Dans <code>6.sql</code>, écrivez une requête SQL pour retourner toutes les températures normales de l'océan à 50m de profondeur, ainsi que leurs degrés respectifs de latitude et de longitude, dans la Mer d'Arabie. Incluez les colonnes latitude, longitude, et température. Pour simplifier, supposez que la Mer d'Arabie est encadrée par les quatre coordonnées suivantes :</li>
+<li>20° de latitude, 55° de longitude</li>
+<li>20° de latitude, 75° de longitude</li>
+<li>0° de latitude, 55° de longitude</li>
+<li>0° de latitude, 75° de longitude</li>
+<li>Dans <code>7.sql</code>, écrivez une requête SQL pour trouver la température moyenne de la surface de l'océan, arrondie à deux décimales, le long de l'équateur. Appelez la colonne résultante "Average Equator Ocean Surface Temperature".</li>
+<li>Les températures de la surface de l'océan à l'équateur peuvent être trouvées à toutes les longitudes entre les latitudes -0,5° et 0,5°, inclus.</li>
+<li>Dans <code>8.sql</code>, écrivez une requête SQL pour trouver les 10 endroits avec la température normale de la surface de l'océan la plus basse, triés du plus froid au plus chaud. Si deux endroits ont la même température normale de la surface de l'océan, triez par latitude, de la plus petite à la plus grande. Incluez les colonnes latitude, longitude, et température de surface.</li>
+<li>Dans <code>9.sql</code>, écrivez une requête SQL pour trouver les 10 endroits avec la température normale de la surface de l'océan la plus élevée, triés du plus chaud au plus froid. Si deux endroits ont la même température normale de la surface de l'océan, triez par latitude, de la plus petite à la plus grande. Incluez les colonnes latitude, longitude, et température de surface.</li>
+<li>Il y a 180 degrés entiers de latitude. Dans <code>10.sql</code>, écrivez une requête SQL pour déterminer combien de points de latitude nous avons au moins un point de donnée. (Pourquoi pourrions-nous ne pas avoir de points de données pour toutes les latitudes ?)</li>
+</ol>
+<h2 id="utilisation">Utilisation<a class="headerlink" href="#utilisation" title="Permanent link">&para;</a></h2>
+<p>Pour tester vos requêtes au fur et à mesure que vous les écrivez dans vos fichiers <code>.sql</code>, vous pouvez interroger la base de données en exécutant</p>
+<pre><code>.read FILENAME
+</code></pre>
+<p>où <code>FILENAME</code> est le nom du fichier contenant votre requête SQL. Par exemple,</p>
+<pre><code>.read 1.sql
+</code></pre>
+<p>Vous pouvez également exécuter</p>
+<pre><code>$ cat FILENAME | sqlite3 normals.db &gt; output.txt
+</code></pre>
+<p>pour rediriger la sortie de la requête vers un fichier texte appelé <code>output.txt</code>. (Cela peut être utile pour vérifier combien de lignes sont retournées par votre requête !)</p>
+<h2 id="comment-tester">Comment Tester<a class="headerlink" href="#comment-tester" title="Permanent link">&para;</a></h2>
+<ul>
+<li>L'exécution de <code>1.sql</code> produit une table avec 1 colonne et 1 ligne.</li>
+<li>L'exécution de <code>2.sql</code> produit une table avec 1 colonne et 1 ligne.</li>
+<li><code>3.sql</code> dépend de vous !</li>
+<li>L'exécution de <code>4.sql</code> produit une table avec 1 colonne et 1 ligne.</li>
+<li>L'exécution de <code>5.sql</code> produit une table avec 1 colonne et 1 ligne.</li>
+<li>L'exécution de <code>6.sql</code> produit une table avec 3 colonnes et 383 lignes.</li>
+<li>L'exécution de <code>7.sql</code> produit une table avec 1 colonne et 1 ligne.</li>
+<li>L'exécution de <code>8.sql</code> produit une table avec 3 colonnes et 10 lignes.</li>
+<li>L'exécution de <code>9.sql</code> produit une table avec 3 colonnes et 10 lignes.</li>
+<li>L'exécution de <code>10.sql</code> produit une table avec 1 colonne et 1 ligne.</li>
+</ul>
+<p>Notez que les comptes de lignes n'incluent pas les lignes d'en-tête qui ne montrent que les noms de colonnes.</p>
+<h2 id="remerciements">Remerciements<a class="headerlink" href="#remerciements" title="Permanent link">&para;</a></h2>
+<p>Données extraites du World Ocean Atlas 2023, disponibles publiquement auprès de la National Oceanic and Atmospheric Administration (NOAA).</p></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../../.."</script>
+    
+    <script src="../../../js/base.js"></script>
+    <script src="../../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

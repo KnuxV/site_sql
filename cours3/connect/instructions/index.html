@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+
+    
+    <title>Connect - Cours SQL</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../../css/base.min.css" rel="stylesheet">
+    <link href="../../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="../../..">Cours SQL</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 0 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours0/">Introduction</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 1 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours1/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/cyberchase/instructions/">Cyberchase</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/normals/instructions/">Normals</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/players/instructions/">Players</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/views/instructions/">Views</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/index_old.md">Old Index</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 2 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours2/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours2/dese/instructions/">Dese</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours2/moneyball/instructions/">Moneyball</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours2/packages/instructions/">Packages</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 3 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../atl/instructions/">ATL</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Connect</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../doghnut/instructions/">Doghnut</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 4 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours4/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours4/dont-panic/instructions/">Don't Panic</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours4/meteorites/instructions/">Meteorites</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 5 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours5/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours5/bnb/instructions/">BNB</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours5/census/instructions/">Census</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours5/private/instructions/">Private</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 6 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours6/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours6/harvard/instructions/">Harvard</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours6/snap/instructions/">Snap</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 7 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours7/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/index2/">Index 2</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/deep/answers/">Deep Answers</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/deep/instructions/">Deep Instructions</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/dont-panic-python/instructions/">Don't Panic Python</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/linkedin/instructions/">LinkedIn</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">SQLite Python <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../sqlite_python/">Introduction</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../atl/instructions/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../../doghnut/instructions/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#happy-to-connect">Happy to connect</a></li>
+            <li class="second-level"><a href="#probleme-a-resoudre">Problème à Résoudre</a></li>
+                
+            <li class="second-level"><a href="#specification">Spécification</a></li>
+                
+                <li class="third-level"><a href="#plateforme">Plateforme</a></li>
+                <li class="third-level"><a href="#donnees-dexemple">Données d'Exemple</a></li>
+            <li class="second-level"><a href="#utilisation">Utilisation</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="happy-to-connect">Happy to connect<a class="headerlink" href="#happy-to-connect" title="Permanent link">&para;</a></h1>
+<p><img alt="Logo LinkedIn" src="https://cs50.harvard.edu/sql/2024/psets/2/connect/linkedin.png" /></p>
+<h2 id="probleme-a-resoudre">Problème à Résoudre<a class="headerlink" href="#probleme-a-resoudre" title="Permanent link">&para;</a></h2>
+<p>LinkedIn est « le plus grand réseau professionnel au monde » avec pour mission de « connecter les professionnels du monde entier pour les rendre plus productifs et plus performants ». Peut-être avez-vous un compte ? Sur la plateforme, les utilisateurs peuvent publier leur expérience professionnelle (c'est-à-dire, les emplois précédents, l'éducation, etc.) et établir des connexions avec d'autres personnes qu'ils ont rencontrées, en personne ou en ligne.</p>
+<p>Dans un fichier nommé <code>schema.sql</code> dans un dossier nommé <code>connect</code>, écrivez un ensemble d'instructions SQL pour concevoir une base de données que LinkedIn pourrait utiliser.</p>
+<h2 id="specification">Spécification<a class="headerlink" href="#specification" title="Permanent link">&para;</a></h2>
+<p>Votre tâche consiste à créer une base de données SQLite pour LinkedIn à partir de zéro, en écrivant un ensemble d'instructions <code>CREATE TABLE</code> dans un fichier <code>schema.sql</code>. Les détails de mise en œuvre dépendent de vous, bien que vous devriez au minimum vous assurer que votre base de données répond aux spécifications de la plateforme et qu'elle peut représenter les données d'exemple fournies.</p>
+<h3 id="plateforme">Plateforme<a class="headerlink" href="#plateforme" title="Permanent link">&para;</a></h3>
+<h4 id="utilisateurs">Utilisateurs<a class="headerlink" href="#utilisateurs" title="Permanent link">&para;</a></h4>
+<p>Le cœur de la plateforme LinkedIn est ses utilisateurs. Votre base de données doit pouvoir représenter les informations suivantes sur les utilisateurs de LinkedIn :</p>
+<ul>
+<li>Leur prénom et nom de famille</li>
+<li>Leur nom d'utilisateur</li>
+<li>Leur mot de passe</li>
+</ul>
+<p>Gardez à l'esprit que, si une entreprise suit les meilleures pratiques, les mots de passe des applications sont « hachés ». Pas besoin de vous soucier du hachage des mots de passe ici, cependant.</p>
+<h4 id="ecoles-et-universites">Écoles et Universités<a class="headerlink" href="#ecoles-et-universites" title="Permanent link">&para;</a></h4>
+<p>LinkedIn permet également des comptes officiels pour les écoles ou universités, comme celui de Harvard, afin que les anciens élèves (c'est-à-dire, ceux qui y ont étudié) puissent identifier leur affiliation. Assurez-vous que la base de données de LinkedIn peut stocker les informations suivantes sur chaque école :</p>
+<ul>
+<li>Le nom de l'école</li>
+<li>Le type d'école (par exemple, « École Élémentaire », « Collège », « Lycée », « École Primaire », « École Secondaire », « Université », etc.)</li>
+<li>L'emplacement de l'école</li>
+<li>L'année de fondation de l'école</li>
+</ul>
+<h4 id="entreprises">Entreprises<a class="headerlink" href="#entreprises" title="Permanent link">&para;</a></h4>
+<p>LinkedIn permet aux entreprises de créer leurs propres pages, comme celle de LinkedIn elle-même, afin que les employés puissent identifier leur emploi passé ou actuel avec l'entreprise. Assurez-vous que la base de données de LinkedIn peut stocker les informations suivantes pour chaque entreprise :</p>
+<ul>
+<li>Le nom de l'entreprise</li>
+<li>Le secteur d'activité de l'entreprise (par exemple, « Éducation », « Technologie », « Finance », etc.)</li>
+<li>L'emplacement de l'entreprise</li>
+</ul>
+<h4 id="connexions">Connexions<a class="headerlink" href="#connexions" title="Permanent link">&para;</a></h4>
+<p>Et enfin, l'essence de LinkedIn est sa capacité à faciliter les connexions entre les personnes. Assurez-vous que la base de données de LinkedIn peut supporter chacune des connexions suivantes.</p>
+<p>Connexions avec des Personnes</p>
+<p>La base de données de LinkedIn doit pouvoir représenter des connexions mutuelles (réciproques, bidirectionnelles) entre les utilisateurs. Pas besoin de vous soucier des connexions unidirectionnelles, comme l'utilisateur A « suivant » l'utilisateur B sans que l'utilisateur B « suive » l'utilisateur A.</p>
+<p>Connexions avec des Écoles</p>
+<p>Un utilisateur doit pouvoir créer une affiliation avec une école donnée. Et de même, cette école doit pouvoir trouver ses anciens élèves. De plus, permettez à un utilisateur de définir :</p>
+<ul>
+<li>La date de début de son affiliation (c'est-à-dire, quand il a commencé à fréquenter l'école)</li>
+<li>La date de fin de son affiliation (c'est-à-dire, quand il a obtenu son diplôme), le cas échéant</li>
+<li>Le type de diplôme obtenu/poursuivi (par exemple, « Licence », « Master », « Doctorat », etc.)</li>
+</ul>
+<p>Connexions avec des Entreprises</p>
+<p>Un utilisateur doit pouvoir créer une affiliation avec une entreprise donnée. Et de même, cette entreprise doit pouvoir trouver ses employés actuels et passés. De plus, permettez à un utilisateur de définir :</p>
+<ul>
+<li>La date de début de son affiliation (c'est-à-dire, la date à laquelle il a commencé à travailler avec l'entreprise)</li>
+<li>La date de fin de son affiliation (c'est-à-dire, quand il a quitté l'entreprise), le cas échéant</li>
+<li>Le titre qu'il occupait pendant son affiliation avec l'entreprise</li>
+</ul>
+<h3 id="donnees-dexemple">Données d'Exemple<a class="headerlink" href="#donnees-dexemple" title="Permanent link">&para;</a></h3>
+<p>Votre base de données doit pouvoir représenter…</p>
+<ul>
+<li>Un utilisateur, Alan Garber, dont le nom d'utilisateur est « alan » et le mot de passe est « password ».</li>
+<li>Un utilisateur, Reid Hoffman dont le nom d'utilisateur est « reid » et le mot de passe est « password ».</li>
+<li>Une école, Harvard University, qui est une université située à Cambridge, Massachusetts, fondée en 1636.</li>
+<li>Une entreprise, LinkedIn, qui est une entreprise technologique dont le siège est à Sunnyvale, Californie.</li>
+<li>L'éducation de premier cycle d'Alan Garber à Harvard, poursuivant une Licence du 1er septembre 1973 au 1er juin 1976.</li>
+<li>L'emploi de Reid Hoffman chez LinkedIn en tant que PDG et Président, du 1er janvier 2003 au 1er février 2007.</li>
+</ul>
+<h2 id="utilisation">Utilisation<a class="headerlink" href="#utilisation" title="Permanent link">&para;</a></h2>
+<p>Pour créer une base de données à partir de votre schéma, dans votre dossier <code>connect</code>, tapez</p>
+<pre><code>sqlite3 connect.db
+</code></pre>
+<p>Cela créera une base de données SQLite vide nommée <code>connect.db</code>.</p>
+<p>Ensuite, dans l'invite <code>sqlite3</code>, tapez</p>
+<pre><code>.read schema.sql
+</code></pre>
+<p>pour lire les instructions de <code>schema.sql</code>.</p>
+<p>Rappelez-vous que vous pouvez utiliser <code>DROP TABLE tablename</code>, où <code>tablename</code> est le nom de votre table, pour supprimer une table de votre base de données.</p></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../../.."</script>
+    
+    <script src="../../../js/base.js"></script>
+    <script src="../../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

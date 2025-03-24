@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+
+    
+    <title>Private - Cours SQL</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../../css/base.min.css" rel="stylesheet">
+    <link href="../../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="../../..">Cours SQL</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 0 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours0/">Introduction</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 1 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours1/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/cyberchase/instructions/">Cyberchase</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/normals/instructions/">Normals</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/players/instructions/">Players</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/views/instructions/">Views</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/index_old.md">Old Index</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 2 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours2/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours2/dese/instructions/">Dese</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours2/moneyball/instructions/">Moneyball</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours2/packages/instructions/">Packages</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 3 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours3/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours3/atl/instructions/">ATL</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours3/connect/instructions/">Connect</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours3/doghnut/instructions/">Doghnut</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 4 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours4/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours4/dont-panic/instructions/">Don't Panic</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours4/meteorites/instructions/">Meteorites</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 5 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../bnb/instructions/">BNB</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../census/instructions/">Census</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Private</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 6 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours6/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours6/harvard/instructions/">Harvard</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours6/snap/instructions/">Snap</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 7 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours7/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/index2/">Index 2</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/deep/answers/">Deep Answers</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/deep/instructions/">Deep Instructions</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/dont-panic-python/instructions/">Don't Panic Python</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/linkedin/instructions/">LinkedIn</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">SQLite Python <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../sqlite_python/">Introduction</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../census/instructions/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../../../cours6/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#the-private-eye">The Private Eye</a></li>
+            <li class="second-level"><a href="#probleme-a-resoudre">Problème à résoudre</a></li>
+                
+            <li class="second-level"><a href="#code-de-distribution">Code de distribution</a></li>
+                
+            <li class="second-level"><a href="#contexte">Contexte</a></li>
+                
+            <li class="second-level"><a href="#schema">Schéma</a></li>
+                
+            <li class="second-level"><a href="#specification">Spécification</a></li>
+                
+            <li class="second-level"><a href="#conseil">Conseil</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="the-private-eye"><a href="https://cs50.harvard.edu/sql/2024/psets/4/private/">The Private Eye</a><a class="headerlink" href="#the-private-eye" title="Permanent link">&para;</a></h1>
+<p><img alt="A detective's library in the style of an oil painting" src="../../../assets/library.png" /> “A detective’s library in the style of an oil painting,” generated by DALL·E 2</p>
+<h2 id="probleme-a-resoudre">Problème à résoudre<a class="headerlink" href="#probleme-a-resoudre" title="Permanent link">&para;</a></h2>
+<p><a href="https://cs50.ai/">Le débogueur de canard (duck debugger) de CS50</a> a encore disparu et vous avez désespérément besoin d'un détective. Vous avez entendu des histoires sur un détective qui vit en haut de la ville, toujours secret dans son travail, jamais vu sauf quand il le souhaite. Sans surprise, il s'est avéré être assez insaisissable pour vous. Mais vous voilà, dans son étude, après avoir récupéré son adresse auprès d'un certain employé de la poste.</p>
+<p>Sur son bureau en acajou, du papier blanc frais scintille. Inscrit, vous trouvez le tableau suivant :</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>14</td>
+<td>98</td>
+<td>4</td>
+</tr>
+<tr>
+<td>114</td>
+<td>3</td>
+<td>5</td>
+</tr>
+<tr>
+<td>618</td>
+<td>72</td>
+<td>9</td>
+</tr>
+<tr>
+<td>630</td>
+<td>7</td>
+<td>3</td>
+</tr>
+<tr>
+<td>932</td>
+<td>12</td>
+<td>5</td>
+</tr>
+<tr>
+<td>2230</td>
+<td>50</td>
+<td>7</td>
+</tr>
+<tr>
+<td>2346</td>
+<td>44</td>
+<td>10</td>
+</tr>
+<tr>
+<td>3041</td>
+<td>14</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<p>Et glissé en dessous, un livre usé, Les Aventures de Sherlock Holmes.</p>
+<h2 id="code-de-distribution">Code de distribution<a class="headerlink" href="#code-de-distribution" title="Permanent link">&para;</a></h2>
+<p>Pour ce problème, vous devrez télécharger <code>private.db</code> et <code>private.sql</code>.</p>
+<h2 id="contexte">Contexte<a class="headerlink" href="#contexte" title="Permanent link">&para;</a></h2>
+<p>Étant donné la proximité du papier avec Les Aventures de Sherlock Holmes, ce qui est écrit sur celui-ci semble être une variation d'un chiffre de livre (book cipher). Vous savez que dans une version d'un chiffre de livre, le créateur du chiffre vous donne une liste de “triplets” (c'est-à-dire un ensemble de trois nombres). Chaque triplet est structuré comme suit :</p>
+<ul>
+<li>Le premier nombre du triplet est le numéro de la phrase référencée par l'encodeur.</li>
+<li>Le deuxième nombre du triplet est le numéro du caractère, dans cette phrase, où le message commence.</li>
+<li>Le troisième nombre du triplet est la longueur du message en caractères (c'est-à-dire combien de caractères lire à partir du premier, y compris les espaces et la ponctuation).</li>
+</ul>
+<p>Par exemple, considérez le triplet 2, 1, 8 à la lumière des phrases suivantes :</p>
+<blockquote>
+<p>Quite so! You have not observed. And yet you have seen.</p>
+</blockquote>
+<p>2 fait référence à la 2ème phrase, “You have not observed.” 1 fait référence au 1er caractère de cette phrase, “Y.” Et 8 fait référence à la longueur du message à partir de ce premier caractère. En commençant par le 1er caractère de la 2ème phrase, en lisant 8 caractères (y compris les espaces !) vous obtenez :</p>
+<blockquote>
+<p>You have</p>
+</blockquote>
+<p>Vous pouvez imaginer, maintenant, enchaîner plusieurs tuples pour encoder un message plus long. Peut-être que c'est exactement ce que le détective a fait !</p>
+<h2 id="schema">Schéma<a class="headerlink" href="#schema" title="Permanent link">&para;</a></h2>
+<p>Dans <code>private.db</code>, vous trouverez une table, <code>sentences</code>. La table <code>sentences</code> contient toutes les phrases des Aventures de Sherlock Holmes. En particulier, elle contient les colonnes suivantes :</p>
+<ul>
+<li><code>id</code>, qui est l'ID de la phrase</li>
+<li><code>sentence</code>, qui est la phrase elle-même</li>
+</ul>
+<h2 id="specification">Spécification<a class="headerlink" href="#specification" title="Permanent link">&para;</a></h2>
+<p>Votre tâche est de décoder le chiffre laissé pour vous par le détective. La manière dont vous le faites dépend de vous, mais vous devez vous assurer que—à la fin de votre processus—vous avez une vue (view) structurée comme suit :</p>
+<ul>
+<li>La vue doit être nommée <code>message</code></li>
+<li>La vue doit avoir une seule colonne, <code>phrase</code></li>
+<li>Lorsque la requête SQL (SQL query) suivante est exécutée sur <code>private.db</code>, votre vue doit renvoyer une seule colonne dans laquelle chaque ligne est une phrase du message.</li>
+</ul>
+<pre><code>SELECT &quot;phrase&quot; FROM &quot;message&quot;;
+</code></pre>
+<p>Dans <code>private.sql</code>, vous devez écrire toutes les instructions SQL (SQL statements) nécessaires pour reproduire votre création de la vue. C'est-à-dire :</p>
+<ul>
+<li>Si la création de la vue nécessite la création d'une table séparée et l'insertion de données dans celle-ci, vous devez vous assurer que <code>private.sql</code> contient les instructions pour créer cette table et insérer ces données. (N'ayez pas peur d'ajouter des tables et d'ajouter des données comme vous le souhaitez !)</li>
+<li><code>private.sql</code>, lorsqu'il est exécuté sur une nouvelle instance de <code>private.db</code>, doit être capable de reconstruire entièrement votre vue.</li>
+</ul>
+<h2 id="conseil">Conseil<a class="headerlink" href="#conseil" title="Permanent link">&para;</a></h2>
+<p>Il s'avère que SQLite est équipé d'une fonction qui implémente exactement la fonctionnalité du chiffre de livre : <code>substr</code>. La fonction <code>substr</code> prend trois entrées (“arguments”) :</p>
+<ul>
+<li>Une chaîne (c'est-à-dire du texte) à partir de laquelle prendre une sous-chaîne (c'est-à-dire un sous-ensemble des caractères de la chaîne)</li>
+<li>Le caractère de début de la sous-chaîne, identifié par son numéro (le premier caractère est 1)</li>
+<li>La longueur de la sous-chaîne</li>
+</ul>
+<p>Par exemple, supposons que vous ayez une table appelée <code>sentences</code> qui inclut ce qui suit :</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>sentence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Quite so!</td>
+</tr>
+<tr>
+<td>2</td>
+<td>You have not observed.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>And yet you have seen.</td>
+</tr>
+</tbody>
+</table>
+<p>Si vous exécutez la requête SQL suivante…</p>
+<pre><code class="language-sqlite">SELECT substr(&quot;sentence&quot;, 1, 2)
+FROM &quot;sentences&quot;;
+</code></pre>
+<p>vous recevrez les résultats suivants :</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Substring (1, 2)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Qu</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Yo</td>
+</tr>
+<tr>
+<td>3</td>
+<td>An</td>
+</tr>
+</tbody>
+</table>
+<p>Gardez à l'esprit que les autres arguments de <code>substr</code> peuvent également être des colonnes entières !</p></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../../.."</script>
+    
+    <script src="../../../js/base.js"></script>
+    <script src="../../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

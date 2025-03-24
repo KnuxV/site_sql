@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+
+    
+    <title>Packages - Cours SQL</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../../css/base.min.css" rel="stylesheet">
+    <link href="../../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="../../..">Cours SQL</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 0 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours0/">Introduction</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 1 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours1/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/cyberchase/instructions/">Cyberchase</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/normals/instructions/">Normals</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/players/instructions/">Players</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/views/instructions/">Views</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/index_old.md">Old Index</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 2 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../dese/instructions/">Dese</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../moneyball/instructions/">Moneyball</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Packages</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 3 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours3/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours3/atl/instructions/">ATL</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours3/connect/instructions/">Connect</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours3/doghnut/instructions/">Doghnut</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 4 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours4/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours4/dont-panic/instructions/">Don't Panic</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours4/meteorites/instructions/">Meteorites</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 5 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours5/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours5/bnb/instructions/">BNB</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours5/census/instructions/">Census</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours5/private/instructions/">Private</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 6 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours6/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours6/harvard/instructions/">Harvard</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours6/snap/instructions/">Snap</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 7 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours7/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/index2/">Index 2</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/deep/answers/">Deep Answers</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/deep/instructions/">Deep Instructions</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/dont-panic-python/instructions/">Don't Panic Python</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/linkedin/instructions/">LinkedIn</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">SQLite Python <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../sqlite_python/">Introduction</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../moneyball/instructions/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../../../cours3/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#livraisons-sil-vous-plait">Livraisons, S'il Vous Plaît</a></li>
+            <li class="second-level"><a href="#probleme-a-resoudre">Problème à Résoudre</a></li>
+                
+            <li class="second-level"><a href="#distribution-du-code">Distribution du Code</a></li>
+                
+            <li class="second-level"><a href="#schema">Schéma</a></li>
+                
+                <li class="third-level"><a href="#table-addresses">Table addresses</a></li>
+                <li class="third-level"><a href="#table-drivers">Table drivers</a></li>
+                <li class="third-level"><a href="#table-packages">Table packages</a></li>
+                <li class="third-level"><a href="#table-scans">Table scans</a></li>
+            <li class="second-level"><a href="#specification">Spécification</a></li>
+                
+                <li class="third-level"><a href="#la-lettre-perdue">La Lettre Perdue</a></li>
+                <li class="third-level"><a href="#la-livraison-malicieuse">La Livraison Malicieuse</a></li>
+                <li class="third-level"><a href="#le-cadeau-oublie">Le Cadeau Oublié</a></li>
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="livraisons-sil-vous-plait">Livraisons, S'il Vous Plaît<a class="headerlink" href="#livraisons-sil-vous-plait" title="Permanent link">&para;</a></h1>
+<p><img alt="Un colis en carton sur le pas de la porte d'une charmante maison de ville, dans le style d'une peinture en plein air" src="https://cs50.harvard.edu/sql/2024/psets/1/packages/package.png" /></p>
+<h2 id="probleme-a-resoudre">Problème à Résoudre<a class="headerlink" href="#probleme-a-resoudre" title="Permanent link">&para;</a></h2>
+<p>Vous êtes un employé de bureau de poste pour la ville de Boston et, à ce titre, vous supervisez la livraison du courrier dans toute la ville. Pour la plupart, tous les colis envoyés sont finalement livrés. Sauf que, de temps en temps, un mystère vous tombe dessus : un colis manquant ! Pour chaque client qui vient vous signaler un colis manquant, votre travail consiste à déterminer :</p>
+<ul>
+<li>L'adresse actuelle (ou l'emplacement !) de leur colis manquant</li>
+<li>Le type d'adresse ou d'emplacement (par exemple, résidentiel, commercial, etc.)</li>
+<li>Le contenu du colis</li>
+</ul>
+<p>Tout ce que vous savez est ce que les clients eux-mêmes vous diront. Pour résoudre chaque mystère, vous devrez utiliser la base de données du service de livraison de courrier, <code>packages.db</code>, qui contient des données sur le transit des colis dans la ville. En utilisant uniquement les informations de la base de données, votre tâche est d'aider chaque client à retrouver son colis manquant.</p>
+<h2 id="distribution-du-code">Distribution du Code<a class="headerlink" href="#distribution-du-code" title="Permanent link">&para;</a></h2>
+<p>Pour ce problème, vous devrez utiliser <code>packages.db</code>, ainsi qu'un fichier <code>.sql</code> et un fichier <code>.txt</code> dans lesquels vous écrirez vos requêtes et réponses.</p>
+<h2 id="schema">Schéma<a class="headerlink" href="#schema" title="Permanent link">&para;</a></h2>
+<p><code>packages.db</code> représente toutes les livraisons de colis récentes dans la ville de Boston. Pour ce faire, <code>packages.db</code> représente les entités suivantes :</p>
+<ul>
+<li>Chauffeurs, qui sont les personnes qui livrent les colis</li>
+<li>Les colis eux-mêmes</li>
+<li>Adresses, comme 1234 Main Street</li>
+<li>Scans des colis, qui représentent des confirmations qu'un chauffeur de livraison a pris ou déposé un colis donné</li>
+</ul>
+<p>Ces entités sont liées selon le diagramme de relation d'entité (ER) ci-dessous :</p>
+<pre><code class="language-mermaid">erDiagram
+    &quot;Package&quot; }o--|| &quot;Address&quot;: &quot;from&quot;
+    &quot;Package&quot; }o--|| &quot;Address&quot;: &quot;to&quot;
+    &quot;Scan&quot; }|--|| &quot;Package&quot; : &quot;of&quot;
+    &quot;Scan&quot; }o--|| &quot;Address&quot; : &quot;at&quot;
+    &quot;Driver&quot; ||--o{ &quot;Scan&quot; : &quot;makes&quot;
+</code></pre>
+<h3 id="table-addresses">Table <code>addresses</code><a class="headerlink" href="#table-addresses" title="Permanent link">&para;</a></h3>
+<p>La table <code>addresses</code> contient les colonnes suivantes :</p>
+<ul>
+<li><code>id</code>, qui est l'ID de l'adresse</li>
+<li><code>address</code>, qui est l'adresse elle-même (par exemple, 7660 Sharon Street)</li>
+<li><code>type</code>, qui est le type d'adresse (par exemple, résidentiel, commercial, etc.)</li>
+</ul>
+<h3 id="table-drivers">Table <code>drivers</code><a class="headerlink" href="#table-drivers" title="Permanent link">&para;</a></h3>
+<p>La table <code>drivers</code> contient les colonnes suivantes :</p>
+<ul>
+<li><code>id</code>, qui est l'ID du chauffeur</li>
+<li><code>name</code>, qui est le prénom du chauffeur</li>
+</ul>
+<h3 id="table-packages">Table <code>packages</code><a class="headerlink" href="#table-packages" title="Permanent link">&para;</a></h3>
+<p>La table <code>packages</code> contient les colonnes suivantes :</p>
+<ul>
+<li><code>id</code>, qui est l'ID du colis</li>
+<li><code>contents</code>, qui contient le contenu du colis</li>
+<li><code>from_address_id</code>, qui est l'ID de l'adresse d'où le colis a été envoyé</li>
+<li><code>to_address_id</code>, qui est l'ID de l'adresse à laquelle le colis a été envoyé. Ce n'est pas nécessairement là où il a fini !</li>
+</ul>
+<h3 id="table-scans">Table <code>scans</code><a class="headerlink" href="#table-scans" title="Permanent link">&para;</a></h3>
+<p>La table <code>scans</code> contient les colonnes suivantes :</p>
+<ul>
+<li><code>id</code>, qui est l'ID du scan</li>
+<li><code>driver_id</code>, qui est l'ID du chauffeur qui a créé le scan</li>
+<li><code>package_id</code>, qui est l'ID du colis scanné</li>
+<li><code>address_id</code>, qui est l'ID de l'adresse où le colis a été scanné</li>
+<li><code>action</code>, qui indique si le colis a été pris en charge ("Pick") ou déposé ("Drop")</li>
+<li><code>timestamp</code>, qui est le jour et l'heure auxquels le colis a été scanné</li>
+</ul>
+<h2 id="specification">Spécification<a class="headerlink" href="#specification" title="Permanent link">&para;</a></h2>
+<p>Pour ce problème, il est tout aussi important de trouver les colis que le processus que vous utilisez pour le faire. Dans <code>log.sql</code>, gardez une trace de toutes les requêtes SQL que vous exécutez sur la base de données. Au-dessus de chaque requête, étiquetez-la avec un commentaire : en SQL, les commentaires sont toutes les lignes qui commencent par <code>--</code>, comme suit :</p>
+<pre><code class="language-sqlite">-- Ceci est un commentaire SQL
+</code></pre>
+<p>Le commentaire doit décrire pourquoi vous exécutez la requête et quelles informations vous espérez obtenir de cette requête particulière. Vous pouvez également utiliser des commentaires pour ajouter des notes supplémentaires sur votre processus de réflexion lorsque vous résolvez chaque mystère : en fin de compte, ce fichier doit servir de preuve du processus que vous avez utilisé pour trouver chaque colis !</p>
+<p>Une fois que vous avez trouvé l'emplacement d'un colis, complétez chacune des lignes dans <code>answers.txt</code> en remplissant les détails sur l'emplacement du colis, ainsi que son contenu. Assurez-vous de ne pas modifier le texte existant dans le fichier ou d'ajouter d'autres lignes au fichier !</p>
+<h3 id="la-lettre-perdue">La Lettre Perdue<a class="headerlink" href="#la-lettre-perdue" title="Permanent link">&para;</a></h3>
+<p>Votre premier rapport de colis manquant provient d'Anneke. Anneke s'approche de votre comptoir et vous dit ce qui suit :</p>
+<blockquote>
+<p>Monsieur, je m'appelle Anneke. J'habite au 900 Somerville Avenue. Il n'y a pas longtemps, j'ai envoyé une lettre spéciale. Elle est destinée à mon amie Varsha. Elle commence un nouveau chapitre de sa vie au 2 Finnegan Street, en centre-ville. (Cette adresse, laissez-moi vous dire : elle était un peu difficile à obtenir correctement la première fois.) La lettre est un mot de félicitations—une petite accolade en papier de moi à elle, pour célébrer ce grand déménagement. Pouvez-vous vérifier si elle est arrivée jusqu'à elle ?</p>
+</blockquote>
+<p>Dans <code>log.sql</code>, sous <code>-- *** La Lettre Perdue ***</code>, gardez une trace des requêtes SQL que vous utilisez pour trouver la lettre perdue d'Anneke. Une fois que vous l'avez trouvée, décrivez-la selon les questions dans <code>answers.txt</code>.</p>
+<h3 id="la-livraison-malicieuse">La Livraison Malicieuse<a class="headerlink" href="#la-livraison-malicieuse" title="Permanent link">&para;</a></h3>
+<p>Votre deuxième rapport de colis manquant provient d'un individu mystérieux d'une ville voisine. Il s'approche de votre comptoir et vous dit ce qui suit :</p>
+<blockquote>
+<p>Bonjour, M. le livreur. Vous vous souvenez peut-être qu'il n'y a pas longtemps, je suis venu de la ville de Fiftyville. J'ai remis une certaine boîte entre vos mains et vous ai demandé de rester discret. Mon associé attend ce colis depuis un moment maintenant. Et pourtant, il semble avoir disparu. Ha ! Y a-t-il une chance que vous puissiez éclaircir ce mystère ? Désolé, il n'y a pas d'adresse "De".</p>
+</blockquote>
+<p>Dans <code>log.sql</code>, sous <code>-- *** La Livraison Malicieuse ***</code>, gardez une trace des requêtes SQL que vous utilisez pour trouver le colis. Une fois que vous l'avez trouvé, décrivez-le selon les questions dans <code>answers.txt</code>.</p>
+<h3 id="le-cadeau-oublie">Le Cadeau Oublié<a class="headerlink" href="#le-cadeau-oublie" title="Permanent link">&para;</a></h3>
+<p>Votre troisième rapport de colis manquant provient d'un grand-parent qui habite près du bureau de poste. Il s'approche de votre comptoir et vous dit ce qui suit :</p>
+<blockquote>
+<p>Oh, excusez-moi, Agent. J'avais envoyé un cadeau mystère, voyez-vous, à ma merveilleuse petite-fille, au 728 Maple Place. C'était il y a environ deux semaines. Maintenant, la date de livraison est passée de sept jours entiers et j'apprends qu'elle attend toujours, les mains vides et le cœur rempli d'anticipation. Je suis un peu inquiet et je me demande où mon colis est passé. Je ne me souviens pas pour la vie de moi ce qu'il y a à l'intérieur, mais je sais qu'il est rempli à ras bord de mon amour pour elle. Pourrions-nous éventuellement le retrouver pour qu'il puisse remplir sa journée de joie ? Je l'ai envoyé de chez moi au 109 Tileston Street.</p>
+</blockquote>
+<p>Dans <code>log.sql</code>, sous <code>-- *** Le Cadeau Oublié ***</code>, gardez une trace des requêtes SQL que vous utilisez pour trouver le cadeau. Une fois que vous l'avez trouvé, décrivez-le selon les questions dans <code>answers.txt</code>.</p></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../../.."</script>
+    
+    <script src="../../../js/base.js"></script>
+    <script src="../../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

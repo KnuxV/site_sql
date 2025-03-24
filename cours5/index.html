@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+
+    
+    <title>Introduction - Cours SQL</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../css/base.min.css" rel="stylesheet">
+    <link href="../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="..">Cours SQL</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 0 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../cours0/">Introduction</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 1 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../cours1/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours1/cyberchase/instructions/">Cyberchase</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours1/normals/instructions/">Normals</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours1/players/instructions/">Players</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours1/views/instructions/">Views</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours1/index_old.md">Old Index</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 2 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../cours2/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours2/dese/instructions/">Dese</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours2/moneyball/instructions/">Moneyball</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours2/packages/instructions/">Packages</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 3 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../cours3/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours3/atl/instructions/">ATL</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours3/connect/instructions/">Connect</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours3/doghnut/instructions/">Doghnut</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 4 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../cours4/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours4/dont-panic/instructions/">Don't Panic</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours4/meteorites/instructions/">Meteorites</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 5 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li class="active">
+    <a href="./">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="bnb/instructions/">BNB</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="census/instructions/">Census</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="private/instructions/">Private</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 6 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../cours6/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours6/harvard/instructions/">Harvard</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours6/snap/instructions/">Snap</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 7 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../cours7/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours7/index2/">Index 2</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours7/deep/answers/">Deep Answers</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours7/deep/instructions/">Deep Instructions</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours7/dont-panic-python/instructions/">Don't Panic Python</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours7/linkedin/instructions/">LinkedIn</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">SQLite Python <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../sqlite_python/">Introduction</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../cours4/meteorites/instructions/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="bnb/instructions/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#cours-5-version-originale">Cours 5 (Version originale)</a></li>
+        <li class="first-level "><a href="#introduction">Introduction</a></li>
+        <li class="first-level "><a href="#vues-views">Vues (Views)</a></li>
+        <li class="first-level "><a href="#simplification">Simplification</a></li>
+            <li class="second-level"><a href="#questions">Questions</a></li>
+                
+        <li class="first-level "><a href="#agregation">Agrégation</a></li>
+            <li class="second-level"><a href="#questions_1">Questions</a></li>
+                
+        <li class="first-level "><a href="#expression-commune-de-table-cte">Expression Commune de Table (CTE)</a></li>
+        <li class="first-level "><a href="#partitionnement">Partitionnement</a></li>
+            <li class="second-level"><a href="#questions_2">Questions</a></li>
+                
+        <li class="first-level "><a href="#securisation">Sécurisation</a></li>
+        <li class="first-level "><a href="#suppressions-logiques-soft-deletions">Suppressions Logiques (Soft Deletions)</a></li>
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h2 id="cours-5-version-originale">Cours 5 (<a href="https://cs50.harvard.edu/sql/2024/notes/4/">Version originale</a>)<a class="headerlink" href="#cours-5-version-originale" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#vues-views">Vues (Views)</a></li>
+<li><a href="#simplification">Simplification</a></li>
+<li><a href="#agrégation">Agrégation</a></li>
+<li><a href="#expression-commune-de-table-cte">Expression Commune de Table (CTE)</a></li>
+<li><a href="#partitionnement">Partitionnement</a></li>
+<li><a href="#sécurisation">Sécurisation</a></li>
+<li><a href="#suppressions-logiques-soft-deletions">Suppressions Logiques (Soft Deletions)</a></li>
+</ul>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Jusqu'à présent, nous avons appris des concepts qui nous permettent de concevoir des bases de données complexes et d'y écrire des données. Maintenant, nous allons explorer des moyens d'obtenir des vues à partir de ces bases de données.</li>
+<li>Revenons à la base de données contenant des livres présélectionnés pour le International Booker Prize. Voici un aperçu des tables de cette base de données.</li>
+</ul>
+<p><img alt="&quot;Tables contenant des livres et des auteurs avec une relation plusieurs-à-plusieurs&quot;" src="https://cs50.harvard.edu/sql/2024/notes/4/images/4.jpg" />
+- Pour trouver un livre écrit par l'auteur Han Kang, nous devrions parcourir chacune des trois tables ci-dessus — d'abord en trouvant l'ID de l'auteur, puis les IDs des livres correspondants et enfin les titres des livres. Au lieu de cela, existe-t-il un moyen de regrouper les informations connexes des trois tables dans une seule vue ?
+- Oui, nous pouvons utiliser la commande <code>JOIN</code> en SQL pour combiner des lignes de deux tables ou plus en fonction d'une colonne liée entre elles. Voici une représentation visuelle de la manière dont ces tables pourraient être jointes afin d'aligner les auteurs et leurs livres.</p>
+<p><img alt="&quot;Table joignant livres, authored et auteurs&quot;" src="https://cs50.harvard.edu/sql/2024/notes/4/images/8.jpg" /></p>
+<p>Cela permet de voir facilement que Han Kang a écrit "The White Book".
+- On peut aussi imaginer supprimer les colonnes d'ID ici, de sorte que notre vue ressemble à ce qui suit.</p>
+<p><img alt="&quot;Table joignant livres, authored et auteurs avec les colonnes d'ID supprimées&quot;" src="https://cs50.harvard.edu/sql/2024/notes/4/images/10.jpg" /></p>
+<h2 id="vues-views">Vues (Views)<a class="headerlink" href="#vues-views" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Une vue est une table virtuelle définie par une requête.</li>
+<li>Supposons que nous écrivions une requête pour joindre trois tables, comme dans l'exemple précédent, puis sélectionnons les colonnes pertinentes. La nouvelle table créée par cette requête peut être enregistrée en tant que vue, à interroger ultérieurement.</li>
+<li>Les vues sont utiles pour :<ul>
+<li>simplifier : regrouper des données de différentes tables pour les interroger plus simplement,</li>
+<li>agréger : exécuter des fonctions d'agrégation, comme trouver la somme, et stocker les résultats,</li>
+<li>partitionner : diviser les données en morceaux logiques,</li>
+<li>sécuriser : masquer les colonnes qui doivent rester sécurisées. Bien qu'il existe d'autres façons dont les vues peuvent être utiles, dans cette conférence, nous nous concentrerons sur les quatre points ci-dessus.</li>
+</ul>
+</li>
+</ul>
+<h2 id="simplification">Simplification<a class="headerlink" href="#simplification" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Ouvrons <code>longlist.db</code> sur SQLite et exécutons la commande <code>.schema</code> pour vérifier que les trois tables que nous avons vues dans l'exemple précédent sont créées : <code>authors</code>, <code>authored</code> et <code>books</code>.</li>
+<li>Pour sélectionner les livres écrits par Fernanda Melchor, nous écririons cette requête imbriquée.</li>
+</ul>
+<pre><code class="language-sql">SELECT &quot;title&quot; FROM &quot;books&quot;
+WHERE &quot;id&quot; IN (
+    SELECT &quot;book_id&quot; FROM &quot;authored&quot;
+    WHERE &quot;author_id&quot; = (
+        SELECT &quot;id&quot; FROM &quot;authors&quot;
+        WHERE &quot;name&quot; = 'Fernanda Melchor'
+    )
+);
+</code></pre>
+<ul>
+<li>La requête ci-dessus est complexe — il y a trois requêtes <code>SELECT</code> dans la requête imbriquée. Pour simplifier cela, utilisons d'abord <code>JOIN</code> pour créer une vue contenant les auteurs et leurs livres.</li>
+<li>Dans un nouveau terminal, connectons-nous à nouveau à <code>longlist.db</code>, et exécutons la requête suivante.</li>
+</ul>
+<pre><code class="language-sql">SELECT &quot;name&quot;, &quot;title&quot; FROM &quot;authors&quot;
+JOIN &quot;authored&quot; ON &quot;authors&quot;.&quot;id&quot; = &quot;authored&quot;.&quot;author_id&quot;
+JOIN &quot;books&quot; ON &quot;books&quot;.&quot;id&quot; = &quot;authored&quot;.&quot;book_id&quot;;
+</code></pre>
+<pre><code>- Notez qu'il est important de spécifier comment deux tables sont jointes, ou les colonnes sur lesquelles elles sont jointes.
+- Astuce : La colonne de clé primaire d'une table est généralement jointe à la colonne de clé étrangère correspondante de l'autre table !
+- L'exécution de cette requête affichera une table contenant tous les noms d'auteurs à côté des titres des livres qu'ils ont écrits.
+</code></pre>
+<ul>
+<li>Pour enregistrer la table virtuelle créée à l'étape précédente en tant que vue, nous devons modifier la requête.</li>
+</ul>
+<pre><code class="language-sql">CREATE VIEW &quot;longlist&quot; AS
+SELECT &quot;name&quot;, &quot;title&quot; FROM &quot;authors&quot;
+JOIN &quot;authored&quot; ON &quot;authors&quot;.&quot;id&quot; = &quot;authored&quot;.&quot;author_id&quot;
+JOIN &quot;books&quot; ON &quot;books&quot;.&quot;id&quot; = &quot;authored&quot;.&quot;book_id&quot;;
+</code></pre>
+<p>La vue créée ici s'appelle <code>longlist</code>. Cette vue peut maintenant être utilisée exactement comme nous utiliserions une table en SQL.
+- Écrivons une requête pour voir toutes les données dans cette vue.</p>
+<pre><code class="language-sql">SELECT * FROM &quot;longlist&quot;;
+</code></pre>
+<ul>
+<li>En utilisant cette vue, nous pouvons considérablement simplifier la requête nécessaire pour trouver les livres écrits par Fernanda Melchor.</li>
+</ul>
+<pre><code class="language-sql">SELECT &quot;title&quot; FROM &quot;longlist&quot; WHERE &quot;name&quot; = 'Fernanda Melchor';
+</code></pre>
+<ul>
+<li>Une vue, étant une table virtuelle, ne consomme pas beaucoup plus d'espace disque pour être créée. Les données d'une vue sont toujours stockées dans les tables sous-jacentes, mais restent accessibles via cette vue simplifiée.</li>
+</ul>
+<h3 id="questions">Questions<a class="headerlink" href="#questions" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Peut-on manipuler les vues pour les trier ou les afficher différemment ?</p>
+</blockquote>
+<ul>
+<li>Oui, nous pouvons trier les livres dans une vue de la même manière que nous le ferions dans une table.<ul>
+<li>Par exemple, affichons les données de la vue <code>longlist</code>, triées par les titres des livres.</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-sql">SELECT &quot;name&quot;, &quot;title&quot;
+FROM  &quot;longlist&quot;
+ORDER BY &quot;title&quot;;
+</code></pre>
+<pre><code>- Nous pourrions également avoir la vue elle-même triée. Nous pouvons le faire en incluant une clause `ORDER BY` dans la requête utilisée pour créer la vue.
+</code></pre>
+<h2 id="agregation">Agrégation<a class="headerlink" href="#agregation" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Dans <code>longlist.db</code>, nous avons une table contenant des notes individuelles attribuées à chaque livre. Dans les semaines précédentes, nous avons vu comment trouver la note moyenne de chaque livre, arrondie à 2 décimales.</li>
+</ul>
+<pre><code class="language-sql">SELECT &quot;book_id&quot;, ROUND(AVG(&quot;rating&quot;), 2) AS &quot;rating&quot;
+FROM &quot;ratings&quot;
+GROUP BY &quot;book_id&quot;;
+</code></pre>
+<ul>
+<li>Les résultats de la requête ci-dessus peuvent être rendus plus utiles en affichant le titre de chaque livre, et peut-être l'année où chaque livre a été présélectionné. Ces informations sont présentes dans la table <code>books</code>.</li>
+</ul>
+<pre><code class="language-sql">SELECT &quot;book_id&quot;, &quot;title&quot;, &quot;year&quot;, ROUND(AVG(&quot;rating&quot;), 2) AS &quot;rating&quot;
+FROM &quot;ratings&quot;
+JOIN &quot;books&quot; ON &quot;ratings&quot;.&quot;book_id&quot; = &quot;books&quot;.&quot;id&quot;
+GROUP BY &quot;book_id&quot;;
+</code></pre>
+<pre><code>- Ici, nous utilisons un `JOIN` pour combiner des informations des tables `ratings` et `books`, en les joignant sur la colonne de l'ID du livre.
+- Remarquez l'ordre des opérations dans cette requête — en particulier, le placement de l'opération `GROUP BY` à la fin de la requête après la jonction des deux tables.
+</code></pre>
+<ul>
+<li>Ces données agrégées peuvent être stockées dans une vue.</li>
+</ul>
+<pre><code class="language-sql">CREATE VIEW &quot;average_book_ratings&quot; AS
+SELECT &quot;book_id&quot; AS &quot;id&quot;, &quot;title&quot;, &quot;year&quot;, ROUND(AVG(&quot;rating&quot;), 2) AS &quot;rating&quot;
+FROM &quot;ratings&quot;
+JOIN &quot;books&quot; ON &quot;ratings&quot;.&quot;book_id&quot; = &quot;books&quot;.&quot;id&quot;
+GROUP BY &quot;book_id&quot;;
+</code></pre>
+<pre><code>- Maintenant, regardons les données dans cette vue.
+</code></pre>
+<pre><code class="language-sql">SELECT * FROM &quot;average_book_ratings&quot;;
+</code></pre>
+<ul>
+<li>En ajoutant plus de données à la table <code>ratings</code>, pour obtenir un agrégat à jour, il suffit de requêter à nouveau la vue en utilisant une commande <code>SELECT</code> comme ci-dessus !</li>
+<li>Chaque fois qu'une vue est créée, elle est ajoutée au schéma. Nous pouvons vérifier cela en exécutant <code>.schema</code> pour observer que <code>longlist</code> et <code>average_book_ratings</code> font désormais partie du schéma de cette base de données.</li>
+<li>Pour créer des vues temporaires qui ne sont pas stockées dans le schéma de la base de données, nous pouvons utiliser <code>CREATE TEMPORARY VIEW</code>. Cette commande crée une vue qui existe uniquement pendant la durée de notre connexion avec la base de données.</li>
+<li>Pour trouver la note moyenne des livres par année, nous pouvons utiliser la vue que nous avons déjà créée.</li>
+</ul>
+<pre><code class="language-sql">SELECT &quot;year&quot;, ROUND(AVG(&quot;rating&quot;), 2) AS &quot;rating&quot;
+FROM &quot;average_book_ratings&quot;
+GROUP BY &quot;year&quot;;
+</code></pre>
+<p>Remarquez que nous sélectionnons la colonne <code>rating</code> de <code>average_book_ratings</code>, qui contient déjà les notes moyennes par livre. Ensuite, nous les regroupons par année et calculons à nouveau les notes moyennes, ce qui nous donne la note moyenne par année !
+- Nous pouvons stocker les résultats dans une vue temporaire.</p>
+<pre><code class="language-sql">CREATE TEMPORARY VIEW &quot;average_ratings_by_year&quot; AS
+SELECT &quot;year&quot;, ROUND(AVG(&quot;rating&quot;), 2) AS &quot;rating&quot; FROM &quot;average_book_ratings&quot;
+GROUP BY &quot;year&quot;;
+</code></pre>
+<h3 id="questions_1">Questions<a class="headerlink" href="#questions_1" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Les vues temporaires peuvent-elles être utilisées pour tester si une requête fonctionne ou non ?</p>
+</blockquote>
+<ul>
+<li>Oui, c'est un excellent cas d'utilisation pour les vues temporaires ! Pour généraliser un peu, les vues temporaires sont utilisées lorsque nous voulons organiser des données d'une certaine manière sans réellement stocker cette organisation à long terme.</li>
+</ul>
+<h2 id="expression-commune-de-table-cte">Expression Commune de Table (CTE)<a class="headerlink" href="#expression-commune-de-table-cte" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Une vue régulière existe pour toujours dans notre schéma de base de données. Une vue temporaire existe pendant la durée de notre connexion avec la base de données. Une CTE est une vue qui existe pour une seule requête.</li>
+<li>Recréons la vue contenant les notes moyennes des livres par année en utilisant une CTE au lieu d'une vue temporaire. Tout d'abord, nous devons supprimer la vue temporaire existante afin de pouvoir réutiliser le nom <code>average_book_ratings</code>.</li>
+</ul>
+<pre><code class="language-sql">DROP VIEW &quot;average_book_ratings&quot;;
+</code></pre>
+<ul>
+<li>Ensuite, nous créons une CTE contenant les notes moyennes par livre. Nous utilisons ensuite les notes moyennes par livre pour calculer les notes moyennes par année, de la même manière que nous l'avons fait précédemment.</li>
+</ul>
+<pre><code class="language-sql">WITH &quot;average_book_ratings&quot; AS (
+    SELECT &quot;book_id&quot;, &quot;title&quot;, &quot;year&quot;, ROUND(AVG(&quot;rating&quot;), 2) AS &quot;rating&quot; FROM &quot;ratings&quot;
+    JOIN &quot;books&quot; ON &quot;ratings&quot;.&quot;book_id&quot; = &quot;books&quot;.&quot;id&quot;
+    GROUP BY &quot;book_id&quot;
+)
+SELECT &quot;year&quot; ROUND(AVG(&quot;rating&quot;), 2) AS &quot;rating&quot; FROM &quot;average_book_ratings&quot;
+GROUP BY &quot;year&quot;;
+</code></pre>
+<h2 id="partitionnement">Partitionnement<a class="headerlink" href="#partitionnement" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Les vues peuvent être utilisées pour partitionner des données, ou les diviser en morceaux plus petits qui seront utiles pour nous ou une application. Par exemple, le site web du International Booker Prize a une page de livres présélectionnés pour chaque année où le prix a été décerné. Cependant, notre base de données stocke tous les livres présélectionnés dans une seule table. Pour créer le site web, ou à d'autres fins, il pourrait être utile d'avoir une table (ou vue) différente de livres pour chaque année.</li>
+<li>Créons une vue pour stocker les livres présélectionnés en 2022.</li>
+</ul>
+<pre><code class="language-sql">CREATE VIEW &quot;2022&quot; AS
+SELECT &quot;id&quot;, &quot;title&quot; FROM &quot;books&quot;
+WHERE &quot;year&quot; = 2022;
+</code></pre>
+<pre><code>- Nous pouvons également voir les données dans cette vue.
+</code></pre>
+<pre><code class="language-sql">SELECT * FROM &quot;2022&quot;;
+</code></pre>
+<h3 id="questions_2">Questions<a class="headerlink" href="#questions_2" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Les vues peuvent-elles être mises à jour ?</p>
+</blockquote>
+<ul>
+<li>Non, car les vues ne contiennent pas de données comme les tables. Les vues extraient en fait des données des tables sous-jacentes chaque fois qu'elles sont interrogées. Cela signifie que lorsqu'une table sous-jacente est mise à jour, la prochaine fois que la vue est interrogée, elle affichera les données mises à jour de la table !</li>
+</ul>
+<h2 id="securisation">Sécurisation<a class="headerlink" href="#securisation" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Les vues peuvent être utilisées pour améliorer la sécurité de la base de données en limitant l'accès à certaines données.</li>
+<li>Prenons l'exemple d'une base de données d'une entreprise de covoiturage avec une table <code>rides</code> qui ressemble à ce qui suit.</li>
+</ul>
+<p><img alt="&quot;Table des trajets contenant la destination, l'origine et les passagers&quot;" src="https://cs50.harvard.edu/sql/2024/notes/4/images/41.jpg" />
+- Si nous devions donner ces données à un analyste, dont le travail est de trouver les itinéraires de trajet les plus populaires, il serait inutile et en fait, non sécurisé de lui donner les noms des passagers individuels. Les noms des passagers sont probablement classés comme informations personnelles identifiables (PII) que les entreprises ne sont pas autorisées à partager sans discernement.
+- Les vues peuvent être utiles dans cette situation — nous pouvons partager avec l'analyste une vue contenant l'origine et la destination des trajets, mais pas les noms des passagers.
+- Pour essayer cela, ouvrons <code>rideshare.db</code> dans notre terminal. L'exécution de <code>.schema</code> devrait révéler une table appelée <code>rides</code> dans cette base de données.
+- Nous pouvons créer une vue avec les colonnes pertinentes, tout en omettant complètement la colonne <code>rider</code>. Mais nous irons un peu plus loin ici, et créerons une colonne <code>rider</code> pour afficher un passager anonyme pour chaque ligne du tableau. Cela indiquera à l'analyste que bien que nous ayons des noms de passagers dans la base de données, les noms ont été anonymisés pour des raisons de sécurité.</p>
+<pre><code class="language-sql">CREATE VIEW &quot;analysis&quot; AS
+SELECT &quot;id&quot;, &quot;origin&quot;, &quot;destination&quot;, 'Anonymous' AS &quot;rider&quot;
+FROM &quot;rides&quot;;
+</code></pre>
+<pre><code>- Nous pouvons interroger cette vue pour nous assurer qu'elle est sécurisée.
+</code></pre>
+<pre><code class="language-sql">SELECT * FROM &quot;analysis&quot;;
+</code></pre>
+<ul>
+<li>Bien que nous puissions créer une vue qui anonymise les données, SQLite ne permet pas le contrôle d'accès. Cela signifie que notre analyste pourrait simplement interroger la table <code>rides</code> d'origine et voir tous les noms de passagers que nous avons pris soin d'omettre dans la vue <code>analysis</code>.</li>
+</ul>
+<h2 id="suppressions-logiques-soft-deletions">Suppressions Logiques (Soft Deletions)<a class="headerlink" href="#suppressions-logiques-soft-deletions" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Comme nous l'avons vu dans les semaines précédentes, une suppression logique implique de marquer une ligne comme supprimée au lieu de la retirer de la table.</li>
+<li>Par exemple, une œuvre d'art intitulée "Farmers working at dawn" est marquée comme supprimée de la table <code>collections</code> en changeant la valeur de la colonne <code>deleted</code> de 0 à 1.</li>
+</ul>
+<p><img alt="&quot;Suppression logique d'une ligne en changeant la valeur &quot;deleted&quot; de 0 à 1&quot;" src="https://cs50.harvard.edu/sql/2024/notes/4/images/46.jpg" />
+- Nous pouvons imaginer créer une vue pour afficher uniquement l'art qui n'est pas supprimé.
+- Pour essayer cela, ouvrons <code>mfa.db</code> dans notre terminal. La table <code>collections</code> n'a pas encore de colonne <code>deleted</code>, nous devons donc l'ajouter. La valeur par défaut ici sera 0, pour indiquer que la ligne n'est pas supprimée.</p>
+<pre><code class="language-sql">ALTER TABLE &quot;collections&quot;
+ADD COLUMN &quot;deleted&quot; INTEGER DEFAULT 0;
+</code></pre>
+<ul>
+<li>Maintenant, effectuons une suppression logique sur l'œuvre "Farmers working at dawn", en la mettant à jour pour avoir 1 dans la colonne <code>deleted</code>.</li>
+</ul>
+<pre><code class="language-sql">UPDATE &quot;collections&quot;
+SET &quot;deleted&quot; = 1
+WHERE &quot;title&quot; = 'Farmers working at dawn';
+</code></pre>
+<ul>
+<li>Nous pouvons créer une vue pour afficher les informations sur les lignes qui ne sont pas supprimées.</li>
+</ul>
+<pre><code class="language-sql">CREATE VIEW &quot;current_collections&quot; AS
+SELECT &quot;id&quot;, &quot;title&quot;, &quot;accession_number&quot;, &quot;acquired&quot;
+FROM &quot;collections&quot;
+WHERE &quot;deleted&quot; = 0;
+</code></pre>
+<pre><code>- Nous pouvons afficher les données dans cette vue pour vérifier que "Farmers working at dawn" n'est pas présent.
+</code></pre>
+<pre><code class="language-sql">SELECT * FROM &quot;current_collections&quot;;
+</code></pre>
+<pre><code>- Lors de la suppression logique d'une ligne de la table sous-jacente `collections`, elle sera retirée de la vue `current_collections` lors de toute interrogation ultérieure.
+</code></pre>
+<ul>
+<li>Nous savons déjà qu'il n'est pas possible d'insérer des données dans une vue ou de les supprimer d'une vue. Cependant, nous pouvons configurer un déclencheur qui insère ou supprime de la table sous-jacente ! Le déclencheur <code>INSTEAD OF</code> nous permet de le faire.</li>
+</ul>
+<pre><code class="language-sql">CREATE TRIGGER &quot;delete&quot;
+INSTEAD OF DELETE ON &quot;current_collections&quot;
+FOR EACH ROW
+BEGIN
+    UPDATE &quot;collections&quot; SET &quot;deleted&quot; = 1
+    WHERE &quot;id&quot; = OLD.&quot;id&quot;;
+END;
+</code></pre>
+<pre><code>- Chaque fois que nous essayons de supprimer des lignes de la vue, ce déclencheur mettra à jour la colonne `deleted` de la ligne dans la table sous-jacente `collections`, complétant ainsi la suppression logique.
+- Nous utilisons le mot-clé `OLD` dans notre clause de mise à jour pour indiquer que l'ID de la ligne mise à jour dans `collections` doit être le même que l'ID de la ligne que nous essayons de supprimer de `current_collections`.
+</code></pre>
+<ul>
+<li>Maintenant, nous pouvons supprimer une ligne de la vue <code>current_collections</code>.</li>
+</ul>
+<pre><code class="language-sql">DELETE FROM &quot;current_collections&quot;
+WHERE &quot;title&quot; = 'Imaginative landscape';
+</code></pre>
+<p>Nous pouvons vérifier que cela a fonctionné en interrogeant la vue.</p>
+<pre><code class="language-sql">SELECT * FROM &quot;current_collections&quot;;
+</code></pre>
+<ul>
+<li>De même, nous pouvons créer un déclencheur qui insère des données dans la table sous-jacente lorsque nous essayons de les insérer dans une vue.</li>
+<li>Il y a deux situations à considérer ici. Nous pourrions essayer d'insérer dans une vue une ligne qui existe déjà dans la table sous-jacente, mais qui a été supprimée logiquement. Nous pouvons écrire le déclencheur suivant pour gérer cette situation.</li>
+</ul>
+<pre><code class="language-sql">CREATE TRIGGER &quot;insert_when_exists&quot;
+INSTEAD OF INSERT ON &quot;current_collections&quot;
+FOR EACH ROW
+WHEN NEW.&quot;accession_number&quot; IN (
+    SELECT &quot;accession_number&quot; FROM &quot;collections&quot;
+)
+BEGIN
+    UPDATE &quot;collections&quot;
+    SET &quot;deleted&quot; = 0
+    WHERE &quot;accession_number&quot; = NEW.&quot;accession_number&quot;;
+END;
+</code></pre>
+<pre><code>- Le mot-clé `WHEN` est utilisé pour vérifier si le numéro d'accession de l'œuvre existe déjà dans la table `collections`. Cela fonctionne parce qu'un numéro d'accession, comme nous le savons des semaines précédentes, identifie de manière unique chaque œuvre d'art dans cette table.
+- Si l'œuvre existe dans la table sous-jacente, nous définissons sa valeur `deleted` sur 0, indiquant une annulation de la suppression logique.
+</code></pre>
+<ul>
+<li>La deuxième situation se produit lorsque nous essayons d'insérer une ligne qui n'existe pas dans la table sous-jacente. Le déclencheur suivant gère cette situation.</li>
+</ul>
+<pre><code class="language-sql">CREATE TRIGGER &quot;insert_when_new&quot;
+INSTEAD OF INSERT ON &quot;current_collections&quot;
+FOR EACH ROW
+WHEN NEW.&quot;accession_number&quot; NOT IN (
+    SELECT &quot;accession_number&quot; FROM &quot;collections&quot;
+)
+BEGIN
+    INSERT INTO &quot;collections&quot; (&quot;title&quot;, &quot;accession_number&quot;, &quot;acquired&quot;)
+    VALUES (NEW.&quot;title&quot;, NEW.&quot;accession_number&quot;, NEW.&quot;acquired&quot;);
+END;
+</code></pre>
+<pre><code>- Lorsque le numéro d'accession des données insérées n'est pas déjà présent dans `collections`, il insère la ligne dans la table.
+</code></pre></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = ".."</script>
+    
+    <script src="../js/base.js"></script>
+    <script src="../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

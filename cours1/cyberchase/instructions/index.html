@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+
+    
+    <title>Cyberchase - Cours SQL</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../../css/base.min.css" rel="stylesheet">
+    <link href="../../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="../../..">Cours SQL</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 0 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours0/">Introduction</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 1 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../">Introduction</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Cyberchase</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../normals/instructions/">Normals</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../players/instructions/">Players</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../views/instructions/">Views</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../index_old.md">Old Index</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 2 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours2/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours2/dese/instructions/">Dese</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours2/moneyball/instructions/">Moneyball</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours2/packages/instructions/">Packages</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 3 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours3/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours3/atl/instructions/">ATL</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours3/connect/instructions/">Connect</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours3/doghnut/instructions/">Doghnut</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 4 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours4/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours4/dont-panic/instructions/">Don't Panic</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours4/meteorites/instructions/">Meteorites</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 5 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours5/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours5/bnb/instructions/">BNB</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours5/census/instructions/">Census</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours5/private/instructions/">Private</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 6 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours6/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours6/harvard/instructions/">Harvard</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours6/snap/instructions/">Snap</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 7 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours7/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/index2/">Index 2</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/deep/answers/">Deep Answers</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/deep/instructions/">Deep Instructions</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/dont-panic-python/instructions/">Don't Panic Python</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/linkedin/instructions/">LinkedIn</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">SQLite Python <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../sqlite_python/">Introduction</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../../normals/instructions/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#cyberchase">Cyberchase</a></li>
+        <li class="first-level "><a href="#probleme-a-resoudre">Problème à Résoudre</a></li>
+        <li class="first-level "><a href="#demonstration">Démonstration</a></li>
+        <li class="first-level "><a href="#code-de-distribution">Code de Distribution</a></li>
+        <li class="first-level "><a href="#schema">Schéma</a></li>
+        <li class="first-level "><a href="#specification">Spécification</a></li>
+        <li class="first-level "><a href="#utilisation">Utilisation</a></li>
+        <li class="first-level "><a href="#comment-tester">Comment Tester</a></li>
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h2 id="cyberchase"><a href="https://cs50.harvard.edu/sql/2024/psets/0/cyberchase/#cyberchase">Cyberchase</a><a class="headerlink" href="#cyberchase" title="Permanent link">&para;</a></h2>
+<p><img alt="cyb_img" src="https://cs50.harvard.edu/sql/2024/psets/0/cyberchase/cyberchase.jpg" /></p>
+<h2 id="probleme-a-resoudre">Problème à Résoudre<a class="headerlink" href="#probleme-a-resoudre" title="Permanent link">&para;</a></h2>
+<p>Bienvenue dans le Cyberespace ! Cyberchase est une série télévisée animée et éducative pour enfants, diffusée par le Public Broadcasting Service (PBS) des États-Unis depuis 2002. Conçue à l'origine pour « montrer aux enfants que les mathématiques sont partout et que tout le monde peut être bon en maths », le monde de Cyberchase tourne autour de Jackie, Matt et Inez qui s'associent à Digit, un « cybird », pour empêcher Hacker de prendre le contrôle du Cyberespace et d'infecter la Carte Mère. En chemin, le quatuor apprend des compétences en mathématiques, en sciences et en résolution de problèmes pour contrecarrer les tentatives de Hacker.</p>
+<p>Dans une base de données appelée <code>cyberchase.db</code>, en utilisant une table appelée <code>episodes</code>, trouvez des réponses aux questions de PBS sur les épisodes de Cyberchase jusqu'à présent.</p>
+<h2 id="demonstration">Démonstration<a class="headerlink" href="#demonstration" title="Permanent link">&para;</a></h2>
+<pre><code class="language-sqlite">sqlite3 cyberchase.db                                                  sqlite&gt; .tables                                                         episodes                                                                 sqlite&gt; SELECT &quot;title&quot; FROM &quot;episodes&quot;      
+</code></pre>
+<h2 id="code-de-distribution">Code de Distribution<a class="headerlink" href="#code-de-distribution" title="Permanent link">&para;</a></h2>
+<p>Pour ce problème, vous devrez utiliser <code>cyberchase.db</code>, ainsi que plusieurs fichiers <code>.sql</code> dans lesquels vous écrirez vos requêtes.</p>
+<p>L'exécution de <code>sqlite3 cyberchase.db</code> devrait ouvrir la base de données dans <code>sqlite3</code>, via laquelle vous exécuterez des requêtes SQL. </p>
+<h2 id="schema">Schéma<a class="headerlink" href="#schema" title="Permanent link">&para;</a></h2>
+<p>Chaque base de données a un certain « schéma » — les tables et colonnes dans lesquelles les données sont organisées. Dans <code>cyberchase.db</code>, vous trouverez une seule table, <code>episodes</code>. Dans la table <code>episodes</code>, vous trouverez les colonnes suivantes :</p>
+<ul>
+<li><code>id</code>, qui identifie de manière unique chaque ligne (épisode) de la table</li>
+<li><code>season</code>, qui est le numéro de la saison dans laquelle l'épisode a été diffusé</li>
+<li><code>episode_in_season</code>, qui est le numéro de l'épisode dans sa saison donnée</li>
+<li><code>title</code>, qui est le titre de l'épisode</li>
+<li><code>topic</code>, qui identifie les idées que l'épisode visait à enseigner</li>
+<li><code>air_date</code>, qui est la date (exprimée au format <code>AAAA-MM-JJ</code>) à laquelle l'épisode a été « diffusé » (c'est-à-dire publié)</li>
+<li><code>production_code</code>, qui est l'ID unique utilisé par PBS pour faire référence à chaque épisode en interne</li>
+</ul>
+<h2 id="specification">Spécification<a class="headerlink" href="#specification" title="Permanent link">&para;</a></h2>
+<p>Pour chacune des questions suivantes, vous devez écrire une seule requête SQL qui produit les résultats spécifiés par chaque problème. Votre réponse doit prendre la forme d'une seule requête SQL. Vous ne devez faire aucune supposition sur les <code>id</code> de certains épisodes : vos requêtes doivent être exactes même si l'<code>id</code> d'un épisode particulier était différent. Enfin, chaque requête doit renvoyer uniquement les données nécessaires pour répondre à la question : si le problème vous demande uniquement de sortir les noms des épisodes, par exemple, votre requête ne doit pas également sortir la date de diffusion de chaque épisode.</p>
+<ol>
+<li>Dans <code>1.sql</code>, écrivez une requête SQL pour lister les titres de tous les épisodes de la saison originale de Cyberchase, la Saison 1.</li>
+<li>Dans <code>2.sql</code>, listez le numéro de saison et le titre du premier épisode de chaque saison.</li>
+<li>Dans <code>3.sql</code>, trouvez le code de production de l'épisode « Hackerized! ».</li>
+<li>Dans <code>4.sql</code>, écrivez une requête pour trouver les titres des épisodes qui n'ont pas encore de sujet répertorié.</li>
+<li>Dans <code>5.sql</code>, trouvez le titre de l'épisode des fêtes diffusé le 31 décembre 2004.</li>
+<li>Dans <code>6.sql</code>, listez les titres des épisodes de la saison 6 (2008) qui ont été publiés en avance, en 2007.</li>
+<li>Dans <code>7.sql</code>, écrivez une requête SQL pour lister les titres et sujets de tous les épisodes enseignant les fractions.</li>
+<li>Dans <code>8.sql</code>, écrivez une requête qui compte le nombre d'épisodes publiés au cours des 6 dernières années, de 2018 à 2023 inclus.<ul>
+<li>Vous trouverez peut-être utile de savoir que vous pouvez utiliser <code>BETWEEN</code> avec des dates, comme <code>BETWEEN '2000-01-01' AND '2000-12-31'</code>.</li>
+</ul>
+</li>
+<li>Dans <code>9.sql</code>, écrivez une requête qui compte le nombre d'épisodes publiés au cours des 6 premières années de Cyberchase, de 2002 à 2007 inclus.</li>
+<li>Dans <code>10.sql</code>, écrivez une requête SQL pour lister les id, titres et codes de production de tous les épisodes. Triez les résultats par code de production, du plus ancien au plus récent.</li>
+<li>Dans <code>11.sql</code>, listez les titres des épisodes de la saison 5, en ordre alphabétique inverse.</li>
+<li>Dans <code>12.sql</code>, comptez le nombre de titres d'épisodes uniques.</li>
+<li>Dans <code>13.sql</code>, écrivez une requête SQL pour explorer une question de votre choix. Cette requête doit :<ul>
+<li>Impliquer au moins une condition, en utilisant <code>WHERE</code> avec <code>AND</code> ou <code>OR</code></li>
+</ul>
+</li>
+</ol>
+<p>Vous sentez-vous plus à l'aise ?</p>
+<p>Vous pouvez éventuellement essayer les requêtes ci-dessous, qui peuvent nécessiter des connaissances avancées !</p>
+<ol>
+<li>Écrivez une requête SQL pour trouver les titres des épisodes diffusés pendant la période des fêtes, généralement en décembre aux États-Unis.<ul>
+<li>Votre requête doit produire une table avec une seule colonne pour le titre de chaque épisode.</li>
+<li>Essayez de trouver une meilleure solution que <code>LIKE</code> si vous le pouvez !</li>
+</ul>
+</li>
+<li>Écrivez une requête SQL pour trouver, pour chaque année, le premier jour de l'année où PBS a publié un épisode de Cyberchase.<ul>
+<li>Votre requête doit produire une table avec deux colonnes, une pour l'année et une pour le mois et le jour les plus précoces où un épisode a été publié cette année-là.</li>
+</ul>
+</li>
+</ol>
+<h2 id="utilisation">Utilisation<a class="headerlink" href="#utilisation" title="Permanent link">&para;</a></h2>
+<p>Pour tester vos requêtes au fur et à mesure que vous les écrivez dans vos fichiers <code>.sql</code>, vous pouvez interroger la base de données en exécutant</p>
+<pre><code>.read FILENAME
+</code></pre>
+<p>où <code>FILENAME</code> est le nom du fichier contenant votre requête SQL. Par exemple,</p>
+<pre><code>.read 1.sql
+</code></pre>
+<p>Vous pouvez également exécuter (dans votre terminal, plutôt qu'à l'intérieur de <code>sqlite3</code>)</p>
+<pre><code>$ cat FILENAME | sqlite3 cyberchase.db &gt; output.txt
+</code></pre>
+<p>pour rediriger la sortie de la requête vers un fichier texte nommé <code>output.txt</code>. (Cela peut être utile pour vérifier combien de lignes sont renvoyées par votre requête !)</p>
+<h2 id="comment-tester">Comment Tester<a class="headerlink" href="#comment-tester" title="Permanent link">&para;</a></h2>
+<p>Réponse à la prochaine séance</p>
+<ul>
+<li>L'exécution de <code>1.sql</code> produit une table avec 1 colonne et 26 lignes.</li>
+<li>L'exécution de <code>2.sql</code> produit une table avec 2 colonnes et 14 lignes.</li>
+<li>L'exécution de <code>3.sql</code> produit une table avec 1 colonne et 1 ligne.</li>
+<li>L'exécution de <code>4.sql</code> produit une table avec 1 colonne et 26 lignes.</li>
+<li>L'exécution de <code>5.sql</code> produit une table avec 1 colonne et 1 ligne.</li>
+<li>L'exécution de <code>6.sql</code> produit une table avec 1 colonne et 2 lignes.</li>
+<li>L'exécution de <code>7.sql</code> produit une table avec 2 colonnes et 6 lignes.</li>
+<li>L'exécution de <code>8.sql</code> produit une table avec 1 colonne et 1 ligne.</li>
+<li>L'exécution de <code>9.sql</code> produit une table avec 1 colonne et 1 ligne.</li>
+<li>L'exécution de <code>10.sql</code> produit une table avec 3 colonnes et 140 lignes.</li>
+<li>L'exécution de <code>11.sql</code> produit une table avec 1 colonne et 10 lignes.</li>
+<li>L'exécution de <code>12.sql</code> produit une table avec 1 colonne et 1 ligne.</li>
+</ul>
+<p><code>13.sql</code> dépend de vous !</p>
+<p>Notez que les comptes de lignes n'incluent pas les lignes d'en-tête qui ne montrent que les noms de colonnes.</p></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../../.."</script>
+    
+    <script src="../../../js/base.js"></script>
+    <script src="../../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

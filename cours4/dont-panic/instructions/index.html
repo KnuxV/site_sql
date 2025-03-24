@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+
+    
+    <title>Don't Panic - Cours SQL</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../../css/base.min.css" rel="stylesheet">
+    <link href="../../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="../../..">Cours SQL</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 0 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours0/">Introduction</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 1 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours1/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/cyberchase/instructions/">Cyberchase</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/normals/instructions/">Normals</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/players/instructions/">Players</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/views/instructions/">Views</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/index_old.md">Old Index</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 2 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours2/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours2/dese/instructions/">Dese</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours2/moneyball/instructions/">Moneyball</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours2/packages/instructions/">Packages</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 3 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours3/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours3/atl/instructions/">ATL</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours3/connect/instructions/">Connect</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours3/doghnut/instructions/">Doghnut</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 4 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../">Introduction</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Don't Panic</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../meteorites/instructions/">Meteorites</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 5 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours5/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours5/bnb/instructions/">BNB</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours5/census/instructions/">Census</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours5/private/instructions/">Private</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 6 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours6/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours6/harvard/instructions/">Harvard</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours6/snap/instructions/">Snap</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 7 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours7/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/index2/">Index 2</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/deep/answers/">Deep Answers</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/deep/instructions/">Deep Instructions</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/dont-panic-python/instructions/">Don't Panic Python</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/linkedin/instructions/">LinkedIn</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">SQLite Python <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../sqlite_python/">Introduction</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../../meteorites/instructions/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#dont-panic-ne-paniquez-pas-version-originale">Don't Panic // Ne Paniquez Pas ! (Version originale)</a></li>
+            <li class="second-level"><a href="#probleme-a-resoudre">Problème à Résoudre</a></li>
+                
+            <li class="second-level"><a href="#demo">Demo</a></li>
+                
+            <li class="second-level"><a href="#schema">Schéma</a></li>
+                
+            <li class="second-level"><a href="#specification">Spécification</a></li>
+                
+                <li class="third-level"><a href="#indices">Indices</a></li>
+            <li class="second-level"><a href="#utilisation">Utilisation</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="dont-panic-ne-paniquez-pas-version-originale"><a href="https://cs50.harvard.edu/sql/2024/psets/3/dont-panic/">Don't Panic</a> // Ne Paniquez Pas ! (<a href="https://cs50.harvard.edu/sql/2024/psets/3/dont-panic/">Version originale</a>)<a class="headerlink" href="#dont-panic-ne-paniquez-pas-version-originale" title="Permanent link">&para;</a></h1>
+<p><img alt="Un seul ordinateur de bureau posé sur un bureau dans un bureau vide la nuit, dans le style d'un roman noir" src="https://cs50.harvard.edu/sql/2024/psets/3/dont-panic/dont-panic-glitch.png" /> "Un seul ordinateur de bureau posé sur un bureau dans un bureau vide la nuit, dans le style d'un roman noir", généré par <a href="https://openai.com/dall-e-2">DALL·E 2</a></p>
+<h2 id="probleme-a-resoudre">Problème à Résoudre<a class="headerlink" href="#probleme-a-resoudre" title="Permanent link">&para;</a></h2>
+<p>Vous êtes un "pentester" (testeur d'intrusion) entraîné. Les entreprises vous engagent souvent pour effectuer des tests de pénétration et signaler les vulnérabilités dans leurs systèmes de données. Il n'y a pas si longtemps, vous avez été engagé par une petite entreprise qui avait besoin de vous pour effectuer un tel test sur une base de données SQLite : celle qui alimente leur site web à faible trafic.</p>
+<p>Pour réussir cette opération secrète, vous devrez :</p>
+<ul>
+<li>Modifier le mot de passe du compte administratif du site web.</li>
+<li>Effacer tous les journaux (logs) de ce changement de mot de passe enregistrés par la base de données.</li>
+<li>Ajouter de fausses données pour détourner l'attention de l'entreprise.</li>
+</ul>
+<p>Et maintenant, une opportunité en or se présente : vous vous êtes faufilé dans les locaux de l'entreprise, juste à temps pour voir un ingénieur logiciel quitter son bureau. La connexion de l'ingénieur à la base de données est toujours ouverte. Vous estimez avoir 5 minutes avant qu'il ne revienne. Prêt ?</p>
+<h2 id="demo">Demo<a class="headerlink" href="#demo" title="Permanent link">&para;</a></h2>
+<p><img alt="image-20250224182119613" src="/home/kevin-desktop/.config/Typora/typora-user-images/image-20250224182119613.png" /></p>
+<p>Vous avez une base de données nommée <code>dont-panic.db</code> à côté d'un fichier <code>hack.sql</code> et <code>reset.sql</code>. L'exécution de <code>sqlite3 dont-panic.db</code> devrait ouvrir la base de données.</p>
+<h2 id="schema">Schéma<a class="headerlink" href="#schema" title="Permanent link">&para;</a></h2>
+<p>Désolé, il n'y a pas beaucoup de temps pour expliquer le schéma de la base de données. N'oubliez pas que vous pouvez accéder au schéma d'une base de données SQLite avec <code>.schema</code>.</p>
+<h2 id="specification">Spécification<a class="headerlink" href="#specification" title="Permanent link">&para;</a></h2>
+<p>Dans <code>hack.sql</code>, écrivez une séquence d'instructions SQL pour réaliser ce qui suit :</p>
+<ul>
+<li>Modifier le mot de passe du compte administratif du site web, <code>admin</code>, pour qu'il soit "oops!".</li>
+<li>Effacer tous les journaux (logs) du changement de mot de passe ci-dessus enregistrés par la base de données.</li>
+<li>Ajouter de fausses données pour détourner l'attention des autres. En particulier, pour piéger <code>emily33</code>, faites en sorte qu'il semble seulement - dans la table <code>user_logs</code> - que le mot de passe du compte <code>admin</code> a été changé pour celui de <code>emily33</code>.</li>
+</ul>
+<p>Lorsque vos instructions SQL dans <code>hack.sql</code> sont exécutées sur une nouvelle instance de la base de données, elles doivent produire les résultats ci-dessus. Sachez simplement que l'ordre dans lequel ces objectifs sont présentés n'est peut-être pas l'ordre dans lequel ils sont le mieux accomplis !</p>
+<p>Gardez également à l'esprit que les mots de passe ne sont généralement pas stockés "en clair" - c'est-à-dire sous forme de caractères simples qui composent le mot de passe. Au lieu de cela, ils sont "hachés" (hashés), ou brouillés, pour préserver la confidentialité. Étant donné cette réalité, vous devrez vous assurer que le mot de passe auquel vous changez le mot de passe administratif est également haché. Heureusement, vous savez que les mots de passe de la table <code>users</code> sont déjà stockés sous forme de hachages MD5. Vous pouvez générer rapidement de tels hachages à partir de texte brut sur md5hashgenerator.com.</p>
+<p>L'horloge tourne !</p>
+<h3 id="indices">Indices<a class="headerlink" href="#indices" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Rappelez-vous que vous pouvez <code>INSERT</code> (insérer) dans une table les lignes retournées par une instruction <code>SELECT</code>, tant que le nombre de colonnes correspond.</li>
+<li>Vous pouvez créer une sous-requête à tout moment dans une instruction SQL, pas seulement dans le cadre d'une clause <code>WHERE</code>. Par exemple, considérez la requête SQL suivante sur une table <code>user_logs</code> simplifiée :</li>
+</ul>
+<pre><code class="language-sqlite">INSERT INTO &quot;user_logs&quot; (&quot;type&quot;, &quot;password&quot;)
+SELECT 'update', (
+    SELECT &quot;password&quot;
+    FROM &quot;users&quot;
+    WHERE &quot;username&quot; = 'carter'
+);
+</code></pre>
+<p>La requête ci-dessus insérera une nouvelle ligne dans la table <code>user_logs</code>. La colonne <code>type</code> aura la valeur "update" et la colonne <code>password</code> aura le mot de passe actuel de l'utilisateur <code>carter</code>.</p>
+<h2 id="utilisation">Utilisation<a class="headerlink" href="#utilisation" title="Permanent link">&para;</a></h2>
+<p>Pour tester votre piratage au fur et à mesure que vous l'écrivez dans vos fichiers <code>hack.sql</code>, vous pouvez interroger la base de données en exécutant</p>
+<pre><code>.read hack.sql
+</code></pre>
+<p>Si vous devez réinitialiser la base de données à tout moment, vous pouvez exécuter</p>
+<pre><code>.read reset.sql
+</code></pre>
+<p>pour la ramener à sa forme originale.</p></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../../.."</script>
+    
+    <script src="../../../js/base.js"></script>
+    <script src="../../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

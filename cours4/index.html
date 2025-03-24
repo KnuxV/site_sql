@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+
+    
+    <title>Introduction - Cours SQL</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../css/base.min.css" rel="stylesheet">
+    <link href="../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="..">Cours SQL</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 0 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../cours0/">Introduction</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 1 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../cours1/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours1/cyberchase/instructions/">Cyberchase</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours1/normals/instructions/">Normals</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours1/players/instructions/">Players</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours1/views/instructions/">Views</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours1/index_old.md">Old Index</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 2 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../cours2/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours2/dese/instructions/">Dese</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours2/moneyball/instructions/">Moneyball</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours2/packages/instructions/">Packages</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 3 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../cours3/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours3/atl/instructions/">ATL</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours3/connect/instructions/">Connect</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours3/doghnut/instructions/">Doghnut</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 4 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li class="active">
+    <a href="./">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="dont-panic/instructions/">Don't Panic</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="meteorites/instructions/">Meteorites</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 5 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../cours5/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours5/bnb/instructions/">BNB</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours5/census/instructions/">Census</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours5/private/instructions/">Private</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 6 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../cours6/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours6/harvard/instructions/">Harvard</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours6/snap/instructions/">Snap</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 7 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../cours7/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours7/index2/">Index 2</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours7/deep/answers/">Deep Answers</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours7/deep/instructions/">Deep Instructions</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours7/dont-panic-python/instructions/">Don't Panic Python</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours7/linkedin/instructions/">LinkedIn</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">SQLite Python <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../sqlite_python/">Introduction</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../cours3/doghnut/instructions/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="dont-panic/instructions/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#cours-4">Cours 4</a></li>
+        <li class="first-level "><a href="#introduction">Introduction</a></li>
+        <li class="first-level "><a href="#schema-de-la-base-de-donnees-database-schema">Schéma de la base de données (Database Schema)</a></li>
+        <li class="first-level "><a href="#autres-contraintes-other-constraints">Autres contraintes (Other Constraints)</a></li>
+        <li class="first-level "><a href="#insertion-de-plusieurs-lignes-inserting-multiple-rows">Insertion de plusieurs lignes (Inserting Multiple Rows)</a></li>
+        <li class="first-level "><a href="#suppression-de-donnees-deleting-data">Suppression de données (Deleting Data)</a></li>
+        <li class="first-level "><a href="#mise-a-jour-de-donnees-updating-data">Mise à jour de données (Updating Data)</a></li>
+        <li class="first-level "><a href="#fin">Fin</a></li>
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h2 id="cours-4"><a href="https://cs50.harvard.edu/sql/2024/notes/3/"><strong>Cours 4</strong></a><a class="headerlink" href="#cours-4" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#schéma-de-la-base-de-données-database-schema">Schéma de la base de données (Database Schema)</a></li>
+<li><a href="#insertion-de-données-inserting-data">Insertion de données (Inserting Data)</a></li>
+<li><a href="#autres-contraintes-other-constraints">Autres contraintes (Other Constraints)</a></li>
+<li><a href="#insertion-de-plusieurs-lignes-inserting-multiple-rows">Insertion de plusieurs lignes (Inserting Multiple Rows)</a></li>
+<li><a href="#suppression-de-données-deleting-data">Suppression de données (Deleting Data)</a></li>
+<li><a href="#mise-à-jour-de-données-updating-data">Mise à jour de données (Updating Data)</a></li>
+<li><a href="#fin">Fin</a></li>
+</ul>
+<h2 id="introduction"><strong>Introduction</strong><a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Dans le cours précédent, nous avons appris à créer notre propre schéma de base de données. Dans ce cours, nous allons explorer comment ajouter, mettre à jour et supprimer des données dans nos bases de données.</li>
+<li>Le Boston MFA (Museum of Fine Arts) est un musée centenaire à Boston. Le MFA gère une vaste collection d'artefacts et d'œuvres d'art historiques et contemporains. Ils utilisent probablement une base de données pour stocker des informations sur leur art et leurs artefacts.</li>
+<li>Lorsqu'un nouvel artefact est ajouté à leur collection, nous pouvons imaginer qu'ils insèrent les données correspondantes dans leur base de données. De même, il existe des cas d'utilisation où les données peuvent nécessiter d'être lues, mises à jour ou supprimées.</li>
+<li>Nous allons maintenant nous concentrer sur la création (ou l'insertion) de données dans une base de données du Boston MFA.</li>
+</ul>
+<h2 id="schema-de-la-base-de-donnees-database-schema"><strong>Schéma de la base de données (Database Schema)</strong><a class="headerlink" href="#schema-de-la-base-de-donnees-database-schema" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Considérons ce schéma que le MFA pourrait utiliser pour sa collection.</li>
+</ul>
+<p><img alt="&quot;Table des collections du MFA contenant des ID, des titres d'œuvres d'art et d'autres informations&quot;" src="https://cs50.harvard.edu/sql/2024/notes/3/images/11.jpg" /></p>
+<ul>
+<li>Chaque ligne de données contient le titre d'une œuvre d'art ainsi que le <code>numéro d'accession</code> (accession number), qui est un identifiant unique utilisé en interne par le musée. Il y a également une date indiquant quand l'art a été acquis.</li>
+<li>La table contient un ID qui sert de clé primaire (primary key).</li>
+<li>Nous pouvons imaginer que l'administrateur de la base de données du MFA exécute une requête SQL pour insérer chacune de ces œuvres d'art dans la table.</li>
+<li>
+<p>Pour comprendre comment cela fonctionne, créons d'abord une base de données appelée <code>mfa.db</code>. Ensuite, lisons le fichier de schéma <code>schema0.sql</code> dans la base de données. Ce fichier de schéma, déjà fourni, nous aide à créer la table <code>collections</code>.</p>
+</li>
+<li>
+<p><code>sqlite
+    .read schema0.sql</code></p>
+</li>
+<li>
+<p>Pour confirmer que la table a été créée, nous pouvons sélectionner à partir de la table. </p>
+</li>
+<li>
+<p>Cela devrait nous donner un résultat vide, car la table n'a pas encore de données.</p>
+</li>
+</ul>
+<p><code>sql
+  SELECT * FROM "collections";</code></p>
+<ul>
+<li>Ou utiliser la commande suivante:</li>
+</ul>
+<p><code>sqlite
+  .schema</code></p>
+<p><strong>Insertion de données (Inserting Data)</strong></p>
+<ul>
+<li>L'instruction SQL <code>INSERT INTO</code> est utilisée pour insérer une ligne de données dans une table donnée.</li>
+</ul>
+<p><code>sql
+  INSERT INTO "collections" ("id", "title", "accession_number", "acquired")
+  VALUES (1, 'Profusion de fleurs', '56.257', '1956-04-12');</code></p>
+<p>Nous pouvons voir que cette commande nécessite la liste des colonnes de la table qui recevront les nouvelles données et les valeurs à ajouter à chaque colonne, dans le même ordre.
+- L'exécution de la commande <code>INSERT INTO</code> ne retourne rien, mais nous pouvons exécuter une requête pour confirmer que la ligne est maintenant présente dans <code>collections</code>.</p>
+<p><code>sql
+  SELECT * FROM "collections";</code></p>
+<ul>
+<li>Nous pouvons ajouter plus de lignes à la base de données en insérant plusieurs fois. Cependant, saisir manuellement la valeur de la clé primaire (comme 1, 2, 3, etc.) peut entraîner des erreurs. Heureusement, SQLite peut remplir automatiquement les valeurs de la clé primaire. Pour utiliser cette fonctionnalité, nous omettons la colonne ID lors de l'insertion d'une ligne.</li>
+</ul>
+<p><code>sql
+  INSERT INTO "collections" ("title", "accession_number", "acquired")
+  VALUES ('Fermiers travaillant à l'aube', '11.6152', '1911-08-03');</code></p>
+<p>Nous pouvons vérifier que cette ligne a été insérée avec un <code>id</code> de 2 en exécutant</p>
+<p><code>sql
+  SELECT * FROM "collections";</code></p>
+<p>Remarquez que SQLite remplit les valeurs de la clé primaire en incrémentant la clé primaire précédente, dans ce cas, 1.</p>
+<h2 id="autres-contraintes-other-constraints"><strong>Autres contraintes (Other Constraints)</strong><a class="headerlink" href="#autres-contraintes-other-constraints" title="Permanent link">&para;</a></h2>
+<ul>
+<li>L'ouverture du fichier <code>schema.sql</code> affiche le schéma de la base de données.</li>
+</ul>
+<p><code>sql
+  CREATE TABLE "collections" (
+      "id" INTEGER,
+      "title" TEXT NOT NULL,
+      "accession_number" TEXT NOT NULL UNIQUE,
+      "acquired" NUMERIC,
+      PRIMARY KEY("id")
+  );</code></p>
+<ul>
+<li>Il est spécifié que le numéro d'accession est unique. Si nous essayons d'insérer une ligne avec un numéro d'accession répété, nous déclencherons une erreur indiquant <code>UNIQUE constraint failed: collections.accession_number (19)</code>.</li>
+<li>Cette erreur nous informe que la ligne que nous essayons d'insérer viole une contrainte dans le schéma, spécifiquement la contrainte <code>UNIQUE</code> dans ce scénario.</li>
+<li>De même, nous pouvons essayer d'ajouter une ligne avec un titre <code>NULL</code>, violant la contrainte <code>NOT NULL</code>.</li>
+</ul>
+<p><code>sql
+  INSERT INTO "collections" ("title", "accession_number", "acquired")
+  VALUES(NULL, NULL, '1900-01-10');</code></p>
+<p>En exécutant ceci, nous verrons à nouveau une erreur indiquant <code>NOT NULL constraint failed: collections.title (19)</code>.
+- De cette manière, les contraintes de schéma sont des garde-fous qui nous protègent de l'ajout de lignes qui ne suivent pas le schéma de notre base de données.</p>
+<h2 id="insertion-de-plusieurs-lignes-inserting-multiple-rows"><strong>Insertion de plusieurs lignes (Inserting Multiple Rows)</strong><a class="headerlink" href="#insertion-de-plusieurs-lignes-inserting-multiple-rows" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Nous pourrions avoir besoin d'insérer plus d'une ligne à la fois lors de l'écriture dans une base de données. Une façon de le faire est de séparer les lignes par des virgules dans la commande <code>INSERT INTO</code>.</li>
+</ul>
+<p><img alt="&quot;Insertion de plusieurs lignes à la fois séparées par des virgules&quot;" src="https://cs50.harvard.edu/sql/2024/notes/3/images/13.jpg" /></p>
+<p>L'insertion de plusieurs lignes de cette manière offre une certaine commodité au programmeur. C'est également une méthode plus rapide et plus efficace d'insérer des lignes dans une base de données.</p>
+<ul>
+<li>Insérons maintenant deux nouvelles peintures dans la table <code>collections</code>.</li>
+</ul>
+<p><code>sql
+  INSERT INTO "collections" ("title", "accession_number", "acquired")
+  VALUES
+  ('Paysage imaginatif', '56.496', NULL),
+  ('Pivoines et papillon', '06.1899', '1906-01-01');</code></p>
+<p>Le musée ne connaît pas toujours exactement quand une peinture a été acquise, donc il est possible que la valeur <code>acquired</code> soit <code>NULL</code>, comme c'est le cas pour la première peinture que nous venons d'insérer.</p>
+<ul>
+<li>Pour voir la table mise à jour, nous pouvons sélectionner toutes les lignes de la table comme toujours.</li>
+</ul>
+<p><code>sql
+  SELECT * FROM "collections";</code></p>
+<ul>
+<li>Nos données pourraient également être stockées dans un format de valeurs séparées par des virgules, ou CSV. Observons dans l'exemple suivant comment les valeurs de chaque ligne sont séparées par une virgule.</li>
+</ul>
+<p><img alt="&quot;Données de peintures au format de valeurs séparées par des virgules&quot;" src="https://cs50.harvard.edu/sql/2024/notes/3/images/14.jpg" /></p>
+<ul>
+<li>SQLite permet d'importer directement un fichier CSV dans notre base de données. Pour ce faire, <strong>nous devons repartir de zéro</strong> en <strong>supprimant</strong> mfa.db. Dans le terminal, on peut utiliser: </li>
+</ul>
+<p><code>sqlite
+  .quit --pour sortir de sqlite</code></p>
+<p><code>bash
+  rm mda.db # pour supprimer un ficher (rm = remove)</code></p>
+<ul>
+<li>
+<p>Nous avons déjà un fichier CSV appelé <code>mfa.csv</code> qui contient les données dont nous avons besoin. En ouvrant ce fichier, nous pouvons noter que la première ligne contient les noms des colonnes, qui correspondent exactement aux noms des colonnes de notre table <code>collections</code> selon le schéma.</p>
+</li>
+<li>
+<p>Créons à nouveau la base de données <code>mfa.db</code> et lisons le fichier de schéma comme nous l'avons fait précédemment.</p>
+</li>
+</ul>
+<p><code>sqlite
+  sqlite3 mfa.db</code></p>
+<ul>
+<li>Ensuite, nous pouvons importer le CSV en exécutant une commande SQLite.</li>
+</ul>
+<p><code>sqlite
+  .import --csv mfa.csv collections</code></p>
+<p>Le premier argument, <code>--csv</code>, indique à SQLite que nous importons un fichier CSV. Cela aidera SQLite à analyser correctement le fichier. Le deuxième argument indique que la première ligne du fichier CSV (la ligne d'en-tête) doit être ignorée, ou non insérée dans la table.</p>
+<ul>
+<li>
+<p>Nous pouvons sélectionner toutes les données de la table <code>collections</code> pour voir que chaque peinture de <code>mfa.csv</code> a été importée avec succès dans la table.</p>
+</li>
+<li>
+<p>Le fichier CSV que nous venons d'insérer contenait des valeurs de clé primaire (1, 2, 3, etc.) pour chaque ligne de données. Cependant, il est plus probable que les fichiers CSV avec lesquels nous travaillons ne contiennent pas les valeurs d'ID ou de clé primaire. Comment pouvons-nous faire en sorte que SQLite les insère automatiquement ?</p>
+</li>
+<li>
+<p>Pour essayer cela, ouvrons <code>mfa.csv</code> dans notre espace de code et supprimons la colonne <code>id</code> de la ligne d'en-tête, ainsi que les valeurs de chaque colonne. Voici à quoi devrait ressembler <code>mfa.csv</code> une fois que nous aurons fini de le modifier :</p>
+</li>
+</ul>
+<p><code>title,accession_number,acquired
+  Profusion de fleurs,56.257,1956-04-12
+  Fermiers travaillant à l'aube,11.6152,1911-08-03
+  Sortie de printemps,14.76,1914-01-08
+  Paysage imaginatif,56.496,
+  Pivoines et papillon,06.1899,1906-01-01</code></p>
+<ul>
+<li>Nous allons également supprimer toutes les lignes qui sont déjà dans la table <code>collections</code>.</li>
+</ul>
+<p><code>sql
+  DELETE FROM "collections";</code></p>
+<ul>
+<li>
+<p>Maintenant, nous voulons importer ce fichier CSV dans une table. Cependant, la table <code>collections</code> (selon notre schéma) doit avoir quatre colonnes dans chaque ligne. Ce nouveau fichier CSV ne contient que trois colonnes pour chaque ligne. Par conséquent, nous ne pouvons pas procéder à l'importation de la même manière que précédemment.</p>
+</li>
+<li>
+<p>Pour importer avec succès le fichier CSV sans valeurs d'ID, nous devons utiliser une table temporaire :</p>
+</li>
+</ul>
+<p><code>sqlite
+  .import --csv mfa_noid.csv temp</code></p>
+<p>Remarquez que nous n'utilisons pas l'argument <code>--skip 1</code> avec cette commande. C'est parce que SQLite est capable de reconnaître la toute première ligne de données CSV comme la ligne d'en-tête, et convertit ces données en noms de colonnes de la nouvelle table <code>temp</code>.</p>
+<ul>
+<li>Nous pouvons voir les données dans la table <code>temp</code> en l'interrogeant.</li>
+</ul>
+<p><code>sql
+  SELECT * FROM "temp";</code></p>
+<ul>
+<li>Ensuite, nous allons sélectionner les données (sans clés primaires) de <code>temp</code> et les déplacer vers <code>collections</code>, ce qui était notre objectif depuis le début ! Nous pouvons utiliser la commande suivante pour y parvenir.</li>
+</ul>
+<p><code>sql
+  INSERT INTO "collections" ("title", "accession_number", "acquired")
+  SELECT "title", "accession_number", "acquired" FROM "temp";</code></p>
+<p>Dans ce processus, SQLite ajoutera automatiquement les valeurs de clé primaire dans la colonne <code>id</code>.</p>
+<ul>
+<li>Juste pour nettoyer notre base de données, nous pouvons également supprimer la table <code>temp</code> une fois que nous avons fini de déplacer les données.</li>
+</ul>
+<p><code>sql
+  DROP TABLE "temp";</code></p>
+<h2 id="suppression-de-donnees-deleting-data"><strong>Suppression de données (Deleting Data)</strong><a class="headerlink" href="#suppression-de-donnees-deleting-data" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Nous avons vu précédemment que l'exécution de la commande suivante supprimait toutes les lignes de la table <code>collections</code>. (Nous ne voulons pas exécuter cette commande maintenant, sinon nous perdrons toutes les données de la table !)</li>
+</ul>
+<p><code>sql
+  DELETE FROM "collections";</code></p>
+<ul>
+<li>Nous pouvons également supprimer des lignes qui correspondent à des conditions spécifiques. Par exemple, pour supprimer la peinture "Sortie de printemps" de notre table <code>collections</code>, nous pouvons exécuter :</li>
+</ul>
+<p><code>sql
+  DELETE FROM "collections"
+  WHERE "title" = 'Sortie de printemps';</code></p>
+<ul>
+<li>Pour supprimer toute peinture avec la date d'acquisition <code>NULL</code>, nous pouvons exécuter</li>
+</ul>
+<p><code>sql
+  DELETE FROM "collections"
+  WHERE "acquired" IS NULL;</code></p>
+<ul>
+<li>Comme toujours, nous nous assurerons que la suppression a fonctionné comme prévu en sélectionnant toutes les données de la table.</li>
+</ul>
+<p><code>sql
+  SELECT * FROM "collections";</code></p>
+<p>Nous voyons que les peintures "Sortie de printemps" et "Paysage imaginatif" ne sont plus dans la table.
+- Pour supprimer les lignes concernant des peintures antérieures à 1909, nous pouvons exécuter</p>
+<p><code>sql
+  DELETE FROM "collections"
+  WHERE "acquired" &lt; '1909-01-01';</code></p>
+<p>En utilisant l'opérateur <code>&lt;</code> ici, nous trouvons les peintures acquises avant le 1er janvier 1909. Ce sont les peintures qui seront supprimées lors de l'exécution de la requête.
+- Il peut y avoir des cas où la suppression de certaines données pourrait affecter l'intégrité d'une base de données. Les contraintes de clé étrangère en sont un bon exemple. Une colonne de clé étrangère fait référence à la clé primaire d'une table différente. Si nous devions supprimer la clé primaire, la colonne de clé étrangère n'aurait plus rien à référencer !
+- Considérons maintenant un schéma mis à jour pour la base de données du MFA, contenant des informations non seulement sur les œuvres d'art mais aussi sur les artistes. Les deux entités Artiste et Collection ont une relation plusieurs-à-plusieurs : une peinture peut être créée par plusieurs artistes et un seul artiste peut également créer plusieurs œuvres d'art.</p>
+<p>["Schéma mis à jour avec les entités artiste et collection"]</p>
+<ul>
+<li>Voici une base de données mettant en œuvre le diagramme ER ci-dessus.</li>
+</ul>
+<p>["Trois tables : artistes, créés, collections"]</p>
+<p>Les tables <code>artistes</code> et <code>collections</code> ont des clés primaires : les colonnes ID. La table <code>created</code> fait référence à ces ID dans ses deux colonnes de clé étrangère.
+- Étant donné cette base de données, si nous choisissons de supprimer l'artiste non identifié (avec l'ID 3), que se passera-t-il avec les lignes de la table <code>created</code> avec un <code>artist_id</code> de 3 ? Essayons-le.
+- Après avoir ouvert <code>mfa.db</code>, nous pouvons maintenant voir le schéma mis à jour en exécutant la commande <code>.schema</code>. La table <code>created</code> a effectivement deux contraintes de clé étrangère, une pour l'ID de l'artiste et une pour l'ID de la collection.
+- Maintenant, nous pouvons essayer de supprimer de la table <code>artistes</code>.</p>
+<p><code>sql
+  DELETE FROM "artists"
+  WHERE "name" = 'Artiste non identifié';</code></p>
+<p>En exécutant ceci, nous obtenons une erreur très similaire à celles que nous avons déjà vues dans ce cours : <code>Runtime error: FOREIGN KEY constraint failed (19)</code>. Cette erreur nous informe que la suppression de ces données violerait la contrainte de clé étrangère définie dans la table <code>created</code>.
+- Comment nous assurer que la contrainte n'est pas violée ? Une possibilité est de supprimer les lignes correspondantes de la table <code>created</code> avant de supprimer de la table <code>artistes</code>.</p>
+<p><code>sql
+  DELETE FROM "created"
+  WHERE "artist_id" = (
+      SELECT "id"
+      FROM "artists"
+      WHERE "name" = 'Artiste non identifié'
+  );</code></p>
+<p>Cette requête supprime efficacement l'affiliation de l'artiste avec son œuvre. Une fois l'affiliation supprimée, nous pouvons supprimer les données de l'artiste sans violer la contrainte de clé étrangère. Pour ce faire, nous pouvons exécuter</p>
+<p><code>sql
+  DELETE FROM "artists"
+  WHERE "name" = 'Artiste non identifié';</code></p>
+<ul>
+<li>Dans une autre possibilité, nous pouvons spécifier l'action à entreprendre lorsqu'un ID référencé par une clé étrangère est supprimé. Pour ce faire, nous utilisons le mot-clé <code>ON DELETE</code> suivi de l'action à entreprendre.</li>
+<li><code>ON DELETE RESTRICT</code> : Cela nous empêche de supprimer des ID lorsque la contrainte de clé étrangère est violée.</li>
+<li><code>ON DELETE NO ACTION</code> : Cela permet la suppression d'ID référencés par une clé étrangère et rien ne se passe.</li>
+<li><code>ON DELETE SET NULL</code> : Cela permet la suppression d'ID référencés par une clé étrangère et définit les références de clé étrangère sur <code>NULL</code>.</li>
+<li><code>ON DELETE SET DEFAULT</code> : Cela fait la même chose que le précédent, mais nous permet de définir une valeur par défaut au lieu de <code>NULL</code>.</li>
+<li><code>ON DELETE CASCADE</code> : Cela permet la suppression d'ID référencés par une clé étrangère et supprime également en cascade les lignes de clé étrangère référentes. Par exemple, si nous utilisions ceci pour supprimer un ID d'artiste, toutes les affiliations de l'artiste avec les œuvres d'art seraient également supprimées de la table <code>created</code>.</li>
+<li>La dernière version du fichier de schéma met en œuvre la méthode ci-dessus. Les contraintes de clé étrangère ressemblent maintenant à ceci :</li>
+</ul>
+<p><code>sql
+  FOREIGN KEY("artist_id") REFERENCES "artists"("id") ON DELETE CASCADE
+  FOREIGN KEY("collection_id") REFERENCES "collections"("id") ON DELETE CASCADE</code></p>
+<p>Maintenant, l'exécution de l'instruction <code>DELETE</code> suivante ne résultera pas en une erreur, et supprimera en cascade de la table <code>artistes</code> à la table <code>created</code> :</p>
+<p><code>sql
+  DELETE FROM "artists"
+  WHERE "name" = 'Artiste non identifié';</code></p>
+<p>Pour vérifier que cette suppression en cascade a fonctionné, nous pouvons interroger la table <code>created</code> :</p>
+<p><code>sql
+  SELECT * FROM "created";</code></p>
+<p>Nous observons qu'aucune des lignes n'a un ID de 3 (l'ID de l'artiste supprimé de la table <code>artistes</code>).</p>
+<h2 id="mise-a-jour-de-donnees-updating-data"><strong>Mise à jour de données (Updating Data)</strong><a class="headerlink" href="#mise-a-jour-de-donnees-updating-data" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Nous pouvons facilement imaginer des scénarios dans lesquels des données dans une base de données devraient être mises à jour. Peut-être, dans le cas de la base de données du MFA, nous découvrons que la peinture "Fermiers travaillant à l'aube" initialement attribuée à un "Artiste non identifié" a en fait été créée par l'artiste Li Yin.</li>
+<li>Nous pouvons utiliser la commande de mise à jour pour apporter des modifications, par exemple, à l'affiliation d'une peinture. Voici la syntaxe de la commande de mise à jour.</li>
+</ul>
+<p>["Syntaxe de la commande de mise à jour"]</p>
+<ul>
+<li>Changeons cette affiliation pour "Fermiers travaillant à l'aube" dans la table <code>created</code> en utilisant la syntaxe ci-dessus.</li>
+</ul>
+<p><code>sql
+  UPDATE "created"
+  SET "artist_id" = (
+      SELECT "id"
+      FROM "artists"
+      WHERE "name" = 'Li Yin'
+  )
+  WHERE "collection_id" = (
+      SELECT "id"
+      FROM "collections"
+      WHERE "title" = 'Fermiers travaillant à l'aube'
+  );</code></p>
+<p>La première partie de cette requête spécifie la table à mettre à jour. La partie suivante récupère l'ID de Li Yin à définir comme nouvel ID. La dernière partie sélectionne la ou les lignes dans <code>created</code> qui seront mises à jour avec l'ID de Li Yin, qui est la peinture "Fermiers travaillant à l'aube" !</p>
+<h2 id="fin"><strong>Fin</strong><a class="headerlink" href="#fin" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Cela conclut le Cours 3 sur l'écriture en SQL !</li>
+</ul>
+<hr />
+<p>Si vous avez besoin de plus d'informations ou d'aide supplémentaire, n'hésitez pas à demander !</p></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = ".."</script>
+    
+    <script src="../js/base.js"></script>
+    <script src="../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

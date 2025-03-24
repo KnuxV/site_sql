@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+
+    
+    <title>Moneyball - Cours SQL</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../../css/base.min.css" rel="stylesheet">
+    <link href="../../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="../../..">Cours SQL</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 0 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours0/">Introduction</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 1 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours1/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/cyberchase/instructions/">Cyberchase</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/normals/instructions/">Normals</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/players/instructions/">Players</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/views/instructions/">Views</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/index_old.md">Old Index</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 2 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../dese/instructions/">Dese</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Moneyball</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../packages/instructions/">Packages</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 3 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours3/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours3/atl/instructions/">ATL</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours3/connect/instructions/">Connect</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours3/doghnut/instructions/">Doghnut</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 4 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours4/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours4/dont-panic/instructions/">Don't Panic</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours4/meteorites/instructions/">Meteorites</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 5 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours5/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours5/bnb/instructions/">BNB</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours5/census/instructions/">Census</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours5/private/instructions/">Private</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 6 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours6/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours6/harvard/instructions/">Harvard</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours6/snap/instructions/">Snap</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 7 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours7/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/index2/">Index 2</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/deep/answers/">Deep Answers</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/deep/instructions/">Deep Instructions</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/dont-panic-python/instructions/">Don't Panic Python</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/linkedin/instructions/">LinkedIn</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">SQLite Python <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../sqlite_python/">Introduction</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../dese/instructions/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../../packages/instructions/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#moneyball">Moneyball</a></li>
+            <li class="second-level"><a href="#probleme-a-resoudre">Problème à Résoudre</a></li>
+                
+            <li class="second-level"><a href="#schema">Schéma</a></li>
+                
+                <li class="third-level"><a href="#table-players">Table players</a></li>
+                <li class="third-level"><a href="#table-teams">Table teams</a></li>
+                <li class="third-level"><a href="#table-performances">Table performances</a></li>
+                <li class="third-level"><a href="#table-salaries">Table salaries</a></li>
+            <li class="second-level"><a href="#specification">Spécification</a></li>
+                
+                <li class="third-level"><a href="#1sql">1.sql</a></li>
+                <li class="third-level"><a href="#2sql">2.sql</a></li>
+                <li class="third-level"><a href="#3sql">3.sql</a></li>
+                <li class="third-level"><a href="#4sql">4.sql</a></li>
+                <li class="third-level"><a href="#5sql">5.sql</a></li>
+                <li class="third-level"><a href="#6sql">6.sql</a></li>
+                <li class="third-level"><a href="#7sql">7.sql</a></li>
+                <li class="third-level"><a href="#8sql">8.sql</a></li>
+                <li class="third-level"><a href="#9sql">9.sql</a></li>
+                <li class="third-level"><a href="#10sql">10.sql</a></li>
+                <li class="third-level"><a href="#11sql">11.sql</a></li>
+                <li class="third-level"><a href="#12sql">12.sql</a></li>
+            <li class="second-level"><a href="#utilisation">Utilisation</a></li>
+                
+            <li class="second-level"><a href="#remerciements">Remerciements</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="moneyball">Moneyball<a class="headerlink" href="#moneyball" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>Il s'agit de réduire les choses à un seul chiffre. En utilisant les statistiques comme nous les lisons, nous trouverons la valeur des joueurs que personne d'autre ne peut voir.</p>
+<p>Peter Brand dans Moneyball</p>
+</blockquote>
+<h2 id="probleme-a-resoudre">Problème à Résoudre<a class="headerlink" href="#probleme-a-resoudre" title="Permanent link">&para;</a></h2>
+<p>Nous sommes en 2001. Vous avez été embauché pour aider à tirer le meilleur parti du budget limité de l'équipe de baseball des Oakland Athletics. Chaque année, des équipes comme les "A's" engagent de nouveaux joueurs de baseball. Malheureusement, vous manquez de joueurs vedettes — et de fonds. Cependant, avec un peu de SQL et de chance, qui dit que vous ne pouvez pas créer une équipe qui défie les attentes ?</p>
+<p>Avec une base de données appelée <code>moneyball.db</code> — qui contient des informations sur les joueurs, leurs performances (performances) et leurs salaires (salaries) — aidez les Oakland Athletics à trouver la valeur des joueurs que les autres pourraient manquer.</p>
+<h2 id="schema">Schéma<a class="headerlink" href="#schema" title="Permanent link">&para;</a></h2>
+<p><code>moneyball.db</code> représente tous les joueurs (players), équipes (teams), salaires (salaries) et performances (performances) de la Ligue Majeure de Baseball jusqu'en 2001. En particulier, <code>moneyball.db</code> représente les entités suivantes :</p>
+<ul>
+<li>Un joueur (player), qui inclut toute personne ayant joué en Ligue Majeure de Baseball pendant une période quelconque</li>
+<li>Une équipe (team), qui inclut toutes les équipes, passées et présentes, en Ligue Majeure de Baseball</li>
+<li>Une performance (performance), qui décrit les types de coups sûrs (hits) qu'un joueur a réalisés pour son équipe une année donnée</li>
+<li>Un salaire (salary), qui est le montant d'argent qu'une équipe a payé à l'un de ses joueurs une année donnée</li>
+</ul>
+<p>Ces entités sont liées selon le diagramme de relation d'entité (ER) ci-dessous :</p>
+<pre><code class="language-mermaid">erDiagram
+    Player ||--|{ Salary : earns
+    Player ||--|{ &quot;Performance&quot; : generates
+    Team ||--|{ Salary : &quot;pays&quot;
+    &quot;Performance&quot; }|--|| Team : with
+</code></pre>
+<h3 id="table-players">Table <code>players</code><a class="headerlink" href="#table-players" title="Permanent link">&para;</a></h3>
+<p>La table <code>players</code> contient les colonnes suivantes :</p>
+<ul>
+<li><code>id</code>, qui est l'ID du joueur (player)</li>
+<li><code>first_name</code>, qui est le prénom du joueur (first name)</li>
+<li><code>last_name</code>, qui est le nom de famille du joueur (last name)</li>
+<li><code>bats</code>, qui est le côté ("R" pour droit ou "L" pour gauche) avec lequel le joueur frappe (bats)</li>
+<li><code>throws</code>, qui est la main ("R" pour droit ou "L" pour gauche) avec laquelle le joueur lance (throws)</li>
+<li><code>weight</code>, qui est le poids du joueur en livres (pounds)</li>
+<li><code>height</code>, qui est la taille du joueur en pouces (inches)</li>
+<li><code>debut</code>, qui est la date (exprimée sous la forme <code>YYYY-MM-DD</code>) à laquelle le joueur a commencé sa carrière en MLB (debut)</li>
+<li><code>final_game</code>, qui est la date (exprimée sous la forme <code>YYYY-MM-DD</code>) à laquelle le joueur a joué son dernier match en MLB (final game)</li>
+<li><code>birth_year</code>, qui est l'année de naissance du joueur (birth year)</li>
+<li><code>birth_month</code>, qui est le mois (exprimé sous la forme d'un entier) de naissance du joueur (birth month)</li>
+<li><code>birth_day</code>, qui est le jour de naissance du joueur (birth day)</li>
+<li><code>birth_city</code>, qui est la ville de naissance du joueur (birth city)</li>
+<li><code>birth_state</code>, qui est l'État de naissance du joueur (birth state)</li>
+<li><code>birth_country</code>, qui est le pays de naissance du joueur (birth country)</li>
+</ul>
+<h3 id="table-teams">Table <code>teams</code><a class="headerlink" href="#table-teams" title="Permanent link">&para;</a></h3>
+<p>La table <code>teams</code> contient les colonnes suivantes :</p>
+<ul>
+<li><code>id</code>, qui est l'ID de chaque équipe (team)</li>
+<li><code>year</code>, qui est l'année de fondation de l'équipe (year founded)</li>
+<li><code>name</code>, qui est le nom de l'équipe (name)</li>
+<li><code>park</code>, qui est le nom du parc où l'équipe joue (ou a joué) (park)</li>
+</ul>
+<h3 id="table-performances">Table <code>performances</code><a class="headerlink" href="#table-performances" title="Permanent link">&para;</a></h3>
+<p>La table <code>performances</code> contient les colonnes suivantes :</p>
+<ul>
+<li><code>id</code>, qui est l'ID de la performance (performance)</li>
+<li><code>player_id</code>, qui est l'ID du joueur (player) qui a généré la performance (performance)</li>
+<li><code>team_id</code>, qui est l'ID de l'équipe (team) pour laquelle le joueur a généré la performance (performance)</li>
+<li><code>year</code>, qui est l'année à laquelle le joueur a généré la performance (year)</li>
+<li><code>G</code>, qui est le nombre de matchs joués (games played) par le joueur, pour l'équipe donnée, l'année donnée</li>
+<li><code>AB</code>, qui est le nombre de "at bats" (passages à la batte) du joueur, pour l'équipe donnée, l'année donnée</li>
+<li><code>H</code>, qui est le nombre de coups sûrs (hits) du joueur, pour l'équipe donnée, l'année donnée</li>
+<li><code>2B</code>, qui est le nombre de doubles (coups sûrs de deux bases) du joueur, pour l'équipe donnée, l'année donnée</li>
+<li><code>3B</code>, qui est le nombre de triples (coups sûrs de trois bases) du joueur, pour l'équipe donnée, l'année donnée</li>
+<li><code>HR</code>, qui est le nombre de coups de circuit (home runs) du joueur, pour l'équipe donnée, l'année donnée</li>
+<li><code>RBI</code>, qui est le nombre de "runs batted in" (points produits) du joueur, pour l'équipe donnée, l'année donnée</li>
+<li><code>SB</code>, qui est le nombre de buts volés (stolen bases) du joueur, pour l'équipe donnée, l'année donnée</li>
+</ul>
+<h3 id="table-salaries">Table <code>salaries</code><a class="headerlink" href="#table-salaries" title="Permanent link">&para;</a></h3>
+<p>La table <code>salaries</code> contient les colonnes suivantes :</p>
+<ul>
+<li><code>id</code>, qui est l'ID du salaire (salary)</li>
+<li><code>player_id</code>, qui est l'ID du joueur (player) gagnant le salaire (salary)</li>
+<li><code>team_id</code>, qui est l'ID de l'équipe (team) payant le salaire (salary)</li>
+<li><code>year</code>, qui est l'année pendant laquelle le salaire (salary) a été payé</li>
+<li><code>salary</code>, qui est le salaire (salary) lui-même en dollars américains (non ajusté pour l'inflation)</li>
+</ul>
+<h2 id="specification">Spécification<a class="headerlink" href="#specification" title="Permanent link">&para;</a></h2>
+<h5 id="1sql"><code>1.sql</code><a class="headerlink" href="#1sql" title="Permanent link">&para;</a></h5>
+<p>Vous devriez commencer par vous faire une idée de l'évolution des salaires moyens des joueurs au fil du temps. Dans <code>1.sql</code>, écrivez une requête SQL pour trouver le salaire moyen des joueurs par année (year).</p>
+<ul>
+<li>Triez par année (year) en ordre décroissant.</li>
+<li>Arrondissez le salaire (salary) à deux décimales et appelez la colonne "salaire moyen" (average salary).</li>
+<li>Votre requête doit retourner une table avec deux colonnes, une pour l'année (year) et une pour le salaire moyen (average salary).</li>
+</ul>
+<h5 id="2sql"><code>2.sql</code><a class="headerlink" href="#2sql" title="Permanent link">&para;</a></h5>
+<p>Votre directeur général (c'est-à-dire la personne qui prend des décisions sur les contrats des joueurs) vous demande si l'équipe devrait échanger un joueur actuel contre Cal Ripken Jr., une star qui approche probablement de sa retraite. Dans <code>2.sql</code>, écrivez une requête SQL pour trouver l'historique des salaires (salary history) de Cal Ripken Jr.</p>
+<ul>
+<li>Triez par année (year) en ordre décroissant.</li>
+<li>Votre requête doit retourner une table avec deux colonnes, une pour l'année (year) et une pour le salaire (salary).</li>
+</ul>
+<h5 id="3sql"><code>3.sql</code><a class="headerlink" href="#3sql" title="Permanent link">&para;</a></h5>
+<p>Votre équipe a besoin d'un excellent frappeur de coups de circuit (home run hitter). Ken Griffey Jr., un lauréat de longue date du Silver Slugger et du Gold Glove, pourrait être un bon prospect. Dans <code>3.sql</code>, écrivez une requête SQL pour trouver l'historique des coups de circuit (home run history) de Ken Griffey Jr.</p>
+<ul>
+<li>Triez par année (year) en ordre décroissant.</li>
+<li>Notez qu'il peut y avoir deux joueurs portant le nom "Ken Griffey." Ce Ken Griffey est né en 1969.</li>
+<li>Votre requête doit retourner une table avec deux colonnes, une pour l'année (year) et une pour les coups de circuit (home runs).</li>
+</ul>
+<h5 id="4sql"><code>4.sql</code><a class="headerlink" href="#4sql" title="Permanent link">&para;</a></h5>
+<p>Vous devez faire une recommandation sur les joueurs que l'équipe devrait envisager d'engager. Avec le budget limité de l'équipe, le directeur général veut savoir quels joueurs ont été les moins bien payés en 2001. Dans <code>4.sql</code>, écrivez une requête SQL pour trouver les 50 joueurs les moins bien payés en 2001.</p>
+<ul>
+<li>Triez les joueurs par salaire (salary), du plus bas au plus élevé.</li>
+<li>Si deux joueurs ont le même salaire (salary), triez par ordre alphabétique par prénom (first name) puis par nom de famille (last name).</li>
+<li>Si deux joueurs ont le même prénom (first name) et nom de famille (last name), triez par ID du joueur (player ID).</li>
+<li>Votre requête doit retourner trois colonnes, une pour les prénoms des joueurs (first names), une pour leurs noms de famille (last names) et une pour leurs salaires (salaries).</li>
+</ul>
+<h5 id="5sql"><code>5.sql</code><a class="headerlink" href="#5sql" title="Permanent link">&para;</a></h5>
+<p>C'est une journée un peu calme au bureau. Bien que Satchel ne joue plus, dans <code>5.sql</code>, écrivez une requête SQL pour trouver toutes les équipes (teams) pour lesquelles Satchel Paige a joué.</p>
+<ul>
+<li>Votre requête doit retourner une table avec une seule colonne, une pour les noms des équipes (names of the teams).</li>
+</ul>
+<h5 id="6sql"><code>6.sql</code><a class="headerlink" href="#6sql" title="Permanent link">&para;</a></h5>
+<p>Quelles équipes pourraient être les plus grandes concurrentes des A's cette année ? Dans <code>6.sql</code>, écrivez une requête SQL pour retourner les 5 meilleures équipes (top 5 teams), triées par le nombre total de coups sûrs (total hits) réalisés par les joueurs en 2001.</p>
+<ul>
+<li>Appelez la colonne représentant le nombre total de coups sûrs (total hits) réalisés par les joueurs en 2001 "total hits" (total hits).</li>
+<li>Triez par nombre total de coups sûrs (total hits), du plus élevé au plus bas.</li>
+<li>Votre requête doit retourner deux colonnes, une pour les noms des équipes (names of the teams) et une pour leurs coups sûrs totaux (total hits) en 2001.</li>
+</ul>
+<h5 id="7sql"><code>7.sql</code><a class="headerlink" href="#7sql" title="Permanent link">&para;</a></h5>
+<p>Vous devez faire une recommandation sur le ou les joueurs à éviter de recruter. Dans <code>7.sql</code>, écrivez une requête SQL pour trouver le nom du joueur (player) qui a été le mieux payé de tous les temps en Ligue Majeure de Baseball (Major League Baseball).</p>
+<ul>
+<li>Votre requête doit retourner une table avec deux colonnes, une pour le prénom du joueur (first name) et une pour son nom de famille (last name).</li>
+</ul>
+<h5 id="8sql"><code>8.sql</code><a class="headerlink" href="#8sql" title="Permanent link">&para;</a></h5>
+<p>Combien les A's devraient-ils payer pour obtenir le meilleur frappeur de coups de circuit (home run hitter) de la saison dernière ? Dans <code>8.sql</code>, écrivez une requête SQL pour trouver le salaire de 2001 (2001 salary) du joueur qui a frappé le plus de coups de circuit (home runs) en 2001.</p>
+<ul>
+<li>Votre requête doit retourner une table avec une colonne, le salaire (salary) du joueur.</li>
+</ul>
+<h5 id="9sql"><code>9.sql</code><a class="headerlink" href="#9sql" title="Permanent link">&para;</a></h5>
+<p>Quels salaires les autres équipes paient-elles ? Dans <code>9.sql</code>, écrivez une requête SQL pour trouver les 5 équipes les moins bien payées (par salaire moyen) en 2001.</p>
+<ul>
+<li>Arrondissez la colonne du salaire moyen (average salary) à deux décimales et appelez-la "salaire moyen" (average salary).</li>
+<li>Triez les équipes par salaire moyen (average salary), du plus bas au plus élevé.</li>
+<li>Votre requête doit retourner une table avec deux colonnes, une pour les noms des équipes (names of the teams) et une pour leur salaire moyen (average salary).</li>
+</ul>
+<h5 id="10sql"><code>10.sql</code><a class="headerlink" href="#10sql" title="Permanent link">&para;</a></h5>
+<p>Le directeur général vous a demandé un rapport détaillant le nom de chaque joueur (player), son salaire (salary) pour chaque année où il a joué, et son nombre de coups de circuit (home runs) pour chaque année où il a joué. Pour être précis, le tableau doit inclure :</p>
+<ul>
+<li>Les prénoms de tous les joueurs (first names of all players)</li>
+<li>Les noms de famille de tous les joueurs (last names of all players)</li>
+<li>Les salaires de tous les joueurs (salaries of all players)</li>
+<li>Les coups de circuit de tous les joueurs (home runs of all players)</li>
+<li>L'année (year) à laquelle le joueur a été payé ce salaire (salary) et a frappé ces coups de circuit (home runs)</li>
+</ul>
+<p>Dans <code>10.sql</code>, écrivez une requête pour retourner un tel tableau.</p>
+<ul>
+<li>Votre requête doit retourner une table avec cinq colonnes, selon ce qui précède.</li>
+<li>Triez les résultats, d'abord et avant tout, par ID des joueurs (player IDs) (du plus bas au plus élevé).</li>
+<li>Triez les lignes concernant le même joueur par année (year), en ordre décroissant.</li>
+<li>Considérez un cas particulier : supposons qu'un joueur ait plusieurs salaires (salaries) ou performances (performances) pour une année donnée. Triez-les d'abord par nombre de coups de circuit (home runs), en ordre décroissant, puis par salaire (salary), en ordre décroissant.</li>
+<li>Assurez-vous que, pour une seule ligne, l'année (year) du salaire (salary) et l'année (year) de la performance (performance) correspondent.</li>
+</ul>
+<h5 id="11sql"><code>11.sql</code><a class="headerlink" href="#11sql" title="Permanent link">&para;</a></h5>
+<p>Vous avez besoin d'un joueur qui peut obtenir des coups sûrs (hits). Qui pourrait être le plus sous-estimé ? Dans <code>11.sql</code>, écrivez une requête SQL pour trouver les 10 joueurs les moins chers par coup sûr (hit) en 2001.</p>
+<ul>
+<li>Votre requête doit retourner une table avec trois colonnes, une pour les prénoms des joueurs (first names), une pour leurs noms de famille (last names) et une appelée "dollars par coup sûr" (dollars per hit).</li>
+<li>Vous pouvez calculer la colonne "dollars par coup sûr" (dollars per hit) en divisant le salaire (salary) d'un joueur en 2001 par le nombre de coups sûrs (hits) qu'il a réalisés en 2001. Rappelez-vous que vous pouvez utiliser <code>AS</code> pour renommer une colonne.</li>
+<li>Diviser un salaire (salary) par 0 coup sûr (hit) donnera une valeur <code>NULL</code>. Évitez le problème en filtrant les joueurs avec 0 coup sûr (hit).</li>
+<li>Triez la table par la colonne "dollars par coup sûr" (dollars per hit), du moins cher au plus cher. Si deux joueurs ont le même "dollars par coup sûr" (dollars per hit), triez par prénom (first name), puis par nom de famille (last name), par ordre alphabétique.</li>
+<li>Comme dans <code>10.sql</code>, assurez-vous que l'année (year) du salaire (salary) et l'année (year) de la performance (performance) correspondent.</li>
+<li>Vous pouvez supposer, pour simplifier, qu'un joueur n'aura qu'un seul salaire (salary) et une seule performance (performance) en 2001.</li>
+</ul>
+<h5 id="12sql"><code>12.sql</code><a class="headerlink" href="#12sql" title="Permanent link">&para;</a></h5>
+<p>Les coups sûrs (hits) sont formidables, mais les RBIs (runs batted in) le sont aussi ! Dans <code>12.sql</code>, écrivez une requête SQL pour trouver les joueurs parmi les 10 moins chers par coup sûr (hit) et parmi les 10 moins chers par RBI en 2001.</p>
+<ul>
+<li>Votre requête doit retourner une table avec deux colonnes, une pour les prénoms des joueurs (first names) et une pour leurs noms de famille (last names).</li>
+<li>Vous pouvez calculer le salaire (salary) d'un joueur par RBI en divisant son salaire (salary) de 2001 par son nombre de RBIs en 2001.</li>
+<li>Vous pouvez supposer, pour simplifier, qu'un joueur n'aura qu'un seul salaire (salary) et une seule performance (performance) en 2001.</li>
+<li>Triez vos résultats par ID du joueur (player ID), du plus bas au plus élevé (ou par ordre alphabétique par nom de famille (last name), car les deux sont identiques dans ce cas !).</li>
+<li>Gardez à l'esprit les leçons apprises dans <code>10.sql</code> et <code>11.sql</code> !</li>
+</ul>
+<h2 id="utilisation">Utilisation<a class="headerlink" href="#utilisation" title="Permanent link">&para;</a></h2>
+<p>Pour tester vos requêtes au fur et à mesure que vous les écrivez dans vos fichiers <code>.sql</code>, vous pouvez interroger la base de données en exécutant :</p>
+<pre><code>.read FILENAME
+</code></pre>
+<p>où <code>FILENAME</code> est le nom du fichier contenant votre requête SQL. Par exemple,</p>
+<pre><code>.read 1.sql
+</code></pre>
+<p>Vous pouvez également exécuter :</p>
+<pre><code>$ cat FILENAME | sqlite3 moneyball.db &gt; output.txt
+</code></pre>
+<p>pour rediriger la sortie de la requête vers un fichier texte nommé <code>output.txt</code>. (Cela peut être utile pour vérifier combien de lignes sont retournées par votre requête !)</p>
+<h2 id="remerciements">Remerciements<a class="headerlink" href="#remerciements" title="Permanent link">&para;</a></h2>
+<p>Récit adapté du livre de Michael Lewis, Moneyball : The Art of Winning an Unfair Game. Données adaptées de la Lahman Baseball Database, sous licence Creative Commons Attribution-ShareAlike 3.0 Unported License.</p></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../../.."</script>
+    
+    <script src="../../../js/base.js"></script>
+    <script src="../../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+
+    
+    <title>BNB - Cours SQL</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../../css/base.min.css" rel="stylesheet">
+    <link href="../../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="../../..">Cours SQL</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 0 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours0/">Introduction</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 1 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours1/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/cyberchase/instructions/">Cyberchase</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/normals/instructions/">Normals</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/players/instructions/">Players</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/views/instructions/">Views</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours1/index_old.md">Old Index</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 2 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours2/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours2/dese/instructions/">Dese</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours2/moneyball/instructions/">Moneyball</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours2/packages/instructions/">Packages</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 3 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours3/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours3/atl/instructions/">ATL</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours3/connect/instructions/">Connect</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours3/doghnut/instructions/">Doghnut</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 4 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours4/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours4/dont-panic/instructions/">Don't Panic</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours4/meteorites/instructions/">Meteorites</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 5 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../">Introduction</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">BNB</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../census/instructions/">Census</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../private/instructions/">Private</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 6 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours6/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours6/harvard/instructions/">Harvard</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours6/snap/instructions/">Snap</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 7 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../cours7/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/index2/">Index 2</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/deep/answers/">Deep Answers</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/deep/instructions/">Deep Instructions</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/dont-panic-python/instructions/">Don't Panic Python</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../cours7/linkedin/instructions/">LinkedIn</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">SQLite Python <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../sqlite_python/">Introduction</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../../census/instructions/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#bed-and-breakfast">Bed and Breakfast</a></li>
+            <li class="second-level"><a href="#probleme-a-resoudre">Problème à résoudre</a></li>
+                
+            <li class="second-level"><a href="#demonstration">Démonstration</a></li>
+                
+            <li class="second-level"><a href="#code-de-distribution">Code de distribution</a></li>
+                
+            <li class="second-level"><a href="#schema">Schéma</a></li>
+                
+            <li class="second-level"><a href="#specification">Spécification</a></li>
+                
+                <li class="third-level"><a href="#no-descriptions">No Descriptions</a></li>
+                <li class="third-level"><a href="#one-bedrooms">One-Bedrooms</a></li>
+                <li class="third-level"><a href="#available">Available</a></li>
+                <li class="third-level"><a href="#frequently-reviewed">Frequently Reviewed</a></li>
+                <li class="third-level"><a href="#june-vacancies">June Vacancies</a></li>
+            <li class="second-level"><a href="#utilisation">Utilisation</a></li>
+                
+            <li class="second-level"><a href="#comment-tester">Comment tester</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="bed-and-breakfast"><a href="https://cs50.harvard.edu/sql/2024/psets/4/bnb/">Bed and Breakfast</a><a class="headerlink" href="#bed-and-breakfast" title="Permanent link">&para;</a></h1>
+<p><img alt="A bed and breakfast in Boston, the style of a realistic photograph" src="../../../assets/bnb.png" /> “A bed and breakfast in Boston, the style of a realistic photograph”, generated by DALL·E 2</p>
+<h2 id="probleme-a-resoudre">Problème à résoudre<a class="headerlink" href="#probleme-a-resoudre" title="Permanent link">&para;</a></h2>
+<p>Un Bed and Breakfast (“BnB” en abrégé !) est un lieu d'hébergement à court terme où l'on peut séjourner et payer le propriétaire pour le service, similaire à un hôtel. Au cours des dernières années, AirBnB a permis à presque tout le monde de louer son logement, qu'il s'agisse d'une maison, d'un cottage mignon ou même d'une cabane dans les arbres.</p>
+<p>Vous êtes un analyste de données pour la ville de Boston et vous vous intéressez à découvrir comment l'essor d'AirBnB a changé la scène touristique locale. Vous avez même compilé une base de données, <code>bnb.db</code>, remplie de données directement issues d'AirBnB. Dans <code>bnb.db</code>, créez quelques vues (views) qui donneront une image plus claire de l'influence d'AirBnB sur la ville de Boston.</p>
+<h2 id="demonstration">Démonstration<a class="headerlink" href="#demonstration" title="Permanent link">&para;</a></h2>
+<pre><code class="language-sqlite">$ sqlite3 bnb.db                                                                                    
+sqlite&gt; SELECT &quot;property_type&quot;, &quot;host_name&quot;, &quot;bedrooms&quot;                                             
+   ...&gt; FROM &quot;listings&quot;                                                                             
+   ...&gt; LIMIT 10;
+.quit
+</code></pre>
+<h2 id="code-de-distribution">Code de distribution<a class="headerlink" href="#code-de-distribution" title="Permanent link">&para;</a></h2>
+<p>Pour ce problème, vous devrez télécharger <code>bnb.db</code>, ainsi que quelques fichiers <code>.sql</code> dans lesquels vous écrirez vos requêtes (queries).</p>
+<h2 id="schema">Schéma<a class="headerlink" href="#schema" title="Permanent link">&para;</a></h2>
+<pre><code class="language-mermaid">erDiagram
+    &quot;Listing&quot; ||--o{ &quot;Review&quot; : receives
+    &quot;Listing&quot; ||--|{ &quot;Availability&quot; : has
+</code></pre>
+<p>Dans <code>bnb.db</code>, vous trouverez trois tables qui implémentent les relations décrites dans le diagramme ER ci-dessus. Cliquez sur les déroulants ci-dessous pour en savoir plus sur le schéma de chaque table.</p>
+<p><code>listings</code> table</p>
+<p>La table <code>listings</code> contient les colonnes suivantes :</p>
+<ul>
+<li><code>id</code>, qui est l'ID de l'annonce (listing).</li>
+<li><code>property_type</code>, qui est le type de l'annonce (par exemple, “Entire rental unit”, “Private room in rental unit”, etc.).</li>
+<li><code>host_name</code>, qui est le nom d'utilisateur AirBnB de l'hôte de l'annonce.</li>
+<li><code>accommodates</code>, qui est le nombre maximum d'occupants de l'annonce.</li>
+<li><code>bedrooms</code>, qui est le nombre de chambres de l'annonce.</li>
+<li><code>description</code>, qui est la description de l'annonce sur AirBnB.</li>
+</ul>
+<p><code>reviews</code> table</p>
+<p>La table <code>reviews</code> contient les colonnes suivantes :</p>
+<ul>
+<li><code>id</code>, qui est l'ID de l'avis (review).</li>
+<li><code>listing_id</code>, qui est l'ID de l'annonce qui a reçu l'avis.</li>
+<li><code>date</code>, qui est la date de publication de l'avis.</li>
+<li><code>reviewer_name</code>, qui est le nom d'utilisateur AirBnB du réviseur.</li>
+<li><code>comments</code>, qui est le contenu de l'avis.</li>
+</ul>
+<p><code>availabilities</code> table</p>
+<p>La table <code>availabilities</code> contient les colonnes suivantes :</p>
+<ul>
+<li><code>id</code>, qui est l'ID de la disponibilité (availability).</li>
+<li><code>listing_id</code>, qui est l'ID de l'annonce associée à la disponibilité.</li>
+<li><code>date</code>, qui est la date de la disponibilité.</li>
+<li><code>available</code>, qui indique si la date est toujours disponible à la réservation (<code>TRUE</code> ou <code>FALSE</code>).</li>
+<li><code>price</code>, qui est le prix du séjour à la date donnée.</li>
+</ul>
+<h2 id="specification">Spécification<a class="headerlink" href="#specification" title="Permanent link">&para;</a></h2>
+<p>Dans chacun des fichiers <code>.sql</code> correspondants, écrivez une instruction SQL (SQL statement) pour créer chacune des vues (views) suivantes des données dans <code>bnb.db</code>. Notez que, bien que les vues puissent être créées à partir d'autres vues, chacune de vos vues doit être autonome (c'est-à-dire ne pas dépendre d'une vue antérieure).</p>
+<h4 id="no-descriptions">No Descriptions<a class="headerlink" href="#no-descriptions" title="Permanent link">&para;</a></h4>
+<p>Vous remarquerez peut-être qu'en exécutant</p>
+<pre><code>SELECT * FROM &quot;listings&quot; LIMIT 5;
+</code></pre>
+<p>les résultats semblent assez bizarres ! La colonne <code>description</code> contient des descriptions avec de nombreux sauts de ligne, chacun étant imprimé dans votre terminal.</p>
+<p>Dans <code>no_descriptions.sql</code>, écrivez une instruction SQL pour créer une vue nommée <code>no_descriptions</code> qui inclut toutes les colonnes de la table <code>listings</code> sauf <code>description</code>.</p>
+<h4 id="one-bedrooms">One-Bedrooms<a class="headerlink" href="#one-bedrooms" title="Permanent link">&para;</a></h4>
+<p>Dans <code>one_bedrooms.sql</code>, écrivez une instruction SQL pour créer une vue nommée <code>one_bedrooms</code>. Cette vue doit contenir toutes les annonces (listings) qui ont exactement une chambre. Assurez-vous que la vue contient les colonnes suivantes :</p>
+<ul>
+<li><code>id</code>, qui est l'<code>id</code> de l'annonce de la table <code>listings</code>.</li>
+<li><code>property_type</code>, de la table <code>listings</code>.</li>
+<li><code>host_name</code>, de la table <code>listings</code>.</li>
+<li><code>accommodates</code>, de la table <code>listings</code>.</li>
+</ul>
+<h4 id="available">Available<a class="headerlink" href="#available" title="Permanent link">&para;</a></h4>
+<p>Dans <code>available.sql</code>, écrivez une instruction SQL pour créer une vue nommée <code>available</code>. Cette vue doit contenir toutes les dates disponibles pour toutes les annonces. Assurez-vous que la vue contient les colonnes suivantes :</p>
+<ul>
+<li><code>id</code>, qui est l'<code>id</code> de l'annonce de la table <code>listings</code>.</li>
+<li><code>property_type</code>, de la table <code>listings</code>.</li>
+<li><code>host_name</code>, de la table <code>listings</code>.</li>
+<li><code>date</code>, de la table <code>availabilities</code>, qui est la date de la disponibilité.</li>
+</ul>
+<h4 id="frequently-reviewed">Frequently Reviewed<a class="headerlink" href="#frequently-reviewed" title="Permanent link">&para;</a></h4>
+<p>Dans <code>frequently_reviewed.sql</code>, écrivez une instruction SQL pour créer une vue nommée <code>frequently_reviewed</code>. Cette vue doit contenir les 100 annonces les plus fréquemment commentées, triées de la plus à la moins fréquemment commentée. Assurez-vous que la vue contient les colonnes suivantes :</p>
+<ul>
+<li><code>id</code>, qui est l'<code>id</code> de l'annonce de la table <code>listings</code>.</li>
+<li><code>property_type</code>, de la table <code>listings</code>.</li>
+<li><code>host_name</code>, de la table <code>listings</code>.</li>
+<li><code>reviews</code>, qui est le nombre d'avis que l'annonce a reçus.</li>
+</ul>
+<p>Si deux annonces ont le même nombre d'avis, triez par <code>property_type</code> (par ordre alphabétique), puis par <code>host_name</code> (par ordre alphabétique).</p>
+<h4 id="june-vacancies">June Vacancies<a class="headerlink" href="#june-vacancies" title="Permanent link">&para;</a></h4>
+<p>Dans <code>june_vacancies.sql</code>, écrivez une instruction SQL pour créer une vue nommée <code>june_vacancies</code>. Cette vue doit contenir toutes les annonces et le nombre de jours en juin 2023 où elles sont restées vacantes. Assurez-vous que la vue contient les colonnes suivantes :</p>
+<ul>
+<li><code>id</code>, qui est l'<code>id</code> de l'annonce de la table <code>listings</code>.</li>
+<li><code>property_type</code>, de la table <code>listings</code>.</li>
+<li><code>host_name</code>, de la table <code>listings</code>.</li>
+<li><code>days_vacant</code>, qui est le nombre de jours en juin 2023 où l'annonce donnée était marquée comme disponible.</li>
+</ul>
+<h2 id="utilisation">Utilisation<a class="headerlink" href="#utilisation" title="Permanent link">&para;</a></h2>
+<p>Pour tester vos vues au fur et à mesure que vous les écrivez dans vos fichiers <code>.sql</code>, vous pouvez exécuter une requête (query) sur la base de données en exécutant</p>
+<pre><code>.read FILENAME
+</code></pre>
+<p>où <code>FILENAME</code> est le nom du fichier contenant votre requête SQL. Par exemple,</p>
+<pre><code>.read no_descriptions.sql
+</code></pre>
+<p>Gardez à l'esprit que vous pouvez également utiliser</p>
+<pre><code>DROP VIEW name;
+</code></pre>
+<p>où <code>name</code> est le nom de votre vue, pour supprimer une vue avant de la recréer.</p>
+<h2 id="comment-tester">Comment tester<a class="headerlink" href="#comment-tester" title="Permanent link">&para;</a></h2>
+<p>Bien que <code>check50</code> soit disponible pour ce problème, vous êtes encouragé à tester également votre code par vous-même. Vous pouvez essayer des requêtes comme celles ci-dessous :</p>
+<ul>
+<li>Combien y a-t-il d'annonces au total ? Utilisez votre vue <code>no_descriptions</code> pour trouver qu'il y en a 3 973.</li>
+<li>Combien y a-t-il d'annonces avec une chambre ? Et combien peuvent accueillir au moins 4 invités ? Utilisez votre vue <code>one_bedrooms</code> pour trouver que parmi les 1 228 annonces avec une chambre, 222 peuvent accueillir votre groupe de 4.</li>
+<li>Combien d'annonces sont disponibles pour le 31 décembre 2023 (c'est-à-dire “2023-12-31”) ? Utilisez votre vue <code>available</code> pour trouver qu'il y en a 2 251. Combien d'entre elles sont disponibles sur n'importe quel type de bateau ? Vous devriez trouver qu'il y en a 7. Bonne année à flot !</li>
+<li>Combien d'avis a la propriété la plus fréquemment commentée ? Et qui est l'hôte de cette propriété ? Utilisez votre vue <code>frequently_reviewed</code> pour trouver que la propriété de Tiffany a 860 avis.</li>
+<li>Combien d'annonces étaient disponibles en juin 2023 ? Utilisez votre vue <code>june_vacancies</code> pour trouver qu'il y avait 1 895 vacances.</li>
+</ul></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../../.."</script>
+    
+    <script src="../../../js/base.js"></script>
+    <script src="../../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>
