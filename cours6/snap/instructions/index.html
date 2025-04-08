@@ -239,11 +239,9 @@
 <p>Dans ce problème, vous écrirez des requêtes SQL pour une application fictive qui permet aux utilisateurs d'envoyer des photos qui expirent 30 secondes après que le destinataire les a vues (une idée popularisée par Snapchat !). Les requêtes que vous écrirez permettront finalement à l'application de mettre en œuvre ses fonctionnalités principales. Cependant, étant donné que l'application compte plusieurs milliers d'utilisateurs dépendant d'une communication instantanée, il est particulièrement important d'écrire des requêtes rapides, et pas seulement correctes. Vous pratiquerez l'écriture de requêtes qui tirent parti des index, tout cela au service de permettre aux utilisateurs de rester en contact en un clin d'œil.</p>
 <h2 id="demonstration">Démonstration<a class="headerlink" href="#demonstration" title="Permanent link">¶</a></h2>
 <pre><code class="language-bash">$ sqlite3 snap.db                                                                                   
-sqlite&gt; EXPLAIN QUERY PLAN                                                                          
-   ...&gt; SELECT * FROM "messages"                                                                    
-   ...&gt; WHERE "from_user_id" = 2;                                                                   
+sqlite&gt; EXPLAIN QUERY PLAN SELECT * FROM "messages" WHERE "from_user_id" = 2;                                                                   
 QUERY PLAN                                                                                          
-`--SEARCH messages USING INDEX search_messages_by_from_user_id (from_user_id=?)                     
+--SEARCH messages USING INDEX search_messages_by_from_user_id (from_user_id=?)                     
 sqlite&gt; .quit 
 </code></pre>
 <h2 id="code-de-distribution">Code de Distribution<a class="headerlink" href="#code-de-distribution" title="Permanent link">¶</a></h2>

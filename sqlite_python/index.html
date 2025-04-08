@@ -409,8 +409,6 @@
 </div></div>
         <div class="col-md-9" role="main">
 
-<p>Voici une version modifiée du guide SQLite avec Python, incluant des explications supplémentaires sur les concepts propres à la bibliothèque <code>sqlite3</code>, notamment <code>cursor</code>, <code>fetchone</code>, <code>fetchmany</code>, <code>fetchall</code>, <code>commit</code>, <code>execute</code>, et <code>executemany</code>.</p>
-<hr />
 <h1 id="sqlite-avec-python-guide-pratique">SQLite avec Python : Guide Pratique<a class="headerlink" href="#sqlite-avec-python-guide-pratique" title="Permanent link">&para;</a></h1>
 <p>Ce guide se concentre sur les commandes Python pour manipuler une base de données SQLite existante (<code>pokedex.sqlite</code>) en utilisant les opérations CRUD (Create, Read, Update, Delete).</p>
 <h2 id="table-des-matieres">Table des matières<a class="headerlink" href="#table-des-matieres" title="Permanent link">&para;</a></h2>
@@ -661,6 +659,7 @@ for row in rows:
 
 # Utilisation de pandas pour une analyse plus avancée
 df_pokemon = pd.read_sql_query(&quot;SELECT * FROM pokedex&quot;, conn)
+print(df_pokemon)
 
 # Analyse statistique par type
 def extract_types(type_string):
@@ -702,9 +701,7 @@ conn.close()
 3   venusaur    20  1000    80  82  83  100 100 80  {grass,poison}  1   The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.
 4   charmander  6   85  39  52  43  60  50  65  {fire}  2   Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail.
 5   charmeleon  11  190 58  64  58  80  65  80  {fire}  2   When it swings its burning tail, it elevates the temperature to unbearably high levels.
-</code></pre>
-<hr />
-<p>Ce guide devrait maintenant être plus clair et informatif, avec des explications supplémentaires sur les concepts clés de la bibliothèque <code>sqlite3</code>.</p></div>
+</code></pre></div>
         
         
     </div>
