@@ -167,7 +167,7 @@
 <a href="index2/">Index 2</a>
 </li>
 <li>
-<a href="deep/answers/">Deep Answers</a>
+<a href="deep/answers.md">Deep Answers</a>
 </li>
 <li>
 <a href="deep/instructions/">Deep Instructions</a>
@@ -184,7 +184,7 @@
 <a class="dropdown-toggle" data-toggle="dropdown" href="#">SQLite Python <b class="caret"></b></a>
 <ul class="dropdown-menu">
 <li>
-<a href="../sqlite_python/">Introduction</a>
+<a href="../sqlite_python/index.md">Introduction</a>
 </li>
 </ul>
 </li>
@@ -276,7 +276,7 @@
 <li>La <strong>scalabilité</strong> (scalability) est la capacité d'augmenter ou de diminuer la capacité d'une application ou d'une base de données pour répondre à la demande.</li>
 <li>Les plateformes de médias sociaux et les systèmes bancaires sont des exemples d'applications qui peuvent avoir besoin de se développer à mesure qu'elles grandissent et gagnent plus d'utilisateurs.</li>
 <li>Dans cette conférence, nous utiliserons différents systèmes de gestion de bases de données comme MySQL et PostgreSQL, qui peuvent être utilisés pour mettre à l'échelle des bases de données.</li>
-<li>SQLite est une base de données intégrée, mais MySQL et PostgreSQL sont des serveurs de bases de données — ils fonctionnent souvent sur leur propre matériel dédié auquel nous pouvons nous connecter via Internet pour exécuter nos requêtes SQL. Cela leur confère l'avantage de pouvoir stocker leurs données en RAM, ce qui entraîne des requêtes plus rapides.</li>
+<li>SQLite est une <u>base de données intégrée</u>, mais MySQL et PostgreSQL sont des <u>serveurs de bases de données</u> — ils fonctionnent souvent sur leur propre matériel dédié auquel nous pouvons nous connecter via Internet pour exécuter nos requêtes SQL. Cela leur confère l'avantage de pouvoir stocker leurs données en RAM, ce qui entraîne des requêtes plus rapides.</li>
 </ul>
 <h2 id="transition-de-sqlite-vers-les-bases-de-donnees-clientserveur">Transition de SQLite vers les bases de données client/serveur<a class="headerlink" href="#transition-de-sqlite-vers-les-bases-de-donnees-clientserveur" title="Permanent link">¶</a></h2>
 <ul>
@@ -341,9 +341,8 @@
 </ul>
 <h2 id="mysql">MySQL<a class="headerlink" href="#mysql" title="Permanent link">¶</a></h2>
 <ul>
-<li>Nous allons utiliser la base de données MBTA avec laquelle nous avons travaillé dans les conférences précédentes. Le diagramme ER suivant montre les entités Card (Carte), Swipe (Passage) et Station (Station) et les relations entre ces entités.</li>
+<li>Nous allons utiliser la base de données MBTA avec laquelle nous avons travaillé dans les cours précédents. Le diagramme ER suivant montre les entités Card (Carte), Swipe (Passage) et Station (Station) et les relations entre ces entités.</li>
 </ul>
-<p>[Diagramme ER pour la base de données MBTA avec les entités Card, Swipe et Station]</p>
 <div class="mermaid">erDiagram
     Card ||--o{ Swipe : makes
     Swipe }o--|| Station : at
@@ -354,29 +353,25 @@
 </ul>
 <p><code>bash
   mysql -u root -h 127.0.0.1 -P 3306 -p</code></p>
-<pre><code>- Dans cette commande de terminal, `-u` indique l'utilisateur. Nous fournissons l'utilisateur auquel nous voulons nous connecter à la base de données en tant que `root` (synonyme d'administrateur de base de données, dans ce cas).
-- `127.0.0.1` est l'adresse de l'hôte local sur Internet (notre propre ordinateur).
-- `3306` est le port auquel nous voulons nous connecter, et c'est le port par défaut où MySQL est hébergé. Considérez la combinaison de l'hôte et du port comme l'adresse de la base de données à laquelle nous essayons de nous connecter !
-- `-p` à la fin de la commande indique que nous voulons être invités à saisir un mot de passe lors de la connexion.
-</code></pre>
 <ul>
+<li>Dans cette commande de terminal, <code>-u</code> indique l'utilisateur. Nous fournissons l'utilisateur auquel nous voulons nous connecter à la base de données en tant que <code>root</code> (synonyme d'administrateur de base de données, dans ce cas).<ul>
+<li><code>127.0.0.1</code> est l'adresse de l'hôte local sur Internet (notre propre ordinateur).</li>
+<li><code>3306</code> est le port auquel nous voulons nous connecter, et c'est le port par défaut où MySQL est hébergé. Considérez la combinaison de l'hôte et du port comme l'adresse de la base de données à laquelle nous essayons de nous connecter !</li>
+<li><code>-p</code> à la fin de la commande indique que nous voulons être invités à saisir un mot de passe lors de la connexion.</li>
+</ul>
+</li>
 <li>Étant donné qu'il s'agit d'un serveur de base de données complet avec potentiellement de nombreuses bases de données à l'intérieur. Pour afficher toutes les bases de données existantes, nous utilisons la commande MySQL suivante.</li>
 </ul>
-<p><code>sql
-  SHOW DATABASES;</code></p>
+<pre><code class="language-sql">  SHOW DATABASES;
+</code></pre>
 <p>Cela renvoie certaines bases de données par défaut déjà présentes dans le serveur.
 - Nous allons effectuer quelques opérations pour configurer la base de données MBTA. Nous avons vu comment faire cela dans SQLite, alors concentrons-nous sur les différences de syntaxe pour MySQL !
-    - Création d'une nouvelle base de données :</p>
-<pre><code>  ```sql
-  CREATE DATABASE `mbta`;
-  ```
-
-  Au lieu de guillemets, nous utilisons des accents graves pour identifier le nom de la table et d'autres variables dans nos instructions SQL.
-- Pour changer la base de données actuelle en `mbta` :
-
-  ```sql
-  USE `mbta`;
-  ```
+- Création d'une nouvelle base de données :</p>
+<pre><code class="language-sql">  CREATE DATABASE `mbta`;
+</code></pre>
+<p>Au lieu de guillemets, nous utilisons des accents graves pour identifier le nom de la table et d'autres variables dans nos instructions SQL.
+- Pour changer la base de données actuelle en <code>mbta</code> :</p>
+<pre><code class="language-sql">  USE `mbta`;
 </code></pre>
 <h2 id="creating-the-cards-table">Creating the <code>cards</code> Table<a class="headerlink" href="#creating-the-cards-table" title="Permanent link">¶</a></h2>
 <ul>
@@ -443,9 +438,8 @@
 <li>Dans SQLite, nous avions un type de données <code>REAL</code>. Ici, nos options sont <code>FLOAT</code> et <code>DOUBLE PRECISION</code> comme montré dans le tableau ci-dessous.</li>
 </ul>
 <p>[Types de données réels dans MySQL]</p>
-<pre><code>- La quantité de précision doit être spécifiée avec le nombre d'octets, en raison de l'imprécision des nombres à virgule flottante. Cela signifie qu'avec une quantité limitée de mémoire, les nombres à virgule flottante ne peuvent être représentés qu'avec une certaine précision. Plus il y a d'octets, plus la précision avec laquelle le nombre est représenté est grande.
-</code></pre>
 <ul>
+<li>La quantité de précision doit être spécifiée avec le nombre d'octets, en raison de l'imprécision des nombres à virgule flottante. Cela signifie qu'avec une quantité limitée de mémoire, les nombres à virgule flottante ne peuvent être représentés qu'avec une certaine précision. Plus il y a d'octets, plus la précision avec laquelle le nombre est représenté est grande.</li>
 <li>Il existe également un moyen dans MySQL d'utiliser un type décimal (précision fixe). Avec cela, nous spécifierions le nombre de chiffres dans le nombre à représenter, et le nombre de chiffres après la virgule décimale.</li>
 <li>Créons maintenant la table <code>swipes</code>.</li>
 </ul>

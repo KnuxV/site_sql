@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+
+    
+    <title>Les bases de données relationnelles et MongoDB - Cours SQL</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../css/base.min.css" rel="stylesheet">
+    <link href="../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="..">Cours SQL</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 0 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../cours0/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours0/histoire/">Histoire</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 1 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../cours1/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours1/cyberchase/instructions/">Cyberchase</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours1/normals/instructions/">Normals</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours1/players/instructions/">Players</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours1/views/instructions/">Views</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours1/index_old.md">Old Index</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 2 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../cours2/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours2/dese/instructions/">Dese</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours2/moneyball/instructions/">Moneyball</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours2/packages/instructions/">Packages</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 3 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../cours3/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours3/atl/instructions/">ATL</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours3/connect/instructions/">Connect</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours3/doghnut/instructions/">Doghnut</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 4 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../cours4/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours4/dont-panic/instructions/">Don't Panic</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours4/meteorites/instructions/">Meteorites</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 5 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../cours5/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours5/bnb/instructions/">BNB</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours5/census/instructions/">Census</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours5/private/instructions/">Private</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 6 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../cours6/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours6/harvard/instructions/">Harvard</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours6/snap/instructions/">Snap</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours 7 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../cours7/">Introduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours7/index2/">Index 2</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours7/deep/answers.md">Deep Answers</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours7/deep/instructions/">Deep Instructions</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours7/dont-panic-python/instructions/">Don't Panic Python</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cours7/linkedin/instructions/">LinkedIn</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">SQLite Python <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../sqlite_python/index.md">Introduction</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#les-bases-de-donnees-relationnelles-et-mongodb">Les bases de données relationnelles et MongoDB</a></li>
+            <li class="second-level"><a href="#partie-1-rappel-sur-les-bases-de-donnees-relationnelles-et-principes-acid">Partie 1: Rappel sur les bases de données relationnelles et principes ACID</a></li>
+                
+                <li class="third-level"><a href="#11-introduction-aux-principes-acid">1.1 Introduction aux principes ACID</a></li>
+                <li class="third-level"><a href="#12-les-limites-du-modele-relationnel">1.2 Les limites du modèle relationnel</a></li>
+            <li class="second-level"><a href="#partie-2-introduction-aux-formats-de-donnees-flexibles">Partie 2: Introduction aux formats de données flexibles</a></li>
+                
+                <li class="third-level"><a href="#21-introduction-a-json-javascript-object-notation">2.1 Introduction à JSON (JavaScript Object Notation)</a></li>
+                <li class="third-level"><a href="#22-de-la-structure-tabulaire-aux-documents">2.2 De la structure tabulaire aux documents</a></li>
+            <li class="second-level"><a href="#format-sql-tables-relationnelles">Format SQL (tables relationnelles)</a></li>
+                
+                <li class="third-level"><a href="#table-utilisateurs">Table: utilisateurs</a></li>
+                <li class="third-level"><a href="#table-adresses">Table: adresses</a></li>
+                <li class="third-level"><a href="#table-competences_utilisateurs">Table: competences_utilisateurs</a></li>
+            <li class="second-level"><a href="#format-mongodb-documents-json">Format MongoDB (documents JSON)</a></li>
+                
+                <li class="third-level"><a href="#normalisation-vs-denormalisation">Normalisation vs Dénormalisation</a></li>
+                <li class="third-level"><a href="#quand-utiliser-chaque-approche">Quand utiliser chaque approche?</a></li>
+                <li class="third-level"><a href="#23-exercice-de-transformation-du-relationnel-au-document">2.3 Exercice de transformation: du relationnel au document</a></li>
+                <li class="third-level"><a href="#modele-relationnel">Modèle relationnel</a></li>
+                <li class="third-level"><a href="#transformation-en-modele-documentaire">Transformation en modèle documentaire</a></li>
+                <li class="third-level"><a href="#avantages-de-lapproche-documentaire">Avantages de l'approche documentaire</a></li>
+        <li class="first-level "><a href="#partie-3-mongodb-principes-fondamentaux">Partie 3: MongoDB - Principes fondamentaux</a></li>
+            <li class="second-level"><a href="#31-architecture-de-mongodb">3.1 Architecture de MongoDB</a></li>
+                
+                <li class="third-level"><a href="#terminologie-comparative">Terminologie comparative</a></li>
+                <li class="third-level"><a href="#structure-des-documents">Structure des documents</a></li>
+                <li class="third-level"><a href="#caracteristiques-cles">Caractéristiques clés</a></li>
+            <li class="second-level"><a href="#32-installation-et-prise-en-main">3.2 Installation et prise en main</a></li>
+                
+                <li class="third-level"><a href="#installation-de-mongodb">Installation de MongoDB</a></li>
+                <li class="third-level"><a href="#premier-pas-avec-mongodb">Premier pas avec MongoDB</a></li>
+            <li class="second-level"><a href="#33-crud-en-mongodb">3.3 CRUD en MongoDB</a></li>
+                
+                <li class="third-level"><a href="#create-creation">Create (Création)</a></li>
+                <li class="third-level"><a href="#read-lecture">Read (Lecture)</a></li>
+                <li class="third-level"><a href="#update-mise-a-jour">Update (Mise à jour)</a></li>
+                <li class="third-level"><a href="#delete-suppression">Delete (Suppression)</a></li>
+            <li class="second-level"><a href="#34-exemple-pratique-complet">3.4 Exemple pratique complet</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="les-bases-de-donnees-relationnelles-et-mongodb">Les bases de données relationnelles et MongoDB<a class="headerlink" href="#les-bases-de-donnees-relationnelles-et-mongodb" title="Permanent link">&para;</a></h1>
+<p><a href="https://github.com/KnuxV/sql_mongo">Lien vers Github</a></p>
+<h2 id="partie-1-rappel-sur-les-bases-de-donnees-relationnelles-et-principes-acid">Partie 1: Rappel sur les bases de données relationnelles et principes ACID<a class="headerlink" href="#partie-1-rappel-sur-les-bases-de-donnees-relationnelles-et-principes-acid" title="Permanent link">&para;</a></h2>
+<h3 id="11-introduction-aux-principes-acid">1.1 Introduction aux principes ACID<a class="headerlink" href="#11-introduction-aux-principes-acid" title="Permanent link">&para;</a></h3>
+<p>Les bases de données relationnelles comme MySQL, PostgreSQL et SQLite que nous avons étudiées jusqu'à présent suivent les principes ACID, un ensemble de propriétés qui garantissent la fiabilité des transactions:</p>
+<h4 id="atomicite-atomicity">Atomicité (Atomicity)<a class="headerlink" href="#atomicite-atomicity" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><strong>Définition</strong>: Une transaction est traitée comme une unité indivisible qui réussit complètement ou échoue complètement</p>
+</li>
+<li>
+<p>Exemple: Si vous transférez 100€ du compte A au compte B:</p>
+</li>
+<li>
+<p>Débit du compte A de 100€</p>
+</li>
+<li>Crédit du compte B de 100€</li>
+</ul>
+<p>Si l'une de ces opérations échoue, l'autre est annulée (rollback)</p>
+<pre><code class="language-sql">BEGIN TRANSACTION;
+    UPDATE comptes SET solde = solde - 100 WHERE id = 'compte_A';
+    UPDATE comptes SET solde = solde + 100 WHERE id = 'compte_B';
+COMMIT;
+</code></pre>
+<h4 id="coherence-consistency">Cohérence (Consistency)<a class="headerlink" href="#coherence-consistency" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Définition</strong>: La base de données passe uniquement d'un état valide à un autre état valide</li>
+<li><strong>Exemple</strong>: Si une contrainte exige que tous les comptes aient un solde positif, une transaction qui rendrait un solde négatif serait refusée</li>
+</ul>
+<pre><code class="language-sql">-- Contrainte d'intégrité définie dans le schéma
+CREATE TABLE comptes (
+    id TEXT PRIMARY KEY,
+    solde NUMERIC CHECK (solde &gt;= 0)
+);
+</code></pre>
+<h4 id="isolation-isolation">Isolation (Isolation)<a class="headerlink" href="#isolation-isolation" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Définition</strong>: Les transactions s'exécutent comme si elles étaient les seules à accéder à la base de données</li>
+<li><strong>Exemple</strong>: Deux utilisateurs modifiant simultanément le même compte ne créent pas de conditions de concurrence</li>
+</ul>
+<pre><code class="language-sql">-- Utilisateur 1
+BEGIN TRANSACTION;
+    -- La base de données verrouille la ligne pour empêcher d'autres modifications
+    UPDATE comptes SET solde = solde - 50 WHERE id = 'compte_A';
+COMMIT;
+
+-- Utilisateur 2 (exécuté simultanément)
+BEGIN TRANSACTION;
+    -- Cette transaction attendra que la première soit terminée
+    UPDATE comptes SET solde = solde - 75 WHERE id = 'compte_A';
+COMMIT;
+</code></pre>
+<h4 id="durabilite-durability">Durabilité (Durability)<a class="headerlink" href="#durabilite-durability" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Définition</strong>: Une fois qu'une transaction est validée, ses modifications sont permanentes</li>
+<li><strong>Exemple</strong>: Si le système tombe en panne après validation d'une transaction, les modifications sont préservées</li>
+</ul>
+<h3 id="12-les-limites-du-modele-relationnel">1.2 Les limites du modèle relationnel<a class="headerlink" href="#12-les-limites-du-modele-relationnel" title="Permanent link">&para;</a></h3>
+<p>Malgré ces garanties solides, le modèle relationnel présente plusieurs limitations:</p>
+<h4 id="rigidite-des-schemas">Rigidité des schémas<a class="headerlink" href="#rigidite-des-schemas" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Modifier la structure d'une table est coûteux et complexe</li>
+<li>Toutes les lignes doivent avoir exactement les mêmes colonnes</li>
+</ul>
+<pre><code class="language-sql">-- Opération potentiellement lourde sur une grande table
+ALTER TABLE utilisateurs ADD COLUMN date_derniere_connexion TIMESTAMP;
+</code></pre>
+<h4 id="difficultes-avec-les-donnees-evolutives">Difficultés avec les données évolutives<a class="headerlink" href="#difficultes-avec-les-donnees-evolutives" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Les applications modernes ont souvent des attributs variables selon les utilisateurs</li>
+<li>Exemple: Un réseau social où chaque utilisateur a des préférences différentes</li>
+</ul>
+<pre><code class="language-sql">-- Solution relationnelle typique: créer plusieurs tables
+CREATE TABLE preferences_utilisateurs (
+    utilisateur_id INT,
+    cle_preference TEXT,
+    valeur_preference TEXT,
+    PRIMARY KEY (utilisateur_id, cle_preference)
+);
+</code></pre>
+<h4 id="problemes-avec-les-donnees-hierarchiques-ou-imbriquees">Problèmes avec les données hiérarchiques ou imbriquées<a class="headerlink" href="#problemes-avec-les-donnees-hierarchiques-ou-imbriquees" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>Exemple: Représenter une structure organisationnelle ou un document JSON</p>
+</li>
+<li>
+<p>Nécessite souvent plusieurs jointures ou des solutions complexes</p>
+</li>
+</ul>
+<h2 id="partie-2-introduction-aux-formats-de-donnees-flexibles">Partie 2: Introduction aux formats de données flexibles<a class="headerlink" href="#partie-2-introduction-aux-formats-de-donnees-flexibles" title="Permanent link">&para;</a></h2>
+<h3 id="21-introduction-a-json-javascript-object-notation">2.1 Introduction à JSON (JavaScript Object Notation)<a class="headerlink" href="#21-introduction-a-json-javascript-object-notation" title="Permanent link">&para;</a></h3>
+<p>JSON est devenu un format d'échange de données standard pour les applications web et mobiles modernes. Il offre une alternative flexible aux structures tabulaires rigides des bases de données relationnelles.</p>
+<h4 id="structure-de-base-du-json">Structure de base du JSON<a class="headerlink" href="#structure-de-base-du-json" title="Permanent link">&para;</a></h4>
+<p>JSON s'organise autour de deux structures principales:</p>
+<ul>
+<li><strong>Objets</strong>: ensembles de paires clé/valeur entourés d'accolades <code>{}</code></li>
+<li><strong>Tableaux</strong>: collections ordonnées de valeurs entourées de crochets <code>[]</code></li>
+</ul>
+<h4 id="types-de-valeurs-supportes">Types de valeurs supportés<a class="headerlink" href="#types-de-valeurs-supportes" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Chaînes de caractères: <code>"Ceci est une chaîne"</code></li>
+<li>Nombres: <code>42</code> ou <code>3.14</code></li>
+<li>Booléens: <code>true</code> ou <code>false</code></li>
+<li>Valeur nulle: <code>null</code></li>
+<li>Objets imbriqués: <code>{"nom": "Dupont"}</code></li>
+<li>Tableaux: <code>[1, 2, 3]</code></li>
+</ul>
+<h4 id="exemple-simple-de-document-json">Exemple simple de document JSON<a class="headerlink" href="#exemple-simple-de-document-json" title="Permanent link">&para;</a></h4>
+<pre><code class="language-json">{
+  &quot;id&quot;: 101,
+  &quot;nom&quot;: &quot;Dupont&quot;,
+  &quot;prenom&quot;: &quot;Marie&quot;,
+  &quot;email&quot;: &quot;marie.dupont@example.com&quot;,
+  &quot;age&quot;: 32,
+  &quot;actif&quot;: true,
+  &quot;adresses&quot;: [
+    {
+      &quot;type&quot;: &quot;domicile&quot;,
+      &quot;rue&quot;: &quot;23 avenue Victor Hugo&quot;,
+      &quot;ville&quot;: &quot;Paris&quot;,
+      &quot;code_postal&quot;: &quot;75016&quot;
+    },
+    {
+      &quot;type&quot;: &quot;travail&quot;,
+      &quot;rue&quot;: &quot;5 rue de la Paix&quot;,
+      &quot;ville&quot;: &quot;Paris&quot;,
+      &quot;code_postal&quot;: &quot;75002&quot;
+    }
+  ],
+  &quot;competences&quot;: [&quot;Python&quot;, &quot;SQL&quot;, &quot;JavaScript&quot;]
+}
+</code></pre>
+<h4 id="avantages-du-format-json">Avantages du format JSON<a class="headerlink" href="#avantages-du-format-json" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Lisibilité humaine</strong>: format texte facile à lire et à écrire</li>
+<li><strong>Hiérarchie naturelle</strong>: supporte nativement les données imbriquées</li>
+<li><strong>Flexibilité structurelle</strong>: pas de schéma fixe, chaque objet peut avoir ses propres attributs</li>
+<li><strong>Universalité</strong>: pris en charge par presque tous les langages de programmation</li>
+</ul>
+<h3 id="22-de-la-structure-tabulaire-aux-documents">2.2 De la structure tabulaire aux documents<a class="headerlink" href="#22-de-la-structure-tabulaire-aux-documents" title="Permanent link">&para;</a></h3>
+<h4 id="comparaison-des-approches">Comparaison des approches<a class="headerlink" href="#comparaison-des-approches" title="Permanent link">&para;</a></h4>
+<h4 id="modele-relationnel-tabulaire">Modèle relationnel (tabulaire)<a class="headerlink" href="#modele-relationnel-tabulaire" title="Permanent link">&para;</a></h4>
+<p>Voici un exemple simplifié avec 2 utilisateurs et 3 adresses représentés en format SQL (tables) puis en format MongoDB (document JSON):</p>
+<h2 id="format-sql-tables-relationnelles">Format SQL (tables relationnelles)<a class="headerlink" href="#format-sql-tables-relationnelles" title="Permanent link">&para;</a></h2>
+<h3 id="table-utilisateurs">Table: utilisateurs<a class="headerlink" href="#table-utilisateurs" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>nom</th>
+<th>prenom</th>
+<th>age</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>101</td>
+<td>Dupont</td>
+<td>Marie</td>
+<td>32</td>
+</tr>
+<tr>
+<td>102</td>
+<td>Martin</td>
+<td>Jean</td>
+<td>45</td>
+</tr>
+</tbody>
+</table>
+<h3 id="table-adresses">Table: adresses<a class="headerlink" href="#table-adresses" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>utilisateur_id</th>
+<th>type</th>
+<th>rue</th>
+<th>ville</th>
+<th>code_postal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>101</td>
+<td>domicile</td>
+<td>23 avenue Victor Hugo</td>
+<td>Paris</td>
+<td>75016</td>
+</tr>
+<tr>
+<td>2</td>
+<td>101</td>
+<td>travail</td>
+<td>5 rue de la Paix</td>
+<td>Paris</td>
+<td>75002</td>
+</tr>
+<tr>
+<td>3</td>
+<td>102</td>
+<td>domicile</td>
+<td>8 allée des Roses</td>
+<td>Bordeaux</td>
+<td>33000</td>
+</tr>
+</tbody>
+</table>
+<h3 id="table-competences_utilisateurs">Table: competences_utilisateurs<a class="headerlink" href="#table-competences_utilisateurs" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>utilisateur_id</th>
+<th>competence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>101</td>
+<td>Python</td>
+</tr>
+<tr>
+<td>2</td>
+<td>101</td>
+<td>SQL</td>
+</tr>
+<tr>
+<td>3</td>
+<td>101</td>
+<td>JavaScript</td>
+</tr>
+<tr>
+<td>4</td>
+<td>102</td>
+<td>Java</td>
+</tr>
+<tr>
+<td>5</td>
+<td>102</td>
+<td>C++</td>
+</tr>
+</tbody>
+</table>
+<h2 id="format-mongodb-documents-json">Format MongoDB (documents JSON)<a class="headerlink" href="#format-mongodb-documents-json" title="Permanent link">&para;</a></h2>
+<pre><code class="language-json">[
+  {
+    &quot;_id&quot;: 101,
+    &quot;nom&quot;: &quot;Dupont&quot;,
+    &quot;prenom&quot;: &quot;Marie&quot;,
+    &quot;age&quot;: 32,
+    &quot;adresses&quot;: [
+      {
+        &quot;type&quot;: &quot;domicile&quot;,
+        &quot;rue&quot;: &quot;23 avenue Victor Hugo&quot;,
+        &quot;ville&quot;: &quot;Paris&quot;,
+        &quot;code_postal&quot;: &quot;75016&quot;
+      },
+      {
+        &quot;type&quot;: &quot;travail&quot;,
+        &quot;rue&quot;: &quot;5 rue de la Paix&quot;,
+        &quot;ville&quot;: &quot;Paris&quot;,
+        &quot;code_postal&quot;: &quot;75002&quot;
+      }
+    ],
+    &quot;competences&quot;: [&quot;Python&quot;, &quot;SQL&quot;, &quot;JavaScript&quot;]
+  },
+  {
+    &quot;_id&quot;: 102,
+    &quot;nom&quot;: &quot;Martin&quot;,
+    &quot;prenom&quot;: &quot;Jean&quot;,
+    &quot;age&quot;: 45,
+    &quot;adresse&quot;: {
+        &quot;rue&quot;: &quot;8 allée des Roses&quot;,
+        &quot;ville&quot;: &quot;Bordeaux&quot;,
+        &quot;code_postal&quot;: &quot;33000&quot;
+    },
+    &quot;competences&quot;: [&quot;Java&quot;, &quot;C++&quot;]
+  }
+]
+</code></pre>
+<h3 id="normalisation-vs-denormalisation">Normalisation vs Dénormalisation<a class="headerlink" href="#normalisation-vs-denormalisation" title="Permanent link">&para;</a></h3>
+<h4 id="normalisation-approche-relationnelle">Normalisation (approche relationnelle)<a class="headerlink" href="#normalisation-approche-relationnelle" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Divise les données en tables distinctes pour éliminer la redondance</li>
+<li>Maintient l'intégrité référentielle via des clés étrangères</li>
+<li>Optimise l'espace de stockage</li>
+<li>Facilite les mises à jour (modification en un seul endroit)</li>
+</ul>
+<h4 id="denormalisation-approche-documentaire">Dénormalisation (approche documentaire)<a class="headerlink" href="#denormalisation-approche-documentaire" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Regroupe les données liées dans un seul document</li>
+<li>Réduit le besoin de jointures</li>
+<li>Améliore les performances de lecture</li>
+<li>Simplifie la distribution des données</li>
+</ul>
+<h3 id="quand-utiliser-chaque-approche">Quand utiliser chaque approche?<a class="headerlink" href="#quand-utiliser-chaque-approche" title="Permanent link">&para;</a></h3>
+<h4 id="embedding-documents-imbriques">Embedding (documents imbriqués)<a class="headerlink" href="#embedding-documents-imbriques" title="Permanent link">&para;</a></h4>
+<p>Idéal pour:</p>
+<ul>
+<li>Relations "one-to-few" (un-à-peu): un utilisateur avec quelques adresses</li>
+<li>Données accédées ensemble: profil utilisateur toujours consulté avec ses adresses</li>
+<li>Données qui évoluent ensemble: modifier un utilisateur et ses informations associées</li>
+</ul>
+<h4 id="references-approche-similaire-aux-cles-etrangeres">Références (approche similaire aux clés étrangères)<a class="headerlink" href="#references-approche-similaire-aux-cles-etrangeres" title="Permanent link">&para;</a></h4>
+<p>Préférable pour:</p>
+<ul>
+<li>Relations "one-to-many" (un-à-plusieurs) avec grand volume: un produit avec des milliers d'avis</li>
+<li>Données partagées: catégories de produits référencées par de nombreux produits</li>
+<li>Données fréquemment mises à jour indépendamment</li>
+</ul>
+<h3 id="23-exercice-de-transformation-du-relationnel-au-document">2.3 Exercice de transformation: du relationnel au document<a class="headerlink" href="#23-exercice-de-transformation-du-relationnel-au-document" title="Permanent link">&para;</a></h3>
+<p>Prenons un exemple d'e-commerce simple:</p>
+<h3 id="modele-relationnel">Modèle relationnel<a class="headerlink" href="#modele-relationnel" title="Permanent link">&para;</a></h3>
+<pre><code>Clients (id, nom, email, telephone)
+Commandes (id, client_id, date, statut)
+Produits (id, nom, prix, stock)
+Details_Commande (commande_id, produit_id, quantite, prix_unitaire)
+</code></pre>
+<h3 id="transformation-en-modele-documentaire">Transformation en modèle documentaire<a class="headerlink" href="#transformation-en-modele-documentaire" title="Permanent link">&para;</a></h3>
+<p>Version avec documents imbriqués:</p>
+<pre><code class="language-json">// Collection &quot;commandes&quot;
+{
+  &quot;_id&quot;: 1001,
+  &quot;client&quot;: {
+    &quot;id&quot;: 5,
+    &quot;nom&quot;: &quot;Dupont Marie&quot;,
+    &quot;email&quot;: &quot;marie.d@example.com&quot;
+  },
+  &quot;date&quot;: &quot;2023-04-22T14:30:00Z&quot;,
+  &quot;statut&quot;: &quot;expédiée&quot;,
+  &quot;produits&quot;: [
+    {
+      &quot;id&quot;: 101,
+      &quot;nom&quot;: &quot;Smartphone Galaxy S23&quot;,
+      &quot;prix_unitaire&quot;: 899.99,
+      &quot;quantite&quot;: 1
+    },
+    {
+      &quot;id&quot;: 205,
+      &quot;nom&quot;: &quot;Coque de protection&quot;,
+      &quot;prix_unitaire&quot;: 19.99,
+      &quot;quantite&quot;: 2
+    }
+  ],
+  &quot;total&quot;: 939.97
+}
+</code></pre>
+<p>Version avec références:</p>
+<pre><code class="language-json">// Collection &quot;commandes&quot;
+{
+  &quot;_id&quot;: 1001,
+  &quot;client_id&quot;: 5,
+  &quot;date&quot;: &quot;2023-04-22T14:30:00Z&quot;,
+  &quot;statut&quot;: &quot;expédiée&quot;,
+  &quot;produits&quot;: [
+    {
+      &quot;produit_id&quot;: 101,
+      &quot;prix_unitaire&quot;: 899.99,
+      &quot;quantite&quot;: 1
+    },
+    {
+      &quot;produit_id&quot;: 205,
+      &quot;prix_unitaire&quot;: 19.99,
+      &quot;quantite&quot;: 2
+    }
+  ],
+  &quot;total&quot;: 939.97
+}
+
+// Collection &quot;clients&quot;
+{
+  &quot;_id&quot;: 5,
+  &quot;nom&quot;: &quot;Dupont Marie&quot;,
+  &quot;email&quot;: &quot;marie.d@example.com&quot;,
+  &quot;telephone&quot;: &quot;+33612345678&quot;
+}
+
+// Collection &quot;produits&quot;
+{
+  &quot;_id&quot;: 101,
+  &quot;nom&quot;: &quot;Smartphone Galaxy S23&quot;,
+  &quot;description&quot;: &quot;Dernier modèle avec appareil photo 108MP&quot;,
+  &quot;prix&quot;: 899.99,
+  &quot;stock&quot;: 45,
+  &quot;categorie&quot;: &quot;Électronique&quot;
+}
+</code></pre>
+<h3 id="avantages-de-lapproche-documentaire">Avantages de l'approche documentaire<a class="headerlink" href="#avantages-de-lapproche-documentaire" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Lecture efficace</strong>: récupération d'une commande complète en une seule opération</li>
+<li><strong>Structure intuitive</strong>: la structure reflète naturellement l'objet métier</li>
+<li><strong>Flexibilité</strong>: facilité d'ajout de nouveaux champs (ex: préférences d'expédition)</li>
+<li><strong>Performances</strong>: moins de jointures signifie généralement des requêtes plus rapides</li>
+<li><strong>Évolutivité</strong>: meilleure distribution des données sur plusieurs serveurs</li>
+</ol>
+<h1 id="partie-3-mongodb-principes-fondamentaux">Partie 3: MongoDB - Principes fondamentaux<a class="headerlink" href="#partie-3-mongodb-principes-fondamentaux" title="Permanent link">&para;</a></h1>
+<h2 id="31-architecture-de-mongodb">3.1 Architecture de MongoDB<a class="headerlink" href="#31-architecture-de-mongodb" title="Permanent link">&para;</a></h2>
+<p>MongoDB est une base de données NoSQL orientée documents qui stocke les données dans des formats similaires à JSON. Voici comment l'architecture de MongoDB se compare aux bases de données relationnelles:</p>
+<h3 id="terminologie-comparative">Terminologie comparative<a class="headerlink" href="#terminologie-comparative" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>MongoDB</th>
+<th>Base de données SQL</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Base de données</td>
+<td>Base de données</td>
+<td>Conteneur physique pour les collections</td>
+</tr>
+<tr>
+<td>Collection</td>
+<td>Table</td>
+<td>Groupe de documents MongoDB</td>
+</tr>
+<tr>
+<td>Document</td>
+<td>Ligne/Enregistrement</td>
+<td>Ensemble de paires clé-valeur</td>
+</tr>
+<tr>
+<td>Champ</td>
+<td>Attribut</td>
+<td>Paire clé-valeur dans un document</td>
+</tr>
+<tr>
+<td>Index</td>
+<td>Index</td>
+<td>Améliore les performances des requêtes</td>
+</tr>
+<tr>
+<td><code>_id</code></td>
+<td>Clé primaire</td>
+<td>Identifiant unique automatique pour chaque document</td>
+</tr>
+<tr>
+<td>Embedding</td>
+<td>-</td>
+<td>Inclusion de documents liés dans un document parent</td>
+</tr>
+<tr>
+<td>Référence</td>
+<td>Clé étrangère</td>
+<td>Lien vers un document dans une autre collection</td>
+</tr>
+</tbody>
+</table>
+<h3 id="structure-des-documents">Structure des documents<a class="headerlink" href="#structure-des-documents" title="Permanent link">&para;</a></h3>
+<p>MongoDB stocke les données sous forme de documents BSON (Binary JSON), une représentation binaire de JSON qui ajoute des types de données supplémentaires comme les dates et les binaires.</p>
+<p>Chaque document dans une collection peut avoir une structure différente, bien qu'en pratique, les documents d'une même collection partagent souvent une structure similaire.</p>
+<pre><code class="language-javascript">// Exemple de document MongoDB
+{
+   _id: ObjectId(&quot;612f9a5b7e9f4e001c8b456a&quot;),
+   titre: &quot;La guerre et la paix&quot;,
+   auteur: &quot;Léon Tolstoï&quot;,
+   annee: 1869,
+   genres: [&quot;Fiction historique&quot;, &quot;Roman&quot;],
+   disponible: true,
+   details: {
+      pages: 1225,
+      editeur: &quot;Gallimard&quot;,
+      ISBN: &quot;978-2070374366&quot;
+   }
+}
+</code></pre>
+<h3 id="caracteristiques-cles">Caractéristiques clés<a class="headerlink" href="#caracteristiques-cles" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Schéma flexible</strong>: Chaque document peut avoir des champs différents</li>
+<li><strong>Documents imbriqués</strong>: Support natif pour les structures de données hiérarchiques</li>
+<li><strong>Scaling horizontal</strong>: Distribution des données sur plusieurs serveurs via le sharding</li>
+<li><strong>Indexation</strong>: Support pour différents types d'index (simples, composés, géospatiaux, etc.)</li>
+<li><strong>Réplication</strong>: Copies multiples des données pour la haute disponibilité</li>
+</ol>
+<h2 id="32-installation-et-prise-en-main">3.2 Installation et prise en main<a class="headerlink" href="#32-installation-et-prise-en-main" title="Permanent link">&para;</a></h2>
+<h3 id="installation-de-mongodb">Installation de MongoDB<a class="headerlink" href="#installation-de-mongodb" title="Permanent link">&para;</a></h3>
+<p>MongoDB est disponible pour différentes plateformes (Windows, macOS, Linux). Deux options principales existent:</p>
+<ol>
+<li><strong>MongoDB Community Server</strong>: version gratuite et open-source</li>
+<li><strong>MongoDB Atlas</strong>: version cloud gérée par MongoDB (offre un tier gratuit)</li>
+</ol>
+<h4 id="outils-dinterface">Outils d'interface<a class="headerlink" href="#outils-dinterface" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>MongoDB Shell</strong>: interface en ligne de commande</li>
+<li><strong>MongoDB Compass</strong>: interface graphique pour explorer et manipuler les données</li>
+<li><strong>MongoDB for VS Code</strong>: extension pour Visual Studio Code</li>
+</ul>
+<h3 id="premier-pas-avec-mongodb">Premier pas avec MongoDB<a class="headerlink" href="#premier-pas-avec-mongodb" title="Permanent link">&para;</a></h3>
+<h4 id="connexion-a-mongodb">Connexion à MongoDB<a class="headerlink" href="#connexion-a-mongodb" title="Permanent link">&para;</a></h4>
+<pre><code class="language-bash"># Connexion à une instance locale
+mongosh
+
+# Connexion à une instance distante
+mongosh &quot;mongodb://username:password@host:port/database&quot;
+</code></pre>
+<h4 id="creation-dune-base-de-donnees-et-dune-collection">Création d'une base de données et d'une collection<a class="headerlink" href="#creation-dune-base-de-donnees-et-dune-collection" title="Permanent link">&para;</a></h4>
+<pre><code class="language-javascript">// Création/utilisation d'une base de données
+use bibliotheque
+
+// Création implicite d'une collection lors de l'insertion
+db.livres.insertOne({
+   titre: &quot;Le Petit Prince&quot;,
+   auteur: &quot;Antoine de Saint-Exupéry&quot;,
+   annee: 1943
+})
+</code></pre>
+<h4 id="navigation-entre-les-bases-de-donnees-et-collections">Navigation entre les bases de données et collections<a class="headerlink" href="#navigation-entre-les-bases-de-donnees-et-collections" title="Permanent link">&para;</a></h4>
+<pre><code class="language-javascript">// Lister les bases de données
+show dbs
+
+// Lister les collections d'une base de données
+show collections
+
+// Voir la base de données actuelle
+db.getName()
+</code></pre>
+<h2 id="33-crud-en-mongodb">3.3 CRUD en MongoDB<a class="headerlink" href="#33-crud-en-mongodb" title="Permanent link">&para;</a></h2>
+<h3 id="create-creation">Create (Création)<a class="headerlink" href="#create-creation" title="Permanent link">&para;</a></h3>
+<p>MongoDB offre plusieurs méthodes pour créer de nouveaux documents:</p>
+<h4 id="insertone-ajouter-un-document-unique">insertOne(): ajouter un document unique<a class="headerlink" href="#insertone-ajouter-un-document-unique" title="Permanent link">&para;</a></h4>
+<pre><code class="language-javascript">db.clients.insertOne({
+   nom: &quot;Dupont&quot;,
+   prenom: &quot;Marie&quot;,
+   email: &quot;marie.d@example.com&quot;,
+   age: 35,
+   ville: &quot;Paris&quot;
+})
+</code></pre>
+<p>Résultat:</p>
+<pre><code>{
+  acknowledged: true,
+  insertedId: ObjectId(&quot;62d95fb372cd8f5639bdf282&quot;)
+}
+</code></pre>
+<h4 id="insertmany-ajouter-plusieurs-documents">insertMany(): ajouter plusieurs documents<a class="headerlink" href="#insertmany-ajouter-plusieurs-documents" title="Permanent link">&para;</a></h4>
+<pre><code class="language-javascript">db.produits.insertMany([
+   {
+      nom: &quot;Smartphone XS&quot;,
+      prix: 899.99,
+      stock: 50
+   },
+   {
+      nom: &quot;Tablette Pro&quot;,
+      prix: 699.99,
+      stock: 25
+   },
+   {
+      nom: &quot;Écouteurs sans fil&quot;,
+      prix: 129.99,
+      stock: 100
+   }
+])
+</code></pre>
+<p>Résultat:</p>
+<pre><code>{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId(&quot;62d9605372cd8f5639bdf283&quot;),
+    '1': ObjectId(&quot;62d9605372cd8f5639bdf284&quot;),
+    '2': ObjectId(&quot;62d9605372cd8f5639bdf285&quot;)
+  }
+}
+</code></pre>
+<h3 id="read-lecture">Read (Lecture)<a class="headerlink" href="#read-lecture" title="Permanent link">&para;</a></h3>
+<p>MongoDB propose plusieurs méthodes pour requêter des documents:</p>
+<h4 id="find-recuperer-plusieurs-documents">find(): récupérer plusieurs documents<a class="headerlink" href="#find-recuperer-plusieurs-documents" title="Permanent link">&para;</a></h4>
+<pre><code class="language-javascript">// Récupérer tous les documents
+db.produits.find()
+
+// Récupérer avec filtres
+db.produits.find({ prix: { $gt: 500 } })
+
+// Projection (sélection de champs)
+db.produits.find(
+   { stock: { $gte: 50 } },
+   { nom: 1, prix: 1, _id: 0 }
+)
+</code></pre>
+<h4 id="findone-recuperer-un-document-unique">findOne(): récupérer un document unique<a class="headerlink" href="#findone-recuperer-un-document-unique" title="Permanent link">&para;</a></h4>
+<pre><code class="language-javascript">// Récupérer le premier document correspondant
+db.clients.findOne({ nom: &quot;Dupont&quot; })
+</code></pre>
+<h4 id="operateurs-de-requete">Opérateurs de requête<a class="headerlink" href="#operateurs-de-requete" title="Permanent link">&para;</a></h4>
+<p>MongoDB offre de nombreux opérateurs pour filtrer les résultats:</p>
+<table>
+<thead>
+<tr>
+<th>Opérateur</th>
+<th>Description</th>
+<th>Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$eq</code></td>
+<td>Égal à</td>
+<td><code>{ age: { $eq: 30 } }</code></td>
+</tr>
+<tr>
+<td><code>$gt</code></td>
+<td>Supérieur à</td>
+<td><code>{ prix: { $gt: 100 } }</code></td>
+</tr>
+<tr>
+<td><code>$lt</code></td>
+<td>Inférieur à</td>
+<td><code>{ stock: { $lt: 20 } }</code></td>
+</tr>
+<tr>
+<td><code>$gte</code></td>
+<td>Supérieur ou égal à</td>
+<td><code>{ age: { $gte: 18 } }</code></td>
+</tr>
+<tr>
+<td><code>$lte</code></td>
+<td>Inférieur ou égal à</td>
+<td><code>{ prix: { $lte: 999 } }</code></td>
+</tr>
+<tr>
+<td><code>$ne</code></td>
+<td>Différent de</td>
+<td><code>{ status: { $ne: "inactif" } }</code></td>
+</tr>
+<tr>
+<td><code>$in</code></td>
+<td>Dans un ensemble</td>
+<td><code>{ categorie: { $in: ["Électronique", "Informatique"] } }</code></td>
+</tr>
+<tr>
+<td><code>$nin</code></td>
+<td>Pas dans un ensemble</td>
+<td><code>{ categorie: { $nin: ["Vêtements"] } }</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="update-mise-a-jour">Update (Mise à jour)<a class="headerlink" href="#update-mise-a-jour" title="Permanent link">&para;</a></h3>
+<p>MongoDB propose plusieurs méthodes pour mettre à jour les documents:</p>
+<h4 id="updateone-modifier-un-document-unique">updateOne(): modifier un document unique<a class="headerlink" href="#updateone-modifier-un-document-unique" title="Permanent link">&para;</a></h4>
+<pre><code class="language-javascript">// Mettre à jour le premier document correspondant
+db.produits.updateOne(
+   { nom: &quot;Smartphone XS&quot; },
+   { $set: { prix: 849.99, promo: true } }
+)
+</code></pre>
+<h4 id="updatemany-modifier-plusieurs-documents">updateMany(): modifier plusieurs documents<a class="headerlink" href="#updatemany-modifier-plusieurs-documents" title="Permanent link">&para;</a></h4>
+<pre><code class="language-javascript">// Mettre à jour tous les documents correspondants
+db.produits.updateMany(
+   { stock: { $lt: 50 } },
+   { $set: { status: &quot;Stock limité&quot; } }
+)
+</code></pre>
+<h4 id="operateurs-de-mise-a-jour">Opérateurs de mise à jour<a class="headerlink" href="#operateurs-de-mise-a-jour" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Opérateur</th>
+<th>Description</th>
+<th>Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$set</code></td>
+<td>Définir une valeur</td>
+<td><code>{ $set: { status: "actif" } }</code></td>
+</tr>
+<tr>
+<td><code>$unset</code></td>
+<td>Supprimer un champ</td>
+<td><code>{ $unset: { temporaire: "" } }</code></td>
+</tr>
+<tr>
+<td><code>$inc</code></td>
+<td>Incrémenter une valeur</td>
+<td><code>{ $inc: { vues: 1, stock: -1 } }</code></td>
+</tr>
+<tr>
+<td><code>$push</code></td>
+<td>Ajouter à un tableau</td>
+<td><code>{ $push: { tags: "nouveau" } }</code></td>
+</tr>
+<tr>
+<td><code>$pull</code></td>
+<td>Retirer d'un tableau</td>
+<td><code>{ $pull: { tags: "ancien" } }</code></td>
+</tr>
+<tr>
+<td><code>$addToSet</code></td>
+<td>Ajouter à un tableau sans doublon</td>
+<td><code>{ $addToSet: { categories: "premium" } }</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="delete-suppression">Delete (Suppression)<a class="headerlink" href="#delete-suppression" title="Permanent link">&para;</a></h3>
+<p>MongoDB propose deux méthodes principales pour supprimer des documents:</p>
+<h4 id="deleteone-supprimer-un-document-unique">deleteOne(): supprimer un document unique<a class="headerlink" href="#deleteone-supprimer-un-document-unique" title="Permanent link">&para;</a></h4>
+<pre><code class="language-javascript">// Supprimer le premier document correspondant
+db.clients.deleteOne({ email: &quot;ancien@example.com&quot; })
+</code></pre>
+<h4 id="deletemany-supprimer-plusieurs-documents">deleteMany(): supprimer plusieurs documents<a class="headerlink" href="#deletemany-supprimer-plusieurs-documents" title="Permanent link">&para;</a></h4>
+<pre><code class="language-javascript">// Supprimer tous les documents correspondants
+db.produits.deleteMany({ discontinued: true })
+
+// Supprimer tous les documents d'une collection
+db.temporaire.deleteMany({})
+</code></pre>
+<h2 id="34-exemple-pratique-complet">3.4 Exemple pratique complet<a class="headerlink" href="#34-exemple-pratique-complet" title="Permanent link">&para;</a></h2>
+<p>Créons une petite base de données pour une librairie en ligne:</p>
+<pre><code class="language-javascript">// Création de la base de données
+use librairie_en_ligne
+
+// Insertion de quelques auteurs
+db.auteurs.insertMany([
+  {
+    nom: &quot;Rowling&quot;,
+    prenom: &quot;J.K.&quot;,
+    nationalite: &quot;Britannique&quot;,
+    date_naissance: new Date(&quot;1965-07-31&quot;)
+  },
+  {
+    nom: &quot;Tolkien&quot;,
+    prenom: &quot;J.R.R.&quot;,
+    nationalite: &quot;Britannique&quot;,
+    date_naissance: new Date(&quot;1892-01-03&quot;),
+    date_deces: new Date(&quot;1973-09-02&quot;)
+  },
+  {
+    nom: &quot;Camus&quot;,
+    prenom: &quot;Albert&quot;,
+    nationalite: &quot;Français&quot;,
+    date_naissance: new Date(&quot;1913-11-07&quot;),
+    date_deces: new Date(&quot;1960-01-04&quot;)
+  }
+])
+
+// Insertion de livres
+db.livres.insertMany([
+  {
+    titre: &quot;Harry Potter à l'école des sorciers&quot;,
+    auteur_id: db.auteurs.findOne({ nom: &quot;Rowling&quot; })._id,
+    annee: 1997,
+    genres: [&quot;Fantasy&quot;, &quot;Jeunesse&quot;],
+    prix: 9.99,
+    stock: 45,
+    avis: [
+      { utilisateur: &quot;Jean D.&quot;, note: 5, commentaire: &quot;Un classique!&quot; },
+      { utilisateur: &quot;Marie L.&quot;, note: 4, commentaire: &quot;Très bon livre pour les enfants&quot; }
+    ]
+  },
+  {
+    titre: &quot;Le Seigneur des Anneaux&quot;,
+    auteur_id: db.auteurs.findOne({ nom: &quot;Tolkien&quot; })._id,
+    annee: 1954,
+    genres: [&quot;Fantasy&quot;, &quot;Aventure&quot;],
+    prix: 12.99,
+    stock: 28,
+    avis: [
+      { utilisateur: &quot;Pierre M.&quot;, note: 5, commentaire: &quot;Chef-d'œuvre absolu&quot; }
+    ]
+  },
+  {
+    titre: &quot;L'Étranger&quot;,
+    auteur_id: db.auteurs.findOne({ nom: &quot;Camus&quot; })._id,
+    annee: 1942,
+    genres: [&quot;Roman&quot;, &quot;Philosophie&quot;],
+    prix: 7.99,
+    stock: 15
+  }
+])
+
+// Recherche de tous les livres de fantasy
+db.livres.find(
+  { genres: &quot;Fantasy&quot; },
+  { titre: 1, annee: 1, prix: 1, _id: 0 }
+)
+
+// Mise à jour du stock après une vente
+db.livres.updateOne(
+  { titre: &quot;L'Étranger&quot; },
+  { $inc: { stock: -1 } }
+)
+
+// Ajout d'un nouvel avis
+db.livres.updateOne(
+  { titre: &quot;L'Étranger&quot; },
+  {
+    $push: {
+      avis: {
+        utilisateur: &quot;Sophie R.&quot;,
+        note: 4,
+        commentaire: &quot;Une lecture marquante&quot;,
+        date: new Date()
+      }
+    }
+  }
+)
+
+// Trouver les livres avec une note moyenne supérieure à 4
+db.livres.aggregate([
+  { $match: { avis: { $exists: true } } },
+  { $project: {
+      titre: 1,
+      note_moyenne: { $avg: &quot;$avis.note&quot; }
+  }},
+  { $match: { note_moyenne: { $gt: 4 } } }
+])
+</code></pre></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = ".."</script>
+    
+    <script src="../js/base.js"></script>
+    <script src="../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>
